@@ -1,0 +1,33 @@
+.pt-1 {
+    margin-top: 60px;
+  }
+.fontStyle {
+    color: snow;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: slategray 1px 0 10px;
+  }
+.banner{
+    background: linear-gradient(to bottom, #776be2 0%, #00ccff 100%);
+}
+.namec{
+  color: rgb(79, 80, 182);
+}
+.stylo{
+  font-family: "Times New Roman", Times, serif;
+}
+.namec:hover,
+.namec:focus {
+    color: rgb(54, 141, 134);
+    cursor: pointer;
+  }
+.media {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2 );
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+.media:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

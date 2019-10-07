@@ -1,0 +1,240 @@
+<!--<div class='col-md-1 col-lg-1 col-sm-12'>-->
+<!--&lt;!&ndash;<button type='submit' mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light" mdbWavesEffect type="submit" (click)="onPress1()">Search</button>&ndash;&gt;-->
+<!--<input type="text" name='url' class="form-control" placeholder="Url">-->
+<!--<input type="text" name='name' class="form-control" placeholder="Url">-->
+<!--<button type='submit' mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light" mdbWavesEffect type="submit" (click)="onPress()">Search</button>-->
+<!--<ul class="list-group" *ngFor="let ser of search">-->
+<!--<li class="list-group-item">{{ ser.url }} (name: {{ ser.name }})</li>-->
+<!--</ul>-->
+<!--</div>-->
+
+<body>
+  <div class='container-fluid lighten-3 d-block homeSearchePan pt-1 pl-1 pr-1 stylo'>
+    <div class='row'>
+      <!--<video class="video-fluid z-depth-1" src="./animation1.mp4" [autoplay]="true" [loop]="true" autoplay loop controls muted>-->
+      <!--&lt;!&ndash;<source src="./animation2.mp4" type="video/mp4" />&ndash;&gt;-->
+      <!--</video>-->
+      <div class='container-fluid text-center headd'>
+        <br><br>
+        <i class="fas fa-book-open fa-4x" style='color:snow;' aria-hidden="true"></i>
+        <h1 class='sss fontStyle h6-responsive'>
+          RESEARCH MORE SEARCH LESS
+        </h1>
+      </div>
+
+      <div class='container-fluid text-center fdg'>
+        <!-- Grd row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-sm-12 offset-md-4 offset-lg-4 offset-sm-0">
+            <span class="btn btn-dark btn-sm"
+              (click)="ss2()">By
+              Author
+              Name</span><span class="btn btn-dark btn-sm" (click)="ss1()">BY Faculty Url</span>
+          </div>
+        </div>
+        
+        <!-- Grd row -->
+        <div [ngStyle]="{display: sss2}">
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-sm-12 offset-md-4 offset-lg-4 offset-sm-0">
+              <!-- Default input -->
+              <input type="text" name='Author' id='authorId' class="form-control" [(ngModel)]="author"
+                placeholder="Author Name">
+            </div>
+            <!-- Grid column -->
+            <div class='col-md-1 col-lg-1 col-sm-12'>
+              <button type='submit' mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light"
+                mdbWavesEffect type="submit" (click)="onPress2()"><i class="fa fa-search fa-2x" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div><br><br><br><br><br><br>
+        </div>
+        <!-- Grd row -->
+        <!-- Grd row -->
+        <div [ngStyle]="{display: sss1}">
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-sm-12 offset-md-3 offset-lg-3 offset-sm-0">
+              <!-- Default input -->
+              <input #url type="text" name='url' class="form-control" placeholder="Url">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-sm-12">
+              <!-- Default input -->
+              <input #name type="text" name='organization' class="form-control" placeholder="Organization name">
+            </div>
+            <!-- Grid column -->
+            <div class='col-md-1 col-lg-1 col-sm-12'>
+              <button type='submit' mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light"
+                mdbWavesEffect type="submit" (click)="onPress(url.value, name.value)"><i class="fa fa-search fa-2x"
+                  aria-hidden="true"></i>
+              </button>
+            </div>
+          </div><br><br><br><br><br><br>
+        </div>
+        <!-- Grd row -->
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class='cardHolder'>
+    <div class='container-fluid'>
+
+      <div class='row pad'>
+
+        <div class="col-md-6 col-lg-6 col-sm-12">
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h4 class="hovr" (click)="openForum()"><a><b>JOIN OUR COMMUNITY</b></a></h4>
+              <p>Join our communiyt to help get helped. Post your queris and find response from a large community.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-sm-12">
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h4><b>CONTACT US</b></h4>
+              <table class="table table-hover table-bordered">
+                <tbody>
+                  <tr>
+                    <td>  <i class="fa fa-facebook-square"></i> facebook.com/usman</td>
+                    <td> <i class="fa fa-mail-reply"></i> usman30.1996@hotmail.com</td>
+                    <td> <i class="fa fa-phone"></i>0302-5081347</td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class='cardHolder'>
+    <div class='container-fluid'>
+
+      <div class='row'>
+
+        <div class="col-md-6 col-lg-6 col-sm-12">
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h4><b>John Doe</b></h4>
+              <p>Architectbajdcvbiasdcv cavvcaskvckavckasbcjacvbjavcjasvcsajvcjsavcjascjvsjcvsajcasjcvjacd
+                ddvbcasksdvckavak bvckasvckavckasca aaavckasvckavca cca & Engineer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-sm-12">
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h4><b>John Doe</b></h4>
+              <p>Architect & bkasjd adfga fa fagfag agaigaigfacva
+                ejbsdjkbfsjdcbsjfdjfbjdfjdfgjdfbjdfbjdfbdjfdjfvbbbbbagkgcaigfkacvddgfd dggf df df df dg d fkgsd sd
+                fgfskgfksgfsf sf sdf ba a agifgakgcda Engineer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class='cardHolder'>
+    <div class='container-fluid'>
+
+      <div class='row'>
+
+        <div class="col-md-6 col-lg-6 col-sm-12">
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h4><b>John Doe</b></h4>
+              <p>Architectbajdcvbiasdcv cavvcaskvckavckasbcjacvbjavcjasvcsajvcjsavcjascjvsjcvsajcasjcvjacd
+                ddvbcasksdvckavak bvckasvckavckasca aaavckasvckavca cca & Engineer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-sm-12">
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h4><b>John Doe</b></h4>
+              <p>Architect & bkasjd adfga fa fagfag agaigaigfacva
+                ejbsdjkbfsjdcbsjfdjfbjdfjdfgjdfbjdfbjdfbdjfdjfvbbbbbagkgcaigfkacvddgfd dggf df df df dg d fkgsd sd
+                fgfskgfksgfsf sf sdf ba a agifgakgcda Engineer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class='cardHolder2'>
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class="col-md-12 col-lg-12 col-sm-12">
+          <div class="card">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="back5.jpg" alt="Los Angeles" width="1100" height="500">
+                  <div class="carousel-caption">
+                    <h3>Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="back5.jpg" alt="Chicago" width="1100" height="500">
+                  <div class="carousel-caption">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago!</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="back5.jpg" alt="New York" width="1100" height="500">
+                  <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+</body>

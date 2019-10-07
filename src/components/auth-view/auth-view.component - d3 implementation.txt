@@ -1,0 +1,572 @@
+import { Component,Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
+import * as d3 from 'd3';
+import { ApiService } from '../../app/api.service';
+declare const createV4SelectableForceDirectedGraph: any;
+@Component({
+  selector: 'app-auth-view',
+  templateUrl: './auth-view.component.html',
+  styleUrls: ['./auth-view.component.css']
+})
+export class AuthViewComponent implements OnInit {
+  query:any;
+  author_result_obj:any={};
+  pub_result:any=[];
+  pub_result_obj:any={};
+  network_authers:any=[]
+  main_auther:any=''
+  // ======================================================
+  name: string;
+  svg;
+  gMain;
+  height;
+  width;
+  rect;
+  gDraw;
+  zoom;
+  color;
+  simulation;
+  link;
+  node;
+  clickedNodeId;
+  data;
+  url;
+
+  // url:string = '';
+  // data: any={};
+
+  thisX1: Array<any> = [];
+  thisX2: Array<any> = [];
+  thisX3: Array<any> = [];
+  thisX4: Array<any> = [];
+  thisX5: Array<any> = [];
+  thisY1: Array<any> = [];
+  thisY2: Array<any> = [];
+  thisY3: Array<any> = [];
+  thisY4: Array<any> = [];
+  thisY5: Array<any> = [];
+
+  nodeId: Array<string> = []
+  highlightedLinks: Array<any> = []
+  oppositeNode: Array<String> = []
+  nodeExtensionNeed: Array<String> = []
+  xx: any[]=[];
+  xxx={};
+  yy:any[]=[];
+  yyy={};
+
+  private tooltip1: any;
+  private tooltip2: any;
+  private tooltip3: any;
+  private tooltip4: any;
+  private tooltip5: any;
+  private tooltip6: any;
+  private tooltip7: any;
+  private tooltip8: any;
+  affilia:any;
+  timeLeft: number = 10;
+  @Input()
+
+  margin = {top: 20, right: 20, bottom: 30, left: 40};
+  // ========================================================
+
+  constructor(private apiservice: ApiService , private router: Router, private _Activatedroute:ActivatedRoute) { }
+
+  ngOnInit() {
+    this.network_authers=[]
+    this.main_auther=''
+    this.query=this._Activatedroute.snapshot.paramMap.get("id");
+    console.log(this.query);
+
+    this.apiservice.searchAuther2(this.query).subscribe(data=>{
+      for (let index = 0; index < data.length; index++) {
+        this.author_result_obj=JSON.parse(data[index]);
+        this.main_auther=this.author_result_obj['urlLink'];
+        this.affilia=this.author_result_obj['affiliation'];
+        // console.log(this.author_result_obj);
+      }
+    });
+    this.apiservice.searchPub(this.query).subscribe(data=>{
+      for (let index = 0; index < data.length; index++) {
+        this.pub_result_obj=JSON.parse(data[index]);
+        this.pub_result.push(this.pub_result_obj);
+        for (let index = 0; index < this.pub_result_obj['coAuthors'].length; index++) {
+          this.network_authers.push(this.pub_result_obj['coAuthors'][index]['linkUrl']);
+        }
+        // console.log(this.pub_result);
+      }
+    });
+  }
+  network(){
+    // console.log(this.main_auther);
+    // console.log(this.network_authers);
+    this.apiservice.getNewtork(this.main_auther,this.affilia).subscribe(d=>{
+      console.log(d);
+
+      this.data=d;
+      // this.data = JSON.stringify(d)
+      this.url = this.data.author;
+      this.link = this.data.links;
+      this.node = this.data.nodes;
+      
+      this.svg = d3.select('svg');
+      createV4SelectableForceDirectedGraph(this.svg, this.data, this.url);
+
+      // this.after();
+
+      this.nodeExtensionNeed = []
+      for (let i = 0; i < d['nodes'].length; i++) {
+        if( d['nodes'][i]['level'] == 1){
+          this.nodeExtensionNeed.push(d['nodes'][i]['urlLink']);
+        }
+      }
+      if (this.nodeExtensionNeed.length > 0){
+        this.apiservice.extend_faculty(this.nodeExtensionNeed).subscribe(data=>{
+          console.log(data)
+        }, err=>{
+          console.log(err);
+        }
+        )
+      }
+    });
+  }
+  after() {
+    this.svg = d3.select('svg');
+
+    var width = +this.svg.attr('width');
+    var height = +this.svg.attr('height');
+
+    this.color = d3.scaleOrdinal(d3.schemeCategory10);
+
+    function dist() {
+      return this.link.value + 20;
+    }
+
+    this.gMain = this.svg.append('g')
+      .classed('g-main', true);
+
+    this.gDraw = this.gMain.append('g')
+    this.rect = this.gDraw.append("rect")
+      .attr("width", "100%")
+      .attr("height", "100%")
+      .attr("fill", "snow");
+
+    // this.render(miserables);
+    this.render(this.data);
+
+    this.simulation = d3.forceSimulation()
+      // .force("link",  d3.forceLink(this.link).id(function(d,i) {
+      //   // console.log(d);
+      //   return d.id;
+      //   })
+      // .distance(50)
+      // .strength(1))
+      .force('charge', d3.forceManyBody())
+      .force('center', d3.forceCenter(width / 2, height / 4))
+      .force('collision', d3.forceCollide().radius(function(d) {
+        return 25;
+      }))
+      .force("x", d3.forceX(width*5))
+      .force("y", d3.forceY(height));
+
+    this.render1(this.data);
+
+  }
+
+
+  ticked() {
+    var t = this;
+    var xw:any='';
+    var yw:any='';
+    var xw1:any='';
+    var yw1:any='';
+
+    // this.link.attr("x1", function(d) { return d.source.x; })
+    // .attr("y1", function(d) { return d.source.y; })
+    // .attr("x2", function(d) { return d.target.x; })
+    // .attr("y2", function(d) { return d.target.y; });
+
+    this.node
+      .attr('cx', function(d) {
+        t.xxx={id:d.id,x:d.x};
+        t.xx.push(t.xxx);
+        if (t.thisX4 !== undefined || t.thisX4.length != 0) {
+          t.thisX5 = t.thisX4;
+        }
+        if (t.thisX3 !== undefined || t.thisX3.length != 0) {
+          t.thisX4 = t.thisX3;
+        }
+        if (t.thisX2 !== undefined || t.thisX2.length != 0) {
+          t.thisX3 = t.thisX2;
+        }
+        if (t.thisX1 !== undefined || t.thisX1.length != 0) {
+          t.thisX2 = t.thisX1;
+        }
+        t.thisX1 = t.xx;
+        return d.x; 
+      })
+
+      .attr('cy', function(d) { 
+        t.yyy={id:d.id,y:d.y};
+        t.yy.push(t.yyy);
+        if (t.thisY4 !== undefined || t.thisY4.length != 0) {
+          t.thisY5 = t.thisY4;
+        }
+        if (t.thisY3 !== undefined || t.thisY3.length != 0) {
+          t.thisY4 = t.thisY3;
+        }
+        if (t.thisY2 !== undefined || t.thisY2.length != 0) {
+          t.thisY3 = t.thisY2;
+        }
+        if (t.thisY1 !== undefined || t.thisY1.length != 0) {
+          t.thisY2 = t.thisY1;
+        }
+        t.thisY1 = t.yy;
+        return d.y; 
+      });
+
+    this.link
+      .attr('x1', function(d) {
+        var source = d.source;
+        for (let index = 0; index < t.xx.length; index++) {
+          if(source==t.xx[index]['id']){
+            xw=t.xx[index]['x'];
+            t.xx.splice(index,1);
+            break;
+          }          
+        }
+        if( xw == 0.0 ){
+          console.log(t.thisX1);
+          for (let index = 0; index < t.thisX1.length; index++) {
+            if(source==t.thisX1[index]['id']){
+              xw=t.thisX1[index]['x'];
+              t.thisX1.splice(index,1);
+              break;
+          }   
+        }
+      }
+        return xw;})
+
+      .attr('y1', function(d) {
+        var source = d.source;
+        for (let index = 0; index < t.yy.length; index++) {
+          if(source==t.yy[index]['id']){
+            yw=t.yy[index]['y'];
+            t.yy.splice(index,1);
+            break;
+          }          
+        }
+        if( yw == 0.0 ){
+          for (let index = 0; index < t.thisY1.length; index++) {
+            if(source==t.thisY1[index]['id']){
+              xw=t.thisY1[index]['x'];
+              t.thisY1.splice(index,1);
+              break;
+          }   
+        }
+      }
+        return yw; })
+
+      .attr('x2', function(d) {
+        var target = d.target;
+        for (let index = 0; index < t.xx.length; index++) {
+          if(target==t.xx[index]['id']){
+            xw1=t.xx[index]['x'];
+            t.xx.splice(index,1);
+            break;
+          }          
+        }
+        if( xw1 == 0.0 ){
+          console.log(t.thisX1);
+          for (let index = 0; index < t.thisX1.length; index++) {
+            if(target==t.thisX1[index]['id']){
+              xw=t.thisX1[index]['x'];
+              t.thisX1.splice(index,1);
+              break;
+          }   
+        }
+      }
+        return xw1; })
+
+      .attr('y2', function(d) {
+        var target = d.target;
+        for (let index = 0; index < t.yy.length; index++) {
+          if(target==t.yy[index]['id']){
+            yw1=t.yy[index]['y'];
+            t.yy.splice(index,1);
+            break;
+          }          
+        }
+        if( yw1 == 0.0 ){
+          for (let index = 0; index < t.thisY1.length; index++) {
+            if(target==t.thisY1[index]['id']){
+              xw=t.thisY1[index]['x'];
+              t.thisY1.splice(index,1);
+              break;
+          }   
+        }
+      }
+        return yw1; });
+
+    this.node
+    .on("mouseover", 
+      (d)=>{
+        var [posX, posY] = [d3.event.x, d3.event.y];
+
+        this.tooltip1 = this.gDraw.append('text')
+          .attr("font-family", "Comic Sans MS")
+          .attr("font-weight", "bold")
+          .attr("text-decoration", "underline")
+          .attr("font-size", "18px")
+          .attr("fill", "Blue");
+
+        this.tooltip1
+          .attr("x", posX+10)
+          .attr("y", posY-110)
+          .text( d.name );
+          
+        this.tooltip2 = this.gDraw.append('text')
+          .attr("font-family", "Comic Sans MS")
+          .attr("font-size", "14px")
+          .attr("fill", "voilet");
+
+        this.tooltip2
+          .attr("x", posX+10)
+          .attr("y", posY-90)
+          // .text( (d)=>{
+          //   if (d.degreeCentrality != 0){
+          //     return d.degreeCentrality;
+          //   }
+          //   else {
+          //     return d.totalPaper;
+          //   }
+          // } );
+          .text( "Degree centrality: "+d.degreeCentrality );
+          
+          this.tooltip3 = this.gDraw.append('text')
+            .attr("font-family", "Comic Sans MS")
+            .attr("font-size", "14px")
+            .attr("fill", "voilet");
+  
+          this.tooltip3
+            .attr("x", posX+10)
+            .attr("y", posY-75)
+            .text( "Closeness centrality: "+d.closenessCentrality );
+          
+            this.tooltip4 = this.gDraw.append('text')
+              .attr("font-family", "Comic Sans MS")
+              .attr("font-size", "14px")
+              .attr("fill", "voilet");
+    
+            this.tooltip4
+              .attr("x", posX+10)
+              .attr("y", posY-60)
+              .text( "Betweeness centrality: "+d.betweennessCentrality );
+          
+              // this.tooltip5 = this.gDraw.append('text')
+              //   .attr("font-family", "Comic Sans MS")
+              //   .attr("font-size", "14px")
+              //   .attr("fill", "voilet");
+      
+              // this.tooltip5
+              //   .attr("x", posX+10)
+              //   .attr("y", posY-45)
+              //   .text( "Eigenvector centrality: "+d.eigenvectorCentrality );
+
+			})
+      .on("mouseout", 
+        (d)=>{
+          this.tooltip1.style("visibility", "hidden");
+          this.tooltip2.style("visibility", "hidden");
+          this.tooltip3.style("visibility", "hidden");
+          this.tooltip4.style("visibility", "hidden");
+          // this.tooltip5.style("visibility", "hidden");
+        }
+      )
+
+			.on("mousemove", (d:any)=>{
+				d3.select('.chart-tooltip1')
+					.style("left", d3.event.pageX + 15 + "px")
+					.style("top", d3.event.pageY - 25 + "px")
+					.text(d[1] - d[0]);
+      });    
+      
+    this.link
+    .on("mouseover", 
+      (d)=>{
+        var [posX, posY] = [d3.event.x, d3.event.y];
+
+        this.tooltip6 = this.gDraw.append('text')
+          .attr("font-family", "Comic Sans MS")
+          .attr("font-weight", "bold")
+          .attr("text-decoration", "underline")
+          .attr("font-size", "18px")
+          .attr("fill", "Green");
+
+        this.tooltip6
+          .attr("x", posX+10)
+          .attr("y", posY-100)
+          .text( d.title );
+          
+        this.tooltip7= this.gDraw.append('text')
+          .attr("font-family", "Comic Sans MS")
+          .attr("font-size", "14px")
+          .attr("fill", "voilet");
+
+        this.tooltip7
+          .attr("x", posX+10)
+          .attr("y", posY-80)
+          .text( "Year published: "+d.year );
+          
+        this.tooltip8 = this.gDraw.append('text')
+          .attr("font-family", "Comic Sans MS")
+          .attr("font-size", "14px")
+          .attr("fill", "voilet");
+
+        this.tooltip8
+          .attr("x", posX+10)
+          .attr("y", posY-65)
+          .text( "About: "+d.overview );
+          
+			})
+      .on("mouseout", 
+        (d)=>{
+          this.tooltip6.style("visibility", "hidden");
+          this.tooltip7.style("visibility", "hidden");
+          this.tooltip8.style("visibility", "hidden");
+        }
+      )
+
+			.on("mousemove", (d:any)=>{
+				d3.select('.chart-tooltip1')
+					.style("left", d3.event.pageX + 15 + "px")
+					.style("top", d3.event.pageY - 25 + "px")
+					.text(d[1] - d[0]);
+			});    
+
+  }
+
+  render(graph) {
+
+    this.link = this.gDraw.append('g')
+      .attr('class', 'links')
+      .selectAll('line')
+      .data(graph.links)
+      .enter().append('line')
+      .attr('stroke-width', function(d) { return Math.sqrt(1); })
+      .attr("stroke", (d)=> { 
+        // console.log(d);
+        if("color" in d)
+          return d.color;
+        else{
+          return 'black';
+        }
+        });
+
+    this.node = this.gDraw.append('g')
+      .attr('class', 'nodes')
+      .selectAll('circle')
+      .data(graph.nodes)
+      .enter().append('circle')
+      .attr('r', (d)=>{
+        if (this.url == d.urlLink){
+          // d.group = 3;
+          return 20;
+        }
+        else{
+          return 10;
+        }
+      })
+      .attr('fill', (d) => this.color(d.group))
+      .call(d3.drag()
+        .on('start', (d) => this.dragstarted(d))
+        .on('drag', (d) => this.dragged(d))
+        .on('end', (d) => this.dragended(d)));
+
+  }
+
+  render1(graph){
+
+    this.node.append('title')
+      .text(function(d) { return "id: "+ d.id; });
+    
+    this.gDraw.call(d3.zoom().on("zoom",  (d) =>  {
+        this.link.attr("transform", d3.event.transform);
+        this.node.attr("transform", d3.event.transform);
+     }))
+
+    // this.simulation = d3.forceSimulation()
+    //   .force("link",  d3.forceLink(graph['links']));
+    
+    this.node.on('click', (d) => {
+      console.log(d.id);
+      this.oppositeNode = []
+      this.oppositeNode.push(d.id);
+      this.highlightedLinks = []
+      this.clickedNodeId = d.id;
+      this.link.each( (dd) => {
+        if(dd.source == this.clickedNodeId){
+          this.oppositeNode.push(dd.target);
+          this.highlightedLinks.push(dd);
+        }
+        else if(dd.target == this.clickedNodeId){
+          this.oppositeNode.push(dd.source);
+          this.highlightedLinks.push(dd);
+        }
+      })
+      this.link.attr('stroke-width',(dd) => {
+        if(this.highlightedLinks.includes(dd)){
+          return Math.sqrt(8); 
+        }
+        else{
+          return Math.sqrt(1); 
+        }
+      })
+      // console.log(this.oppositeNode);
+      this.node.style("opacity", (dd) => {
+        if(this.oppositeNode.includes(dd.id)){
+          return 1;
+        }
+        else{
+          return 0.5;
+        }
+      });  
+    })
+    
+    // this.gMain.on('click', () => {
+    //   this.link.attr('stroke-width',() => {
+    //       return Math.sqrt(1); 
+    //     })
+    // })
+
+    this.simulation
+      .nodes(graph.nodes)
+      .on('tick', () => this.ticked());
+
+    // this.simulation.force('link')
+    //   .links(graph.links);
+
+  }
+  
+  dragged(d) {
+    d.fx = d3.event.x;
+    d.fy = d3.event.y;
+  }
+
+  dragended(d) {
+    if (!d3.event.active) { this.simulation.alphaTarget(0); }
+    d.fx = null;
+    d.fy = null;
+  }
+
+  dragstarted(d) {
+    if (!d3.event.active) { this.simulation.alphaTarget(0.3).restart(); }
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+
+  ngOnDestroy() {
+  }
+
+}

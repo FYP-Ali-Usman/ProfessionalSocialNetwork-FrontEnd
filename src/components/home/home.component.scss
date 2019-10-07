@@ -1,0 +1,81 @@
+.homeSearchePan {
+  align-self: center;
+  padding-top: 5px;
+  background-image: url("backa.png");
+  opacity: 1;
+  background-attachment: fixed;
+  width: 99%;
+  height: 40%;
+}
+.fa-facebook-square{
+  color: royalblue;
+}
+.fa-mail-reply{
+  color: red;
+}
+.fa-phone{
+  color: green;
+}
+.fgd {
+  align-content: center;
+}
+
+.fontStyle {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.headd {
+  margin-top: 20pt;
+}
+.stylo{
+  font-family: "Times New Roman", Times, serif;
+}
+.form-row {
+  color: snow
+}
+
+.sss {
+  color: snow;
+  text-shadow: 20pt;
+  font-weight: bolder;
+  text-shadow: lightslategrey 1px 0 10px;
+  font-size: 46px
+}
+.pad{
+  padding-top: 10px
+}
+.pt-1 {
+  margin-top: 70px;
+}
+
+.hovr:hover{
+  color: royalblue;
+  font-weight: bold
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2 );
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.containerCard {
+  padding: 2px 16px;
+}
+
+.cardHolder{
+  padding-top: 28px;
+}
+.cardHolder2{
+  padding-top: 39px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}

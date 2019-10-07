@@ -1,0 +1,76 @@
+.pt-1 {
+    margin-top: 55px;
+  }
+.fontStyle {
+    color: snow;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: slategray 3px 0 15px;
+  }
+.top{
+    background: linear-gradient(to bottom, #776be2 0%, #00ccff 100%);
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.stylo{
+  font-family: "Times New Roman", Times, serif;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2 );
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.d3-miserables {
+  width: 100%;
+  height: 400px;
+}
+
+.links line {
+  stroke: orangered;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #5dff03;
+  stroke-width: 5px;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+#d3_selectable_force_directed_graph svg {
+    border: 1px solid;
+    font: 13px sans-serif;
+    text-anchor: end;
+}
+
+#d3_selectable_force_directed_graph .node {
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1.5px;
+}
+
+.node .selected {
+  stroke: rgb(56, 2, 250);
+}
+
+.link {
+  stroke: rgba(216, 0, 0, 0.719);
+}
+
+#tooltip {
+  background-color: black;
+  border: 1px white solid;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+  opacity: 0;
+  padding: 10px;
+  position: fixed;
+  z-index: 10;
+}

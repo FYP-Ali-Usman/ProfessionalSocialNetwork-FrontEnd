@@ -1,0 +1,96 @@
+<div class='container-fluid lighten-3 d-block homeSearchePan pt-1 pl-1 pr-1'>
+<h3  class='alert-danger msg1'>{{this.error_msg.username}}</h3>
+<h3  class='alert-danger msg1'>{{this.error_msg.email}}</h3>
+<h3  class='alert-danger msg1'>{{this.error_msg.password}}</h3>
+<h3  class='alert-danger msg1'>{{this.error_msg.detail}}</h3>
+<h3  class='alert-success msg1'>{{this.error_msg.message}}</h3>
+<h3  class='alert-success msg2'>{{this.response_user.detail}}</h3>
+<h3  class='alert-success msg2'>{{this.response_user.message}}</h3>
+
+  <section class="mt-5">
+    <div class="container stylo">
+      <div class="row">
+        <div class="col-md-8">
+          <h1>Registration on the site</h1>
+          <hr>
+        </div>
+      </div>
+      <form id='signupForm' (submit)="onSubmit()">
+        <div class="row">
+          <div class="col-6 col-sm-5 offset-sm-1 col-md-5 offset-md-1">
+            <div class="form-group" id="userdiv">
+              <input type="username"  id="usernameid" name="username" class="form-control" placeholder="User Name"  [(ngModel)]="username" [class.is-invalid]="invalid_name" >
+              <span id="su"></span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-5 col-md-5 ">
+            <span id="userpopup" [style.visibility]="invalid_name?'visible':'hidden'" class="popupp">Invalid Username</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 offset-sm-1 col-md-11 offset-md-1">
+            <span id="check1"[class.text-danger]="chk1" >{{usercheck}}</span>
+          </div>
+        </div>
+
+      <div class="row">
+            <div class="col-6 col-sm-5 offset-sm-1 col-md-5 offset-md-1">
+                  <div class="form-group" id="fname">
+                    <input type="text"  id="fnameid" name="first_name" class="form-control" placeholder="First Name" [(ngModel)]="first_name">
+                  </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-sm-5 offset-sm-1 col-md-5 offset-md-1">
+                  <div class="form-group" id="lname">
+                    <input type="text"  id="lnameid" name="last_name" class="form-control" placeholder="Last Name" [(ngModel)]="last_name">
+                  </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 col-sm-5 offset-sm-1 col-md-5 offset-md-1">
+                <div class="form-group" id="emialid">
+                  <input type="email"  id="emailid" name="email" class="form-control" placeholder="Email" [(ngModel)]="email">
+                </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-6 col-sm-5 offset-sm-1 col-md-5 offset-md-1">
+            <div class="form-group" id="passdiv">
+              <input type="password" id="passwordid" name="password" class="form-control" [(ngModel)]="password" placeholder="Password" [class.is-invalid]="invalid_pass"  required>
+              <span id="sp"></span>
+            </div>
+            <div class="form-group" id="rpasdiv">
+              <input type="password" id="rpasswordid" name="rpassword" [(ngModel)]="rpassword" class="form-control" placeholder="Re-enter Password"[class.is-invalid]="invalid_rpass">
+              <span id="srp"></span>
+            </div>
+          </div>
+          <div class="col-5 col-sm-5 col-md-5 ">
+            <span id="passwordpopup" [style.visibility]="invalid_pass?'visible':'hidden'" class="popupp">{{u}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-11 offset-sm-1 col-md-11 offset-md-1">
+            <span id="check2"></span>
+            <ul id="pcli"></ul>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-2 offset-md-1">
+            <div class="form-group">
+              <input type="submit" name="SingUp" value="Sign Up" id="loginid" class="btn btn-default btn-lg">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+
+
+</div>

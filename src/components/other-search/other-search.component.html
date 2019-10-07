@@ -1,0 +1,78 @@
+<body>
+  <div class='container-fluid lighten-3 d-block homeSearchePan pt-1 pl-1 pr-1 stylo'>
+    <!-- Grd row -->
+    <div class="row top">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-sm-12 offset-md-4 offset-lg-4
+        offset-sm-0">
+        <!-- Default input -->
+        <input type="text" name='Author' class="form-control" [(ngModel)]="author" placeholder="Author Name">
+      </div>
+      <!-- Grid column -->
+      <div class='col-md-1 col-lg-1 col-sm-12'>
+        <button type='submit' mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light" mdbWavesEffect
+          type="submit" (click)="onPress2()"><i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Grd row -->
+
+    <div class="row " [ngStyle]="{'display': loading}">
+      <div class="col-md-4 col-lg-4 col-sm-12 offset-md-4 offset-lg-4
+        offset-sm-0">
+        <div class="spinner-grow text-muted"></div>
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-success"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text-danger"></div>
+        <div class="spinner-grow text-secondary"></div>
+        <div class="spinner-grow text-dark"></div>
+        <div class="spinner-grow text-light"></div>
+        <div class="spinner-grow text-success"></div>
+      </div>
+    </div>
+    <div class="row" style="padding-left: 100px; padding-top: 30px">
+      <div class="col-md-6 col-lg-6 col-sm-12">
+        <div *ngFor="let item of this.author_result2">
+        <div class="card">
+
+          <div class="card-header bg-primary">
+            <h5 class="fontStyle" style="float: left"><a (click)="viewAuthor(item._id)"><i
+                  class="fas fa-user-graduate"></i>&nbsp;{{item.Name}}</a>
+            </h5>
+            <h6 class="fontStyle" style="float: right">Papers:{{item.totalPaper}}&nbsp;&nbsp;</h6>
+            <h6 class="fontStyle" style="float: right">Citations:{{item.totalCitation}}&nbsp;&nbsp;</h6>
+          </div>
+
+          <div class="card-body">
+            <h6 style="float: left"><i class="fas fa-institution"></i>
+              Affiliation:&nbsp;{{item.affiliation}}
+            </h6><br>
+            <hr>
+            <h6><i class="fas fa-sun"></i>
+              Research Interests:
+            </h6><br>
+            <span *ngFor="let itemq of item.researchInterest">&nbsp;&nbsp;<span
+                class="badge badge-light">{{itemq}}</span>
+            </span>
+          </div>
+        </div><br><br>
+      </div>
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2
+        offset-sm-0">
+        <div class="card">
+          <div class="card-header bg-light">Recomendations:</div>
+          <div class="card-body">Content</div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-light">Recomendations:</div>
+          <div class="card-body">Content</div>
+        </div>
+
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+</body>

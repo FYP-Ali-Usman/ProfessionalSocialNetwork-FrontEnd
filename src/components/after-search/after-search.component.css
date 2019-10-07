@@ -1,0 +1,16 @@
+.pt-1 {
+    margin-top: 55px;
+  }
+.fontStyle {
+    color: snow;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: slategray 1px 0 10px;
+  }
+.top{
+    background: linear-gradient(to bottom, #776be2 0%, #00ccff 100%);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.stylo{
+  font-family: "Times New Roman", Times, serif;
+}

@@ -1,0 +1,34 @@
+body {
+  background-color: #2F4F4F
+}
+
+#d3_selectable_force_directed_graph svg {
+    border: 1px solid;
+    font: 13px sans-serif;
+    text-anchor: end;
+}
+
+#d3_selectable_force_directed_graph .node {
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1.5px;
+}
+
+.node .selected {
+  stroke: rgb(56, 2, 250);
+}
+
+.link {
+  stroke: rgba(216, 0, 0, 0.719);
+}
+
+#tooltip {
+  background-color: black;
+  border: 1px white solid;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+  opacity: 0;
+  padding: 10px;
+  position: fixed;
+  z-index: 10;
+}

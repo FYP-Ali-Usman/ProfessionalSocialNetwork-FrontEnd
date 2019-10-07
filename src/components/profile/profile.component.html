@@ -1,0 +1,299 @@
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <div class='container-fluid pro ddd1 pt-1 pl-1 pr-1 stylo'>
+      <h3 class='alert-danger msg1'>{{this.error_msg.username}}</h3>
+      <h3 class='alert-danger msg1'>{{this.error_msg.email}}</h3>
+      <h3 class='alert-danger msg1'>{{this.error_msg.password}}</h3>
+      <h3 class='alert-danger msg1'>{{this.error_msg.detail}}</h3>
+      <h3 class='alert-success msg1'>{{this.error_msg.message}}</h3>
+      <h3 class='alert-success msg2'>{{this.response_user.detail}}</h3>
+      <h3 class='alert-success msg2'>{{this.response_user.message}}</h3>
+      <div class='row profile_img'>
+        <div class='col'>
+          <a target="_blank" href="">
+            <img src="{{dprofile.image}}" alt="Forest">
+          </a>
+          <h3 class='fontStyle' style='margin-top: 10pt;'>{{duser.username}}</h3>
+        </div>
+      </div>
+
+      <div class='row' style='margin-top: 50pt;'>
+        <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>First Name:</h6>
+              <p>{{duser.first_name}}</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 col-lg-4 col-sm-12'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Last Name:</h6>
+              <p>{{duser.last_name}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='row' style='margin-top: 50pt;'>
+        <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Email:</h6>
+              <p>{{duser.email}}</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 col-lg-4 col-sm-12'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Phone:</h6>
+              <p>{{dprofile.phone}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class='row' style='margin-top: 50pt;'>
+        <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Organization:</h6>
+              <p>{{dprofile.organization}}</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 col-lg-4 col-sm-12'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>About:</h6>
+              <p>{{dprofile.about}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='row' style='margin-top: 50pt;'>
+
+        <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Type:</h6>
+              <p>{{dprofile.typeOf}}</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 col-lg-4 col-sm-12'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Ratings:</h6>
+              <p>555555</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='row' style='margin-top: 50pt;'>
+        <div class='col-md-3 col-lg-3 col-sm-12 offset-md-2 offset-lg-2'>
+          <input type="button" name="Update" Value='Update Account'
+            id="profileid" (click)="uploadForm()"
+            class="btn btn-default btn-lg">
+        </div>
+        <div class='col-md-3 col-lg-3 col-sm-12'>
+          <input type="button" name="Update" Value='Update Profile'
+            id="profileid" (click)="uploadForm2()"
+            class="btn btn-default btn-lg">
+        </div>
+        <div class='col-md-2 col-lg-2 col-sm-12'>
+          <input type="submit" name="Delete" Value='Delete Profile'
+            id="deleteid" class="btn btn-danger btn-lg">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- =============================================== -->
+
+    <div id="id01" class='container-fluid model pro ddd2 pt-1 pl-1 pr-1'>
+
+      <form id='signupForm' class="modal-content animate" (submit)="onSubmit()">
+        <span class="close" title="Close Modal" (click)="closeModel()">&times;</span>
+        <div class='row' style='margin-top: 50pt;'>
+          <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+            <div class="card">
+              <div class="container-fluid containerCard">
+                <div class="form-group" id="userdiv">Username
+                  <input type="username" id="usernameid" name="username"
+                    autofocus class="form-control"
+                    value={{duser.username}} placeholder="User Name"
+                    [(ngModel)]="username"
+                    [class.is-invalid]="invalid_name">
+                  <span id="su"></span>
+                </div>
+                <span id="check1" [class.text-danger]="chk1">{{usercheck}}</span>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4 col-lg-4 col-sm-12'>
+            <div class="card">
+              <div class="container-fluid containerCard">
+                <div class="form-group" id="emialid">Email
+                  <input type="email" value={{duser.email}} id="emailid"
+                    name="email" class="form-control"
+                    placeholder="Email" [(ngModel)]="email">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='row' style='margin-top: 50pt;'>
+          <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+            <div class="card">
+              <div class="container-fluid containerCard">
+                <div class="form-group" id="fname">First Name
+                  <input type="text" id="fnameid" value={{duser.first_name}}
+                    name="first_name" class="form-control"
+                    placeholder="First Name" [(ngModel)]="first_name">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4 col-lg-4 col-sm-12'>
+            <div class="card">
+              <div class="container-fluid containerCard">
+                <div class="form-group" id="lname">Last Name
+                  <input type="text" id="lnameid" value={{duser.last_name}}
+                    name="last_name" class="form-control"
+                    placeholder="Last Name" [(ngModel)]="last_name">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='row' style='margin-top: 50pt;'>
+          <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+            <input type="submit" name="Update" Value='Update Profile'
+              id="profileid" class="btn btn-default btn-lg">
+          </div>
+          <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+            <input type="submit" (click)="closeModel()" name="close"
+              Value='Cancle' id="close"
+              class="btn btn-danger btn-lg">
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+
+    <!-- =================================================================== -->
+    <div id="id01" class='container-fluid model pro ddd3 pt-1 pl-1 pr-1'>
+
+      <form id='signupForm' class="modal-content
+        animate" (submit)="onSubmit2()">
+        <span class="close" title="Close Modal" (click)="closeModel2()">&times;</span>
+        <div class='row' style='margin-top: 50pt;'>
+          <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+            <div class="card">
+              <div class="container-fluid containerCard">
+                <div class="custom-file form-group">
+                  <input type="file" class="custom-file-input" id="customFile"
+                    (change)="onFileSelected($event)">
+                  <label class="custom-file-label" for="customFile">Choose
+                    Profile Picture</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4 col-lg-4 col-sm-12'>
+            <div class="card">
+              <div class="container-fluid containerCard">
+                <select class="form-control" name="user_type" #t
+                  (change)="update(t.value)" required>
+                  <option disabled selected value default>Select User Type</option>
+                  <option>User</option>
+                  <option>Auther</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='row' style='margin-top: 50pt;'>
+
+          <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+            <div class="card">
+              <div class="container-fluid containerCard">
+                <div class="form-group" id="phonenodiv">Phone
+                  <input type="Number" id="phonenoid" value={{dprofile.phone}}
+                    name="phonenumber" class="form-control"
+                    [(ngModel)]="phonenumber" placeholder="Enter Phone Number"
+                    [class.is-invalid]="invalid_no">
+                  <span id="spn"></span>
+                </div>
+                <span id="phonenopopup" class="popupp"
+                  [style.visibility]="this.invalid_no?'visible':'hidden'">Invalid
+                  Phone Number</span>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4 col-lg-4 col-sm-12'>
+            <div class="card">
+              <div class="container-fluid containerCard">
+                <div class="form-group" id="organization">Organization
+                  <input type="text" value={{dprofile.organization}}
+                    id="organizationid" name="organization"
+                    class="form-control" [(ngModel)]="organization"
+                    placeholder="Working Organization">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='row' style='margin-top: 50pt;'>
+
+          <div class='col-md-4 col-lg-4 col-sm-12 offset-md-4 offset-lg-4'>
+            <div class="card">
+              <div class="container-fluid containerCard">
+                <div class="form-group" id="about">About
+                  <textarea rows="4" cols="50" id="aboutid"
+                    value={{dprofile.about}} name="about" class="form-control"
+                    [(ngModel)]="about" placeholder="About Yourself ...."></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row' style='margin-top: 50pt;'>
+          <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+            <input type="submit" name="Update" Value='Update Profile'
+              id="profileid" class="btn btn-default btn-lg">
+          </div>
+          <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+            <input type="submit" (click)="closeModel()" name="close"
+              Value='Cancle' id="close"
+              class="btn btn-danger btn-lg">
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+
+  </body>
+
+</html>

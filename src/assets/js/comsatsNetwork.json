@@ -1,0 +1,5138 @@
+{
+    "author": "https://academic.microsoft.com/author/2030653627/publication",
+    "organization": "University of Karachi",
+    "nodes": [
+      {
+        "id": "5d7f31abc63a8961b77cf43f",
+        "name": "Yasir Raza",
+        "group": 1,
+        "urlLink": "https://academic.microsoft.com/author/2030653627/publication",
+        "affiliation": "University of Karachi",
+        "researchInterest": [
+          "Biology",
+          "Helicobacter pylori",
+          "Gastritis",
+          "Internal medicine",
+          "CagA",
+          "Gastric mucosa",
+          "Gastroenterology",
+          "Cancer",
+          "Pathology",
+          "Docking (dog)",
+          "In vivo",
+          "IC50",
+          "Ethyl acetate",
+          "MTT assay",
+          "Polygonaceae",
+          "Column chromatography",
+          "Biochemistry",
+          "Cancer cell",
+          "H&E stain",
+          "Intestinal metaplasia"
+        ],
+        "totalPaper": "10",
+        "totalCitation": "52",
+        "degreeCentrality": 74,
+        "closenessCentrality": 12.696078431372548,
+        "betweennessCentrality": 7466,
+        "eigenvectorCentrality": 0,
+        "level": 0,
+        "index": 0,
+        "x": 621.4186842278214,
+        "y": 130.64691446568847,
+        "vy": 0.09185168158355297,
+        "vx": 0.6736872824409994
+      },
+      {
+        "id": "5d8f3a7807aa8f22c0e15bf2",
+        "name": "Sadia Naz",
+        "group": 1,
+        "urlLink": "https://academic.microsoft.com/author/2154549543/publication",
+        "affiliation": "COMSATS Institute of Information Technology",
+        "researchInterest": [
+          "Ethyl acetate",
+          "Medicine",
+          "Pharmacology",
+          "Biology",
+          "Quercus incana",
+          "Chemistry",
+          "Biochemistry",
+          "Botany",
+          "Antimicrobial",
+          "Organic chemistry",
+          "Antibacterial activity",
+          "Docking (dog)",
+          "In vivo",
+          "Aspergillus niger",
+          "IC50",
+          "MTT assay",
+          "Polygonaceae",
+          "Column chromatography",
+          "Cancer cell",
+          "Agar diffusion test"
+        ],
+        "totalPaper": "17",
+        "totalCitation": "45",
+        "degreeCentrality": 131,
+        "closenessCentrality": 2.872549019607843,
+        "betweennessCentrality": 8228,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 1,
+        "x": 475.9668679339462,
+        "y": 166.83228142438983,
+        "vy": 0.09254826133103486,
+        "vx": 0.6710533347077546
+      },
+      {
+        "id": "000",
+        "name": "Umar Farooq",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2920415312/publication?paperId=2908294277",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 19,
+        "closenessCentrality": 4.8431372549019605,
+        "betweennessCentrality": 874,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 2,
+        "x": 517.3450019970379,
+        "y": 22.75086997625158,
+        "vy": 0.09054733650425209,
+        "vx": 0.6720170721743343
+      },
+      {
+        "id": "222",
+        "name": "Afshan Shams",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2907438848/publication?paperId=2908294277",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 13.558823529411764,
+        "betweennessCentrality": 202.5,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 3,
+        "x": 586.742986570988,
+        "y": 94.69785415484543,
+        "vy": 0.0910343669465868,
+        "vx": 0.6727574841883668
+      },
+      {
+        "id": "333",
+        "name": "Ayaz Ahmed",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2584531804/publication?paperId=2908294277",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 8,
+        "closenessCentrality": 16.529411764705884,
+        "betweennessCentrality": 203,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 4,
+        "x": 420.80494644916234,
+        "y": 358.9331556078014,
+        "vy": 0.09545462265434262,
+        "vx": 0.6698206324345294
+      },
+      {
+        "id": "444",
+        "name": "Umer Rashid",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2618305057/publication?paperId=2908294277",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 13.558823529411764,
+        "betweennessCentrality": 203,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 5,
+        "x": 420.36233338073106,
+        "y": 46.873104657536345,
+        "vy": 0.09105578503427615,
+        "vx": 0.6706516127091915
+      },
+      {
+        "id": "555",
+        "name": "Abdul Sadiq",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2170654589/publication?paperId=2908294277",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 13.558823529411764,
+        "betweennessCentrality": 203,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 6,
+        "x": 455.06170002490177,
+        "y": 82.82811762112017,
+        "vy": 0.0917350579900165,
+        "vx": 0.6709814386552168
+      },
+      {
+        "id": "121212",
+        "name": "Rizwana Sarwar",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2112049213/publication?paperId=2182506834",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 10,
+        "closenessCentrality": 12.392156862745098,
+        "betweennessCentrality": 203,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 7,
+        "x": 593.8096130223668,
+        "y": 226.6849445879569,
+        "vy": 0.09357071965101843,
+        "vx": 0.6735446438120635
+      },
+      {
+        "id": "141414",
+        "name": "Ajmal Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2114870060/publication?paperId=2182506834",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 11,
+        "closenessCentrality": 13.362745098039216,
+        "betweennessCentrality": 203,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 8,
+        "x": 517.7574473157355,
+        "y": 334.8076993713064,
+        "vy": 0.09505369499127284,
+        "vx": 0.6717192540291824
+      },
+      {
+        "id": "151515",
+        "name": "Sara Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2405218456/publication?paperId=2182506834",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 6,
+        "closenessCentrality": 9.607843137254902,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 9,
+        "x": 441.31063880215817,
+        "y": 130.86243359591845,
+        "vy": 0.09225057645359229,
+        "vx": 0.6696889476853821
+      },
+      {
+        "id": "161616",
+        "name": "Afsar Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2126103108/publication?paperId=2182506834",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 5,
+        "closenessCentrality": 8.617647058823529,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 10,
+        "x": 545.3506677079033,
+        "y": 238.7403833849259,
+        "vy": 0.09392894813174159,
+        "vx": 0.6722089922157531
+      },
+      {
+        "id": "171717",
+        "name": "Abdur Rauf",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2172142250/publication?paperId=2182506834",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 10,
+        "closenessCentrality": 13.568627450980392,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 11,
+        "x": 448.37929063620453,
+        "y": 262.86704251546126,
+        "vy": 0.09440306117880158,
+        "vx": 0.6706177414497395
+      },
+      {
+        "id": "181818",
+        "name": "Haji Bahadar",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2060056366/publication?paperId=2182506834",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.6568627450980395,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 12,
+        "x": 427.5243299286453,
+        "y": 178.86340010674948,
+        "vy": 0.09349858467332757,
+        "vx": 0.6692696157389787
+      },
+      {
+        "id": "191919",
+        "name": "Reaz Uddin",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/1914233717/publication?paperId=2182506834",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.6568627450980395,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 13,
+        "x": 510.642047064944,
+        "y": 202.77703309650778,
+        "vy": 0.09346900340108148,
+        "vx": 0.6720742814935934
+      },
+      {
+        "id": "232323",
+        "name": "Syed M. Bukhari",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2130999001/publication?paperId=2802272173",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 6,
+        "closenessCentrality": 9.607843137254902,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 14,
+        "x": 434.59470869551683,
+        "y": 310.89542775012046,
+        "vy": 0.09505309312093004,
+        "vx": 0.6701416919320757
+      },
+      {
+        "id": "242424",
+        "name": "Haroon Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2153430995/publication?paperId=2802272173",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 5,
+        "closenessCentrality": 8.617647058823529,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 15,
+        "x": 379.01535372962286,
+        "y": 190.94639855230716,
+        "vy": 0.09319628214746581,
+        "vx": 0.6689594678602266
+      },
+      {
+        "id": "252525",
+        "name": "Nasiara Karim",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2121016337/publication?paperId=2802272173",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 5.647058823529412,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 16,
+        "x": 462.1673524537844,
+        "y": 214.83741274273217,
+        "vy": 0.09376563036946729,
+        "vx": 0.6709652146871014
+      },
+      {
+        "id": "262626",
+        "name": "Imran Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2304920515/publication?paperId=2802272173",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.6568627450980395,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 17,
+        "x": 399.93639100230513,
+        "y": 274.94852018078154,
+        "vy": 0.09417663530531856,
+        "vx": 0.6687617820303916
+      },
+      {
+        "id": "282828",
+        "name": "Ahmed Al-Harrasi",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2047757036/publication?paperId=2802272173",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 4.892156862745098,
+        "betweennessCentrality": 203,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 18,
+        "x": 524.4114115824558,
+        "y": 154.800037275307,
+        "vy": 0.09164653554982609,
+        "vx": 0.6728749912011726
+      },
+      {
+        "id": "292929",
+        "name": "Asma Bibi",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2047191858/publication?paperId=1932982084",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 19,
+        "x": 496.8513329569923,
+        "y": 250.7769140221709,
+        "vy": 0.09480119781602227,
+        "vx": 0.6716796103028373
+      },
+      {
+        "id": "343434",
+        "name": "Qaisar Mahmood",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2065682857/publication?paperId=1932982084",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 20,
+        "x": 392.822273157306,
+        "y": 142.95841745689603,
+        "vy": 0.09168463088254562,
+        "vx": 0.6689444633466657
+      },
+      {
+        "id": "353535",
+        "name": "Arif Alam",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2608548688/publication?paperId=1932982084",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 21,
+        "x": 607.6205350680294,
+        "y": 178.66300944542368,
+        "vy": 0.09276661489951339,
+        "vx": 0.6734824031190241
+      },
+      {
+        "id": "363636",
+        "name": "Nosheen Mirza",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2060153702/publication?paperId=1932982084",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 22,
+        "x": 316.7091564354345,
+        "y": 251.0322503519165,
+        "vy": 0.09433461211891557,
+        "vx": 0.6685342696230551
+      },
+      {
+        "id": "373737",
+        "name": "Farhan A. Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2607682285/publication?paperId=2787141361",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 23,
+        "x": 538.2653033107271,
+        "y": 106.76076014316823,
+        "vy": 0.09126307354830542,
+        "vx": 0.67176256409457
+      },
+      {
+        "id": "383838",
+        "name": "Sidra Mushtaq",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2785773312/publication?paperId=2787141361",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 24,
+        "x": 531.5270846903494,
+        "y": 286.7773607081424,
+        "vy": 0.09441076522719462,
+        "vx": 0.6726181487653081
+      },
+      {
+        "id": "404040",
+        "name": "Asma Zaidi",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2421073384/publication?paperId=2787141361",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 25,
+        "x": 413.703052463766,
+        "y": 226.90095718450578,
+        "vy": 0.09397535718550099,
+        "vx": 0.6696566572190749
+      },
+      {
+        "id": "434343",
+        "name": "Mohammad S. Mubarak",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2150402970/publication?paperId=2787141361",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 26,
+        "x": 559.1195105951897,
+        "y": 190.7417530626767,
+        "vy": 0.092641117077402,
+        "vx": 0.673064774587795
+      },
+      {
+        "id": "454545",
+        "name": "Binte Zehra",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2765728170/publication?paperId=2767005252",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 27,
+        "x": 351.42752712917945,
+        "y": 286.98187840579715,
+        "vy": 0.09507203180361092,
+        "vx": 0.66849197472263
+      },
+      {
+        "id": "474747",
+        "name": "Syed Abid Ali",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2171166512/publication?paperId=2767005252",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 28,
+        "x": 406.6083952339864,
+        "y": 94.90270474335784,
+        "vy": 0.09168771508404108,
+        "vx": 0.6694279450607451
+      },
+      {
+        "id": "525252",
+        "name": "Izhar Ahmad",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2519608704/publication?paperId=2767005252",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 29,
+        "x": 579.9964566743284,
+        "y": 274.68777772067665,
+        "vy": 0.09479023121213472,
+        "vx": 0.6738330455233571
+      },
+      {
+        "id": "535353",
+        "name": "Yahia Nasser Mabkhot",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/1664622060/publication?paperId=2767005252",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 3,
+        "closenessCentrality": 6.617647058823529,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 30,
+        "x": 365.20277333284145,
+        "y": 238.96659655757264,
+        "vy": 0.09413424891855181,
+        "vx": 0.6691663573291075
+      },
+      {
+        "id": "555555",
+        "name": "Sajid Ali",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2548194100/publication?paperId=2791456175",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 31,
+        "x": 552.029257583094,
+        "y": 58.71575571752539,
+        "vy": 0.09099367243151538,
+        "vx": 0.6727311753725527
+      },
+      {
+        "id": "585858",
+        "name": "Ruben Abagyan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2141948887/publication?paperId=2791456175",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 5.627450980392157,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 32,
+        "x": 483.0610727126345,
+        "y": 298.835247438692,
+        "vy": 0.09473976254446911,
+        "vx": 0.6713456886210073
+      },
+      {
+        "id": "616161",
+        "name": "Khan A",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2296292331/publication?paperId=1785767688",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 33,
+        "x": 358.10430699513427,
+        "y": 106.96276014706595,
+        "vy": 0.09198399220335121,
+        "vx": 0.6689997856027324
+      },
+      {
+        "id": "636363",
+        "name": "Ali M",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2602295840/publication?paperId=1785767688",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 34,
+        "x": 642.279201442242,
+        "y": 214.62248734117406,
+        "vy": 0.09336922476487178,
+        "vx": 0.6748307551789947
+      },
+      {
+        "id": "646464",
+        "name": "Khan Ss",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2563231062/publication?paperId=1785767688",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 35,
+        "x": 337.6144348777445,
+        "y": 335.02619768595713,
+        "vy": 0.09538319906463279,
+        "vx": 0.6686666597706004
+      },
+      {
+        "id": "656565",
+        "name": "Tony Ngo",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2145209217/publication?paperId=2755310687",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 36,
+        "x": 489.74138382510796,
+        "y": 118.81920187078143,
+        "vy": 0.09157328235243263,
+        "vx": 0.671825789801066
+      },
+      {
+        "id": "747474",
+        "name": "Manzoor Ahmad",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2587057944/publication?paperId=2122324911",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 37,
+        "x": 628.496639066233,
+        "y": 262.64014493531425,
+        "vy": 0.09423951158946033,
+        "vx": 0.6743056196051124
+      },
+      {
+        "id": "757575",
+        "name": "Azhar-ul-Haq Ali Shah",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2578444291/publication?paperId=2122324911",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 38,
+        "x": 344.3147959460282,
+        "y": 154.95907552421974,
+        "vy": 0.09335373300550294,
+        "vx": 0.6686314008702663
+      },
+      {
+        "id": "767676",
+        "name": "Shaista Hameed",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2394578624/publication?paperId=2122324911",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 39,
+        "x": 572.9428228781912,
+        "y": 142.6958559443239,
+        "vy": 0.09239208880650447,
+        "vx": 0.6726270042529746
+      },
+      {
+        "id": "828282",
+        "name": "Irfan Ullah",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2600393475/publication?paperId=2792417906",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 5.627450980392157,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 40,
+        "x": 469.2718229185899,
+        "y": 346.8588313222457,
+        "vy": 0.0954743523052744,
+        "vx": 0.6709980393951561
+      },
+      {
+        "id": "919191",
+        "name": "Shujaat Ali Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2433512728/publication?paperId=2783881837",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 41,
+        "x": 371.8810024821918,
+        "y": 58.941652861506235,
+        "vy": 0.09112857150294056,
+        "vx": 0.66972131304005
+      },
+      {
+        "id": "929292",
+        "name": "Arfa Kamil",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2442174040/publication?paperId=2783881837",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 42,
+        "x": 677.0059788344196,
+        "y": 250.59476636432157,
+        "vy": 0.09361594316788635,
+        "vx": 0.6745591948999121
+      },
+      {
+        "id": "939393",
+        "name": "Nadia Riaz",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2056279075/publication?paperId=2783881837",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 3,
+        "closenessCentrality": 6.617647058823529,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 43,
+        "x": 330.51290215576455,
+        "y": 203.0070448574117,
+        "vy": 0.09355410972842997,
+        "vx": 0.6685750762613195
+      },
+      {
+        "id": "949494",
+        "name": "Abdur Rahman Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2104150264/publication?paperId=2783881837",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 44,
+        "x": 503.56034655331365,
+        "y": 70.78704964586629,
+        "vy": 0.09101307452274356,
+        "vx": 0.6715171270277344
+      },
+      {
+        "id": "979797",
+        "name": "Muhammad Raza Shah",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2138449637/publication?paperId=2574166364",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 45,
+        "x": 566.2207250918946,
+        "y": 322.7353157391109,
+        "vy": 0.095017135560815,
+        "vx": 0.67314819527523
+      },
+      {
+        "id": "100100100",
+        "name": "Aliya Ibrar",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/1051832201/publication?paperId=2574166364",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 5.627450980392157,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 46,
+        "x": 309.5759076089957,
+        "y": 119.01429559734169,
+        "vy": 0.09241934112607735,
+        "vx": 0.6691890762607877
+      },
+      {
+        "id": "108108108",
+        "name": "Salim S. Al-Showiman",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2126154771/publication?paperId=2785375167",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 47,
+        "x": 656.088598894777,
+        "y": 166.60615168358146,
+        "vy": 0.09242498192540582,
+        "vx": 0.6747414177911351
+      },
+      {
+        "id": "111111111",
+        "name": "Mohammad Hassan Shahid",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2958760716/publication?paperId=2780262409",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 48,
+        "x": 386.1247622110775,
+        "y": 322.9628083238048,
+        "vy": 0.09518109099873999,
+        "vx": 0.6689239110532903
+      },
+      {
+        "id": "113113113",
+        "name": "Iftikhar Ali",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2171802958/publication?paperId=2780262409",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 49,
+        "x": 468.86164688153053,
+        "y": 34.83571823765855,
+        "vy": 0.09024855955422759,
+        "vx": 0.6711435814542995
+      },
+      {
+        "id": "121121121",
+        "name": "Javid Hussain",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2144262668/publication?paperId=2736459537",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 50,
+        "x": 614.7196755562506,
+        "y": 310.673380121783,
+        "vy": 0.09477548318420265,
+        "vx": 0.6736438682166503
+      },
+      {
+        "id": "126126126",
+        "name": "Taibi Ben Hadda",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/225805792/publication?paperId=2749876131",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 51,
+        "x": 282.0106148591143,
+        "y": 215.074053042051,
+        "vy": 0.09370508296845638,
+        "vx": 0.6681454610008954
+      },
+      {
+        "id": "128128128",
+        "name": "Noor Jehan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2624847086/publication?paperId=2749876131",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 52,
+        "x": 635.2023201907473,
+        "y": 82.61765481983718,
+        "vy": 0.09122087097897681,
+        "vx": 0.6741888281189816
+      },
+      {
+        "id": "129129129",
+        "name": "José P. Cerón-Carrasco",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2916602012/publication?paperId=2749876131",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 53,
+        "x": 503.97149789666025,
+        "y": 382.85197251060447,
+        "vy": 0.095289961294608,
+        "vx": 0.6713866566743972
+      },
+      {
+        "id": "130130130",
+        "name": "Helena den Haan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2551529710/publication?paperId=2749876131",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 54,
+        "x": 323.38358263422197,
+        "y": 70.9883904094004,
+        "vy": 0.0917072590836014,
+        "vx": 0.6691656393151145
+      },
+      {
+        "id": "131131131",
+        "name": "Jorge Peña-García",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2150188294/publication?paperId=2749876131",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 55,
+        "x": 690.804980532371,
+        "y": 202.57152291647068,
+        "vy": 0.09285155159753915,
+        "vx": 0.674713008405906
+      },
+      {
+        "id": "132132132",
+        "name": "Horacio Pérez-Sánchez",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2305830901/publication?paperId=2749876131",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 56,
+        "x": 302.9396720509464,
+        "y": 299.06535916725977,
+        "vy": 0.09485975076430972,
+        "vx": 0.6677481616154961
+      },
+      {
+        "id": "134134134",
+        "name": "Mohamed Fawzy Ramadan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2127272820/publication?paperId=2749876131",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 57,
+        "x": 482.65290098791877,
+        "y": -13.21177471331628,
+        "vy": 0.0900466882534182,
+        "vx": 0.6714884148955357
+      },
+      {
+        "id": "135135135",
+        "name": "Tareq Abu-Izneid",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2582280830/publication?paperId=2749876131",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 58,
+        "x": 600.9571182916919,
+        "y": 358.71621770159015,
+        "vy": 0.09508192016181988,
+        "vx": 0.6726604476924449
+      },
+      {
+        "id": "136136136",
+        "name": "Saud Bawazeer",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2497510051/publication?paperId=2749876131",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 4.637254901960785,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 2,
+        "index": 59,
+        "x": 295.7872471286827,
+        "y": 167.0297711342879,
+        "vy": 0.0934113932285,
+        "vx": 0.6687929469909837
+      },
+      {
+        "id": "137137137",
+        "name": "Adnan Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2192022589/publication?paperId=2169703539",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 4,
+        "closenessCentrality": 6.745098039215686,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 60,
+        "x": 669.9028173416391,
+        "y": 118.57073612065669,
+        "vy": 0.09193920281092274,
+        "vx": 0.6745351268391925
+      },
+      {
+        "id": "138138138",
+        "name": "Amber Farooqui",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2099980615/publication?paperId=2169703539",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 4.764705882352941,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 61,
+        "x": 407.0030944293935,
+        "y": 406.97324947257675,
+        "vy": 0.0959099089843829,
+        "vx": 0.6698594361809967
+      },
+      {
+        "id": "139139139",
+        "name": "Muhammad Mubarak",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2188991351/publication?paperId=2169703539",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 4.764705882352941,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 62,
+        "x": 434.16545295166435,
+        "y": -1.158389597995256,
+        "vy": 0.0904754910659198,
+        "vx": 0.670712718915343
+      },
+      {
+        "id": "140140140",
+        "name": "Alex Facista",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2394951724/publication?paperId=2169703539",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 63,
+        "x": 663.2295993433589,
+        "y": 298.6230733127511,
+        "vy": 0.09426441617724302,
+        "vx": 0.673892106175444
+      },
+      {
+        "id": "141141141",
+        "name": "Syed Shakeel Akhtar",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2167038661/publication?paperId=2169703539",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 3,
+        "closenessCentrality": 5.754901960784314,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 64,
+        "x": 268.2213011823933,
+        "y": 263.0960134882372,
+        "vy": 0.09453353340825797,
+        "vx": 0.6678046406879291
+      },
+      {
+        "id": "142142142",
+        "name": "Saeed Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2299949044/publication?paperId=2169703539",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 3,
+        "closenessCentrality": 5.754901960784314,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 65,
+        "x": 600.5226481724129,
+        "y": 46.6516117242927,
+        "vy": 0.09080713267266399,
+        "vx": 0.6733721314241297
+      },
+      {
+        "id": "143143143",
+        "name": "Javed Iqbal Kazi",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2106519089/publication?paperId=2169703539",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 66,
+        "x": 552.4557536047745,
+        "y": 370.7814851290308,
+        "vy": 0.09525598051076972,
+        "vx": 0.6722139621071184
+      },
+      {
+        "id": "144144144",
+        "name": "Carol Bernstein",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2124331128/publication?paperId=2169703539",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 67,
+        "x": 274.8646889303422,
+        "y": 83.02464148076695,
+        "vy": 0.09251823846092026,
+        "vx": 0.6691137343919525
+      },
+      {
+        "id": "145145145",
+        "name": "Shahana Urooj Kazmi",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2165342961/publication?paperId=2169703539",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 6,
+        "closenessCentrality": 8.72549019607843,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 68,
+        "x": 704.6188767298723,
+        "y": 154.5367247711631,
+        "vy": 0.09235807365114158,
+        "vx": 0.674523096526021
+      },
+      {
+        "id": "147147147",
+        "name": "T. A. Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2156962672/publication?paperId=69814470",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 4.764705882352941,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 69,
+        "x": 372.3161047536202,
+        "y": 370.9952656978519,
+        "vy": 0.0956932935014881,
+        "vx": 0.6689871615652749
+      },
+      {
+        "id": "148148148",
+        "name": "Benazir Kanwal",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2120052190/publication?paperId=69814470",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 70,
+        "x": 447.9457924492107,
+        "y": -49.2100579809606,
+        "vy": 0.09036988693894699,
+        "vx": 0.671309206756678
+      },
+      {
+        "id": "149149149",
+        "name": "Muhammad Akram",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2523376594/publication?paperId=69814470",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 71,
+        "x": 649.4418696090806,
+        "y": 346.6707106175586,
+        "vy": 0.09446705937455827,
+        "vx": 0.6734832494294648
+      },
+      {
+        "id": "150150150",
+        "name": "S. F. Rehmani",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2023716553/publication?paperId=69814470",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 72,
+        "x": 233.48684978576205,
+        "y": 227.13653149990085,
+        "vy": 0.09397454488145654,
+        "vx": 0.6682336378356534
+      },
+      {
+        "id": "151151151",
+        "name": "N. A. Lone",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2262435458/publication?paperId=69814470",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 73,
+        "x": 649.0231060858874,
+        "y": 34.55837458301191,
+        "vy": 0.09129553245552115,
+        "vx": 0.6738390282476988
+      },
+      {
+        "id": "155155155",
+        "name": "Faisal Rasheed",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2718811130/publication?paperId=1985735322",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 74,
+        "x": 455.4976142006178,
+        "y": 394.9117671877481,
+        "vy": 0.09560686627617036,
+        "vx": 0.6702359100726661
+      },
+      {
+        "id": "156156156",
+        "name": "Hamid Manzoor",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2713482509/publication?paperId=1985735322",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 75,
+        "x": 337.1563709537226,
+        "y": 22.93561995279384,
+        "vy": 0.09163615386558321,
+        "vx": 0.6699564372710707
+      },
+      {
+        "id": "158158158",
+        "name": "Muhammad Saeed Quraishy",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2436226926/publication?paperId=1985735322",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 76,
+        "x": 725.5331496252717,
+        "y": 238.53080784985977,
+        "vy": 0.09342670948442025,
+        "vx": 0.6744169978432027
+      },
+      {
+        "id": "159159159",
+        "name": "Salvatore Rubino",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2241315129/publication?paperId=1985735322",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 77,
+        "x": 289.1117239683681,
+        "y": 347.1093292258141,
+        "vy": 0.09515216557596136,
+        "vx": 0.6682966039234984
+      },
+      {
+        "id": "161161161",
+        "name": "Bianca Paglietti",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2024444497/publication?paperId=1985735322",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 78,
+        "x": 531.1428598881051,
+        "y": -25.30342307309175,
+        "vy": 0.09050128402049046,
+        "vx": 0.6722046303497345
+      },
+      {
+        "id": "163163163",
+        "name": "Asif Iqbal Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2305368828/publication?paperId=2577763528",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 79,
+        "x": 587.1684362283578,
+        "y": 406.772432346437,
+        "vy": 0.09509273298461843,
+        "vx": 0.6722649040221754
+      },
+      {
+        "id": "165165165",
+        "name": "Shakeel Akhter",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2718513216/publication?paperId=2577763528",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 80,
+        "x": 260.9565223791866,
+        "y": 131.02039088311267,
+        "vy": 0.0993193268485751,
+        "vx": 0.690044468414462
+      },
+      {
+        "id": "169169169",
+        "name": "Shazia Akbar Ansari",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2438736526/publication?paperId=2030584591",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 81,
+        "x": 718.4392033006261,
+        "y": 106.50108283794403,
+        "vy": 0.09187733077591834,
+        "vx": 0.6741800562542609
+      },
+      {
+        "id": "172172172",
+        "name": "Sofia Ali Syed",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2426260866/publication?paperId=2030584591",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 82,
+        "x": 358.51587075903285,
+        "y": 419.0586355125764,
+        "vy": 0.09557550644918476,
+        "vx": 0.6688772114777398
+      },
+      {
+        "id": "176176176",
+        "name": "Touqeer Ahmad",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2947394868/publication?paperId=2946944915",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 83,
+        "x": 399.4360582499126,
+        "y": -37.15542414392983,
+        "vy": 0.09077088405647261,
+        "vx": 0.6710521963858466
+      },
+      {
+        "id": "179179179",
+        "name": "Jazib Shafiq",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2947826586/publication?paperId=2946944915",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 84,
+        "x": 697.9536533958841,
+        "y": 334.6241773256561,
+        "vy": 0.09387452897749622,
+        "vx": 0.6736921279858707
+      },
+      {
+        "id": "181181181",
+        "name": "Safi Ullah",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2947697978/publication?paperId=2946944915",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 85,
+        "x": 219.69259837244928,
+        "y": 275.1738862959648,
+        "vy": 0.09442829968562885,
+        "vx": 0.6679977877600026
+      },
+      {
+        "id": "182182182",
+        "name": "Najeeb Ur Rehman",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2465287955/publication?paperId=2946944915",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 86,
+        "x": 614.3405239223016,
+        "y": -1.4245328399968553,
+        "vy": 0.09126789434070598,
+        "vx": 0.6730864378887844
+      },
+      {
+        "id": "184184184",
+        "name": "Masroor Hassan Bukhari",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2097826296/publication?paperId=2883391792",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 4.764705882352941,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 87,
+        "x": 490.177511075049,
+        "y": 430.92027425166293,
+        "vy": 0.0950072095622444,
+        "vx": 0.6710761071654646
+      },
+      {
+        "id": "185185185",
+        "name": "Salma Batool",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2883933931/publication?paperId=2883391792",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 88,
+        "x": 288.65760517939793,
+        "y": 34.99244606244084,
+        "vy": 0.09196984027077375,
+        "vx": 0.6694393100606661
+      },
+      {
+        "id": "186186186",
+        "name": "Omar Bagasra",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2487106670/publication?paperId=2883391792",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 4.764705882352941,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 89,
+        "x": 739.3407838740854,
+        "y": 190.49351164309354,
+        "vy": 0.09298562078728839,
+        "vx": 0.6743680305773687
+      },
+      {
+        "id": "187187187",
+        "name": "Abbas Rizvi",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2185232793/publication?paperId=2883391792",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 4.764705882352941,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 90,
+        "x": 323.80315247055245,
+        "y": 383.07920553289836,
+        "vy": 0.09546674532596142,
+        "vx": 0.6688195935777709
+      },
+      {
+        "id": "188188188",
+        "name": "Asifa Shah",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2883120384/publication?paperId=2883391792",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 91,
+        "x": 496.4538443025511,
+        "y": -61.27438110369705,
+        "vy": 0.09019198271035322,
+        "vx": 0.6716062880884562
+      },
+      {
+        "id": "189189189",
+        "name": "Tashmeem Razzaki",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2303627398/publication?paperId=2883391792",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 2,
+        "closenessCentrality": 4.764705882352941,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 92,
+        "x": 635.669528739767,
+        "y": 394.7187569857694,
+        "vy": 0.0946577760186552,
+        "vx": 0.6727285050963251
+      },
+      {
+        "id": "190190190",
+        "name": "Tipu Sultan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2884203067/publication?paperId=2883391792",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 93,
+        "x": 247.2707826336778,
+        "y": 179.10565013834312,
+        "vy": 0.09337165578067633,
+        "vx": 0.6686961926539384
+      },
+      {
+        "id": "193193193",
+        "name": "S. Batool",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2796918711/publication?paperId=2609794061",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 94,
+        "x": 683.7208949341206,
+        "y": 70.5270469682182,
+        "vy": 0.0916467654512428,
+        "vx": 0.6742486398071615
+      },
+      {
+        "id": "195195195",
+        "name": "A. Bukhari",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2607623089/publication?paperId=2609794061",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 95,
+        "x": 441.6754798363349,
+        "y": 442.9699426968436,
+        "vy": 0.09553050138043369,
+        "vx": 0.6706598166046894
+      },
+      {
+        "id": "196196196",
+        "name": "F. Memon",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2608301240/publication?paperId=2609794061",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 96,
+        "x": 385.6634194745989,
+        "y": 10.905023347902882,
+        "vy": 0.0906707895328074,
+        "vx": 0.670273540943442
+      },
+      {
+        "id": "197197197",
+        "name": "M. A. Rauf",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2607962755/publication?paperId=2609794061",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 97,
+        "x": 711.743761081388,
+        "y": 286.56873931357086,
+        "vy": 0.09385355167261145,
+        "vx": 0.6740478337961783
+      },
+      {
+        "id": "200200200",
+        "name": "Fouzia Zeeshan Khan",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2499311516/publication?paperId=2896885348",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 98,
+        "x": 254.41134323699265,
+        "y": 311.1475008992399,
+        "vy": 0.09465079692282108,
+        "vx": 0.6679375674793318
+      },
+      {
+        "id": "201201201",
+        "name": "Tehseen Nawaz",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2897689264/publication?paperId=2896885348",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 3.7745098039215685,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 99,
+        "x": 565.8323360269479,
+        "y": 10.67703313884275,
+        "vy": 0.090590209354034,
+        "vx": 0.672795465037844
+      },
+      {
+        "id": "202202202",
+        "name": "Zulfiqar Mirani",
+        "group": 0,
+        "urlLink": "https://academic.microsoft.com/author/2157925043/publication?paperId=2896885348",
+        "affiliation": "",
+        "researchInterest": [],
+        "totalPaper": "",
+        "totalCitation": "",
+        "degreeCentrality": 1,
+        "closenessCentrality": 0,
+        "betweennessCentrality": 0,
+        "eigenvectorCentrality": 0,
+        "level": 1,
+        "index": 100,
+        "x": 538.6818733266738,
+        "y": 418.8431755525536,
+        "vy": 0.09512184082618512,
+        "vx": 0.6714956300898659
+      }
+    ],
+    "links": [
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "000",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "5d8f3a7807aa8f22c0e15bf2",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "222",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "333",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "444",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "555",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "222",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "5d7f31abc63a8961b77cf43f",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "333",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "444",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "555",
+        "value": 1,
+        "title": "Isolation of dihydrobenzofuran derivatives from ethnomedicinal species Polygonum barbatum as anticancer compounds",
+        "year": "2019",
+        "overview": "Biological Research",
+        "catogories": [
+          "Polygonaceae",
+          "MTT assay",
+          "In vivo"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2908294277/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "121212",
+        "value": 1,
+        "title": "Evaluation of Antioxidant, Free Radical Scavenging, and Antimicrobial Activity of Quercus incana Roxb.",
+        "year": "2015",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2182506834/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Evaluation of Antioxidant, Free Radical Scavenging, and Antimicrobial Activity of Quercus incana Roxb.",
+        "year": "2015",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2182506834/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "141414",
+        "value": 1,
+        "title": "Evaluation of Antioxidant, Free Radical Scavenging, and Antimicrobial Activity of Quercus incana Roxb.",
+        "year": "2015",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2182506834/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "151515",
+        "value": 1,
+        "title": "Evaluation of Antioxidant, Free Radical Scavenging, and Antimicrobial Activity of Quercus incana Roxb.",
+        "year": "2015",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2182506834/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "161616",
+        "value": 1,
+        "title": "Evaluation of Antioxidant, Free Radical Scavenging, and Antimicrobial Activity of Quercus incana Roxb.",
+        "year": "2015",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2182506834/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "171717",
+        "value": 1,
+        "title": "Evaluation of Antioxidant, Free Radical Scavenging, and Antimicrobial Activity of Quercus incana Roxb.",
+        "year": "2015",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2182506834/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "181818",
+        "value": 1,
+        "title": "Evaluation of Antioxidant, Free Radical Scavenging, and Antimicrobial Activity of Quercus incana Roxb.",
+        "year": "2015",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2182506834/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "191919",
+        "value": 1,
+        "title": "Evaluation of Antioxidant, Free Radical Scavenging, and Antimicrobial Activity of Quercus incana Roxb.",
+        "year": "2015",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2182506834/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "121212",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Secondary Metabolites From Quercus incana and Their Antidepressant- and Anxiolytic-Like Potential.",
+        "year": "2018",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2802272173/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Secondary Metabolites From Quercus incana and Their Antidepressant- and Anxiolytic-Like Potential.",
+        "year": "2018",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2802272173/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "141414",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Secondary Metabolites From Quercus incana and Their Antidepressant- and Anxiolytic-Like Potential.",
+        "year": "2018",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2802272173/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "232323",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Secondary Metabolites From Quercus incana and Their Antidepressant- and Anxiolytic-Like Potential.",
+        "year": "2018",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2802272173/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "242424",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Secondary Metabolites From Quercus incana and Their Antidepressant- and Anxiolytic-Like Potential.",
+        "year": "2018",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2802272173/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "252525",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Secondary Metabolites From Quercus incana and Their Antidepressant- and Anxiolytic-Like Potential.",
+        "year": "2018",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2802272173/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "262626",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Secondary Metabolites From Quercus incana and Their Antidepressant- and Anxiolytic-Like Potential.",
+        "year": "2018",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2802272173/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "333",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Secondary Metabolites From Quercus incana and Their Antidepressant- and Anxiolytic-Like Potential.",
+        "year": "2018",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2802272173/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "282828",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Secondary Metabolites From Quercus incana and Their Antidepressant- and Anxiolytic-Like Potential.",
+        "year": "2018",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Quercus incana",
+          "Pharmacology",
+          "Medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2802272173/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "292929",
+        "value": 1,
+        "title": "Phytoextraction of HG by parsley (Petroselinum crispum) and its growth responses.",
+        "year": "2016",
+        "overview": "International Journal of Phytoremediation",
+        "catogories": [
+          "Phytoremediation",
+          "Petroselinum crispum",
+          "Mercury (element)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1932982084/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Phytoextraction of HG by parsley (Petroselinum crispum) and its growth responses.",
+        "year": "2016",
+        "overview": "International Journal of Phytoremediation",
+        "catogories": [
+          "Phytoremediation",
+          "Petroselinum crispum",
+          "Mercury (element)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1932982084/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "161616",
+        "value": 1,
+        "title": "Phytoextraction of HG by parsley (Petroselinum crispum) and its growth responses.",
+        "year": "2016",
+        "overview": "International Journal of Phytoremediation",
+        "catogories": [
+          "Phytoremediation",
+          "Petroselinum crispum",
+          "Mercury (element)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1932982084/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "151515",
+        "value": 1,
+        "title": "Phytoextraction of HG by parsley (Petroselinum crispum) and its growth responses.",
+        "year": "2016",
+        "overview": "International Journal of Phytoremediation",
+        "catogories": [
+          "Phytoremediation",
+          "Petroselinum crispum",
+          "Mercury (element)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1932982084/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "121212",
+        "value": 1,
+        "title": "Phytoextraction of HG by parsley (Petroselinum crispum) and its growth responses.",
+        "year": "2016",
+        "overview": "International Journal of Phytoremediation",
+        "catogories": [
+          "Phytoremediation",
+          "Petroselinum crispum",
+          "Mercury (element)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1932982084/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "343434",
+        "value": 1,
+        "title": "Phytoextraction of HG by parsley (Petroselinum crispum) and its growth responses.",
+        "year": "2016",
+        "overview": "International Journal of Phytoremediation",
+        "catogories": [
+          "Phytoremediation",
+          "Petroselinum crispum",
+          "Mercury (element)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1932982084/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "353535",
+        "value": 1,
+        "title": "Phytoextraction of HG by parsley (Petroselinum crispum) and its growth responses.",
+        "year": "2016",
+        "overview": "International Journal of Phytoremediation",
+        "catogories": [
+          "Phytoremediation",
+          "Petroselinum crispum",
+          "Mercury (element)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1932982084/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "363636",
+        "value": 1,
+        "title": "Phytoextraction of HG by parsley (Petroselinum crispum) and its growth responses.",
+        "year": "2016",
+        "overview": "International Journal of Phytoremediation",
+        "catogories": [
+          "Phytoremediation",
+          "Petroselinum crispum",
+          "Mercury (element)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1932982084/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "373737",
+        "value": 1,
+        "title": "Sulfonamides as Potential Bioactive Scaffolds",
+        "year": "2018",
+        "overview": "Current Organic Chemistry",
+        "catogories": [
+          "Organic chemistry",
+          "Chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2787141361/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "383838",
+        "value": 1,
+        "title": "Sulfonamides as Potential Bioactive Scaffolds",
+        "year": "2018",
+        "overview": "Current Organic Chemistry",
+        "catogories": [
+          "Organic chemistry",
+          "Chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2787141361/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Sulfonamides as Potential Bioactive Scaffolds",
+        "year": "2018",
+        "overview": "Current Organic Chemistry",
+        "catogories": [
+          "Organic chemistry",
+          "Chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2787141361/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "404040",
+        "value": 1,
+        "title": "Sulfonamides as Potential Bioactive Scaffolds",
+        "year": "2018",
+        "overview": "Current Organic Chemistry",
+        "catogories": [
+          "Organic chemistry",
+          "Chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2787141361/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "232323",
+        "value": 1,
+        "title": "Sulfonamides as Potential Bioactive Scaffolds",
+        "year": "2018",
+        "overview": "Current Organic Chemistry",
+        "catogories": [
+          "Organic chemistry",
+          "Chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2787141361/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "171717",
+        "value": 1,
+        "title": "Sulfonamides as Potential Bioactive Scaffolds",
+        "year": "2018",
+        "overview": "Current Organic Chemistry",
+        "catogories": [
+          "Organic chemistry",
+          "Chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2787141361/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "434343",
+        "value": 1,
+        "title": "Sulfonamides as Potential Bioactive Scaffolds",
+        "year": "2018",
+        "overview": "Current Organic Chemistry",
+        "catogories": [
+          "Organic chemistry",
+          "Chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2787141361/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Isolation and characterization of three new anti-proliferative Sesquiterpenes from Polygonum barbatum and their mechanism via apoptotic pathway",
+        "year": "2017",
+        "overview": "BMC Cancer",
+        "catogories": [
+          "VEGF receptors",
+          "Toxicity",
+          "Surgical oncology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2767005252/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "454545",
+        "value": 1,
+        "title": "Isolation and characterization of three new anti-proliferative Sesquiterpenes from Polygonum barbatum and their mechanism via apoptotic pathway",
+        "year": "2017",
+        "overview": "BMC Cancer",
+        "catogories": [
+          "VEGF receptors",
+          "Toxicity",
+          "Surgical oncology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2767005252/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "141414",
+        "value": 1,
+        "title": "Isolation and characterization of three new anti-proliferative Sesquiterpenes from Polygonum barbatum and their mechanism via apoptotic pathway",
+        "year": "2017",
+        "overview": "BMC Cancer",
+        "catogories": [
+          "VEGF receptors",
+          "Toxicity",
+          "Surgical oncology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2767005252/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "474747",
+        "value": 1,
+        "title": "Isolation and characterization of three new anti-proliferative Sesquiterpenes from Polygonum barbatum and their mechanism via apoptotic pathway",
+        "year": "2017",
+        "overview": "BMC Cancer",
+        "catogories": [
+          "VEGF receptors",
+          "Toxicity",
+          "Surgical oncology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2767005252/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "333",
+        "value": 1,
+        "title": "Isolation and characterization of three new anti-proliferative Sesquiterpenes from Polygonum barbatum and their mechanism via apoptotic pathway",
+        "year": "2017",
+        "overview": "BMC Cancer",
+        "catogories": [
+          "VEGF receptors",
+          "Toxicity",
+          "Surgical oncology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2767005252/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "121212",
+        "value": 1,
+        "title": "Isolation and characterization of three new anti-proliferative Sesquiterpenes from Polygonum barbatum and their mechanism via apoptotic pathway",
+        "year": "2017",
+        "overview": "BMC Cancer",
+        "catogories": [
+          "VEGF receptors",
+          "Toxicity",
+          "Surgical oncology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2767005252/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "232323",
+        "value": 1,
+        "title": "Isolation and characterization of three new anti-proliferative Sesquiterpenes from Polygonum barbatum and their mechanism via apoptotic pathway",
+        "year": "2017",
+        "overview": "BMC Cancer",
+        "catogories": [
+          "VEGF receptors",
+          "Toxicity",
+          "Surgical oncology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2767005252/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "171717",
+        "value": 1,
+        "title": "Isolation and characterization of three new anti-proliferative Sesquiterpenes from Polygonum barbatum and their mechanism via apoptotic pathway",
+        "year": "2017",
+        "overview": "BMC Cancer",
+        "catogories": [
+          "VEGF receptors",
+          "Toxicity",
+          "Surgical oncology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2767005252/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "525252",
+        "value": 1,
+        "title": "Isolation and characterization of three new anti-proliferative Sesquiterpenes from Polygonum barbatum and their mechanism via apoptotic pathway",
+        "year": "2017",
+        "overview": "BMC Cancer",
+        "catogories": [
+          "VEGF receptors",
+          "Toxicity",
+          "Surgical oncology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2767005252/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "535353",
+        "value": 1,
+        "title": "Isolation and characterization of three new anti-proliferative Sesquiterpenes from Polygonum barbatum and their mechanism via apoptotic pathway",
+        "year": "2017",
+        "overview": "BMC Cancer",
+        "catogories": [
+          "VEGF receptors",
+          "Toxicity",
+          "Surgical oncology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2767005252/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Identification of new benzamide inhibitor against α-subunit of tryptophan synthase from Mycobacterium tuberculosis through structure-based virtual screening, anti-tuberculosis activity and molecular dynamics simulations",
+        "year": "2019",
+        "overview": "Journal of Biomolecular Structure & Dynamics",
+        "catogories": [
+          "Virtual screening",
+          "Tuberculosis",
+          "Tryptophan synthase"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2791456175/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "555555",
+        "value": 1,
+        "title": "Identification of new benzamide inhibitor against α-subunit of tryptophan synthase from Mycobacterium tuberculosis through structure-based virtual screening, anti-tuberculosis activity and molecular dynamics simulations",
+        "year": "2019",
+        "overview": "Journal of Biomolecular Structure & Dynamics",
+        "catogories": [
+          "Virtual screening",
+          "Tuberculosis",
+          "Tryptophan synthase"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2791456175/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "121212",
+        "value": 1,
+        "title": "Identification of new benzamide inhibitor against α-subunit of tryptophan synthase from Mycobacterium tuberculosis through structure-based virtual screening, anti-tuberculosis activity and molecular dynamics simulations",
+        "year": "2019",
+        "overview": "Journal of Biomolecular Structure & Dynamics",
+        "catogories": [
+          "Virtual screening",
+          "Tuberculosis",
+          "Tryptophan synthase"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2791456175/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "151515",
+        "value": 1,
+        "title": "Identification of new benzamide inhibitor against α-subunit of tryptophan synthase from Mycobacterium tuberculosis through structure-based virtual screening, anti-tuberculosis activity and molecular dynamics simulations",
+        "year": "2019",
+        "overview": "Journal of Biomolecular Structure & Dynamics",
+        "catogories": [
+          "Virtual screening",
+          "Tuberculosis",
+          "Tryptophan synthase"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2791456175/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "585858",
+        "value": 1,
+        "title": "Identification of new benzamide inhibitor against α-subunit of tryptophan synthase from Mycobacterium tuberculosis through structure-based virtual screening, anti-tuberculosis activity and molecular dynamics simulations",
+        "year": "2019",
+        "overview": "Journal of Biomolecular Structure & Dynamics",
+        "catogories": [
+          "Virtual screening",
+          "Tuberculosis",
+          "Tryptophan synthase"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2791456175/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Isolation and characterisation of three new anthraquinone secondary metabolites from Symplocos racemosa",
+        "year": "2016",
+        "overview": "Natural Product Research",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Symplocaceae",
+          "Stereochemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1785767688/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "5d8f3a7807aa8f22c0e15bf2",
+        "value": 1,
+        "title": "Isolation and characterisation of three new anthraquinone secondary metabolites from Symplocos racemosa",
+        "year": "2016",
+        "overview": "Natural Product Research",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Symplocaceae",
+          "Stereochemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1785767688/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "616161",
+        "value": 1,
+        "title": "Isolation and characterisation of three new anthraquinone secondary metabolites from Symplocos racemosa",
+        "year": "2016",
+        "overview": "Natural Product Research",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Symplocaceae",
+          "Stereochemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1785767688/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "151515",
+        "value": 1,
+        "title": "Isolation and characterisation of three new anthraquinone secondary metabolites from Symplocos racemosa",
+        "year": "2016",
+        "overview": "Natural Product Research",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Symplocaceae",
+          "Stereochemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1785767688/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "636363",
+        "value": 1,
+        "title": "Isolation and characterisation of three new anthraquinone secondary metabolites from Symplocos racemosa",
+        "year": "2016",
+        "overview": "Natural Product Research",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Symplocaceae",
+          "Stereochemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1785767688/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "646464",
+        "value": 1,
+        "title": "Isolation and characterisation of three new anthraquinone secondary metabolites from Symplocos racemosa",
+        "year": "2016",
+        "overview": "Natural Product Research",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Symplocaceae",
+          "Stereochemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1785767688/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "656565",
+        "value": 1,
+        "title": "Analysis of drug binding pockets and repurposing opportunities for twelve essential enzymes of ESKAPE pathogens",
+        "year": "2017",
+        "overview": "PeerJ",
+        "catogories": [
+          "Repurposing",
+          "Enzyme",
+          "Drug"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2755310687/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Analysis of drug binding pockets and repurposing opportunities for twelve essential enzymes of ESKAPE pathogens",
+        "year": "2017",
+        "overview": "PeerJ",
+        "catogories": [
+          "Repurposing",
+          "Enzyme",
+          "Drug"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2755310687/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "585858",
+        "value": 1,
+        "title": "Analysis of drug binding pockets and repurposing opportunities for twelve essential enzymes of ESKAPE pathogens",
+        "year": "2017",
+        "overview": "PeerJ",
+        "catogories": [
+          "Repurposing",
+          "Enzyme",
+          "Drug"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2755310687/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Isolation and characterization of two new diterpenoids from Stachys parviflora: Antidiarrheal potential in mice",
+        "year": "2015",
+        "overview": "Phytochemistry Letters",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Stereochemistry",
+          "Stachys"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2122324911/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "121212",
+        "value": 1,
+        "title": "Isolation and characterization of two new diterpenoids from Stachys parviflora: Antidiarrheal potential in mice",
+        "year": "2015",
+        "overview": "Phytochemistry Letters",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Stereochemistry",
+          "Stachys"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2122324911/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "161616",
+        "value": 1,
+        "title": "Isolation and characterization of two new diterpenoids from Stachys parviflora: Antidiarrheal potential in mice",
+        "year": "2015",
+        "overview": "Phytochemistry Letters",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Stereochemistry",
+          "Stachys"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2122324911/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "141414",
+        "value": 1,
+        "title": "Isolation and characterization of two new diterpenoids from Stachys parviflora: Antidiarrheal potential in mice",
+        "year": "2015",
+        "overview": "Phytochemistry Letters",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Stereochemistry",
+          "Stachys"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2122324911/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "171717",
+        "value": 1,
+        "title": "Isolation and characterization of two new diterpenoids from Stachys parviflora: Antidiarrheal potential in mice",
+        "year": "2015",
+        "overview": "Phytochemistry Letters",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Stereochemistry",
+          "Stachys"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2122324911/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "242424",
+        "value": 1,
+        "title": "Isolation and characterization of two new diterpenoids from Stachys parviflora: Antidiarrheal potential in mice",
+        "year": "2015",
+        "overview": "Phytochemistry Letters",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Stereochemistry",
+          "Stachys"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2122324911/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "747474",
+        "value": 1,
+        "title": "Isolation and characterization of two new diterpenoids from Stachys parviflora: Antidiarrheal potential in mice",
+        "year": "2015",
+        "overview": "Phytochemistry Letters",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Stereochemistry",
+          "Stachys"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2122324911/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "757575",
+        "value": 1,
+        "title": "Isolation and characterization of two new diterpenoids from Stachys parviflora: Antidiarrheal potential in mice",
+        "year": "2015",
+        "overview": "Phytochemistry Letters",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Stereochemistry",
+          "Stachys"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2122324911/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "767676",
+        "value": 1,
+        "title": "Isolation and characterization of two new diterpenoids from Stachys parviflora: Antidiarrheal potential in mice",
+        "year": "2015",
+        "overview": "Phytochemistry Letters",
+        "catogories": [
+          "Two-dimensional nuclear magnetic resonance spectroscopy",
+          "Stereochemistry",
+          "Stachys"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2122324911/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Sedative and antinociceptive activities of two new sesquiterpenes isolated from Ricinus communis",
+        "year": "2018",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Sedative",
+          "Ricinus",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2792417906/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "141414",
+        "value": 1,
+        "title": "Sedative and antinociceptive activities of two new sesquiterpenes isolated from Ricinus communis",
+        "year": "2018",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Sedative",
+          "Ricinus",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2792417906/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "171717",
+        "value": 1,
+        "title": "Sedative and antinociceptive activities of two new sesquiterpenes isolated from Ricinus communis",
+        "year": "2018",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Sedative",
+          "Ricinus",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2792417906/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "242424",
+        "value": 1,
+        "title": "Sedative and antinociceptive activities of two new sesquiterpenes isolated from Ricinus communis",
+        "year": "2018",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Sedative",
+          "Ricinus",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2792417906/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "161616",
+        "value": 1,
+        "title": "Sedative and antinociceptive activities of two new sesquiterpenes isolated from Ricinus communis",
+        "year": "2018",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Sedative",
+          "Ricinus",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2792417906/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "828282",
+        "value": 1,
+        "title": "Sedative and antinociceptive activities of two new sesquiterpenes isolated from Ricinus communis",
+        "year": "2018",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Sedative",
+          "Ricinus",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2792417906/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "232323",
+        "value": 1,
+        "title": "Sedative and antinociceptive activities of two new sesquiterpenes isolated from Ricinus communis",
+        "year": "2018",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Sedative",
+          "Ricinus",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2792417906/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "151515",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "141414",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "161616",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "333",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "171717",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "232323",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "919191",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "929292",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "939393",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "949494",
+        "value": 1,
+        "title": "Three new anthraquinone derivatives isolated from Symplocos racemosa and their antibiofilm activity",
+        "year": "2017",
+        "overview": "Chinese Journal of Natural Medicines",
+        "catogories": [
+          "Symplocos racemosa",
+          "Streptococcus mutans",
+          "Proteus mirabilis"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2783881837/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "121212",
+        "value": 1,
+        "title": "Rapid Synthesis of Gold Nanoparticles from Quercus incana and Their Antimicrobial Potential against Human Pathogens",
+        "year": "2017",
+        "overview": "Applied Sciences",
+        "catogories": [
+          "Ultraviolet",
+          "Quercus incana",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2574166364/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Rapid Synthesis of Gold Nanoparticles from Quercus incana and Their Antimicrobial Potential against Human Pathogens",
+        "year": "2017",
+        "overview": "Applied Sciences",
+        "catogories": [
+          "Ultraviolet",
+          "Quercus incana",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2574166364/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "979797",
+        "value": 1,
+        "title": "Rapid Synthesis of Gold Nanoparticles from Quercus incana and Their Antimicrobial Potential against Human Pathogens",
+        "year": "2017",
+        "overview": "Applied Sciences",
+        "catogories": [
+          "Ultraviolet",
+          "Quercus incana",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2574166364/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "151515",
+        "value": 1,
+        "title": "Rapid Synthesis of Gold Nanoparticles from Quercus incana and Their Antimicrobial Potential against Human Pathogens",
+        "year": "2017",
+        "overview": "Applied Sciences",
+        "catogories": [
+          "Ultraviolet",
+          "Quercus incana",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2574166364/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "939393",
+        "value": 1,
+        "title": "Rapid Synthesis of Gold Nanoparticles from Quercus incana and Their Antimicrobial Potential against Human Pathogens",
+        "year": "2017",
+        "overview": "Applied Sciences",
+        "catogories": [
+          "Ultraviolet",
+          "Quercus incana",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2574166364/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "100100100",
+        "value": 1,
+        "title": "Rapid Synthesis of Gold Nanoparticles from Quercus incana and Their Antimicrobial Potential against Human Pathogens",
+        "year": "2017",
+        "overview": "Applied Sciences",
+        "catogories": [
+          "Ultraviolet",
+          "Quercus incana",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2574166364/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "141414",
+        "value": 1,
+        "title": "Rapid Synthesis of Gold Nanoparticles from Quercus incana and Their Antimicrobial Potential against Human Pathogens",
+        "year": "2017",
+        "overview": "Applied Sciences",
+        "catogories": [
+          "Ultraviolet",
+          "Quercus incana",
+          "Organic chemistry"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2574166364/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "121212",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Antimicrobial Acids from Quercus incana (Bluejack Oak)",
+        "year": "2018",
+        "overview": "BioMed Research International",
+        "catogories": [
+          "Quercus incana",
+          "Hydroxymethyl",
+          "Ethyl acetate"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2785375167/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Antimicrobial Acids from Quercus incana (Bluejack Oak)",
+        "year": "2018",
+        "overview": "BioMed Research International",
+        "catogories": [
+          "Quercus incana",
+          "Hydroxymethyl",
+          "Ethyl acetate"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2785375167/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "939393",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Antimicrobial Acids from Quercus incana (Bluejack Oak)",
+        "year": "2018",
+        "overview": "BioMed Research International",
+        "catogories": [
+          "Quercus incana",
+          "Hydroxymethyl",
+          "Ethyl acetate"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2785375167/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "232323",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Antimicrobial Acids from Quercus incana (Bluejack Oak)",
+        "year": "2018",
+        "overview": "BioMed Research International",
+        "catogories": [
+          "Quercus incana",
+          "Hydroxymethyl",
+          "Ethyl acetate"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2785375167/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "171717",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Antimicrobial Acids from Quercus incana (Bluejack Oak)",
+        "year": "2018",
+        "overview": "BioMed Research International",
+        "catogories": [
+          "Quercus incana",
+          "Hydroxymethyl",
+          "Ethyl acetate"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2785375167/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "535353",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Antimicrobial Acids from Quercus incana (Bluejack Oak)",
+        "year": "2018",
+        "overview": "BioMed Research International",
+        "catogories": [
+          "Quercus incana",
+          "Hydroxymethyl",
+          "Ethyl acetate"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2785375167/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "108108108",
+        "value": 1,
+        "title": "Isolation and Characterization of Two New Antimicrobial Acids from Quercus incana (Bluejack Oak)",
+        "year": "2018",
+        "overview": "BioMed Research International",
+        "catogories": [
+          "Quercus incana",
+          "Hydroxymethyl",
+          "Ethyl acetate"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2785375167/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "141414",
+        "value": 1,
+        "title": "Bioactive chromone constituents from Vitex negundo alleviate pain and inflammation",
+        "year": "2017",
+        "overview": "Journal of Pain Research",
+        "catogories": [
+          "Vitex negundo",
+          "Medicine",
+          "Inflammation"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2780262409/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Bioactive chromone constituents from Vitex negundo alleviate pain and inflammation",
+        "year": "2017",
+        "overview": "Journal of Pain Research",
+        "catogories": [
+          "Vitex negundo",
+          "Medicine",
+          "Inflammation"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2780262409/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "111111111",
+        "value": 1,
+        "title": "Bioactive chromone constituents from Vitex negundo alleviate pain and inflammation",
+        "year": "2017",
+        "overview": "Journal of Pain Research",
+        "catogories": [
+          "Vitex negundo",
+          "Medicine",
+          "Inflammation"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2780262409/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "828282",
+        "value": 1,
+        "title": "Bioactive chromone constituents from Vitex negundo alleviate pain and inflammation",
+        "year": "2017",
+        "overview": "Journal of Pain Research",
+        "catogories": [
+          "Vitex negundo",
+          "Medicine",
+          "Inflammation"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2780262409/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "113113113",
+        "value": 1,
+        "title": "Bioactive chromone constituents from Vitex negundo alleviate pain and inflammation",
+        "year": "2017",
+        "overview": "Journal of Pain Research",
+        "catogories": [
+          "Vitex negundo",
+          "Medicine",
+          "Inflammation"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2780262409/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "171717",
+        "value": 1,
+        "title": "Bioactive chromone constituents from Vitex negundo alleviate pain and inflammation",
+        "year": "2017",
+        "overview": "Journal of Pain Research",
+        "catogories": [
+          "Vitex negundo",
+          "Medicine",
+          "Inflammation"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2780262409/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "535353",
+        "value": 1,
+        "title": "Bioactive chromone constituents from Vitex negundo alleviate pain and inflammation",
+        "year": "2017",
+        "overview": "Journal of Pain Research",
+        "catogories": [
+          "Vitex negundo",
+          "Medicine",
+          "Inflammation"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2780262409/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Antidepressent Effect of Two New Benzyl Derivatives from Wild Strawberry Fragaria vesca var. nubicola Lindl. ex Hook.f.",
+        "year": "2017",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Traditional medicine",
+          "Tail Suspension",
+          "Rosaceae"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2736459537/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "141414",
+        "value": 1,
+        "title": "Antidepressent Effect of Two New Benzyl Derivatives from Wild Strawberry Fragaria vesca var. nubicola Lindl. ex Hook.f.",
+        "year": "2017",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Traditional medicine",
+          "Tail Suspension",
+          "Rosaceae"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2736459537/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "242424",
+        "value": 1,
+        "title": "Antidepressent Effect of Two New Benzyl Derivatives from Wild Strawberry Fragaria vesca var. nubicola Lindl. ex Hook.f.",
+        "year": "2017",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Traditional medicine",
+          "Tail Suspension",
+          "Rosaceae"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2736459537/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "252525",
+        "value": 1,
+        "title": "Antidepressent Effect of Two New Benzyl Derivatives from Wild Strawberry Fragaria vesca var. nubicola Lindl. ex Hook.f.",
+        "year": "2017",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Traditional medicine",
+          "Tail Suspension",
+          "Rosaceae"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2736459537/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "121212",
+        "value": 1,
+        "title": "Antidepressent Effect of Two New Benzyl Derivatives from Wild Strawberry Fragaria vesca var. nubicola Lindl. ex Hook.f.",
+        "year": "2017",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Traditional medicine",
+          "Tail Suspension",
+          "Rosaceae"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2736459537/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "121121121",
+        "value": 1,
+        "title": "Antidepressent Effect of Two New Benzyl Derivatives from Wild Strawberry Fragaria vesca var. nubicola Lindl. ex Hook.f.",
+        "year": "2017",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Traditional medicine",
+          "Tail Suspension",
+          "Rosaceae"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2736459537/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "171717",
+        "value": 1,
+        "title": "Antidepressent Effect of Two New Benzyl Derivatives from Wild Strawberry Fragaria vesca var. nubicola Lindl. ex Hook.f.",
+        "year": "2017",
+        "overview": "Frontiers in Pharmacology",
+        "catogories": [
+          "Traditional medicine",
+          "Tail Suspension",
+          "Rosaceae"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2736459537/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "171717",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "000",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "141414",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "126126126",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "100100100",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "128128128",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "129129129",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "130130130",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "131131131",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "132132132",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "242424",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "134134134",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "135135135",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d8f3a7807aa8f22c0e15bf2",
+        "target": "136136136",
+        "value": 1,
+        "title": "Sedative and muscle relaxant activities of diterpenoids from Phlomidoschema parviflorum",
+        "year": "2017",
+        "overview": "Revista Brasileira De Farmacognosia-brazilian Journal of Pharmacognosy",
+        "catogories": [
+          "Stachys",
+          "Sedative",
+          "Phlomidoschema parviflorum"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2749876131/reference",
+        "color": "#0F0E55"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "137137137",
+        "value": 1,
+        "title": "Oxidative DNA Damage as a Potential Early Biomarker of Helicobacter pylori Associated Carcinogenesis",
+        "year": "2014",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Pathology",
+          "Intestinal metaplasia",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2169703539/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "138138138",
+        "value": 1,
+        "title": "Oxidative DNA Damage as a Potential Early Biomarker of Helicobacter pylori Associated Carcinogenesis",
+        "year": "2014",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Pathology",
+          "Intestinal metaplasia",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2169703539/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "139139139",
+        "value": 1,
+        "title": "Oxidative DNA Damage as a Potential Early Biomarker of Helicobacter pylori Associated Carcinogenesis",
+        "year": "2014",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Pathology",
+          "Intestinal metaplasia",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2169703539/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "140140140",
+        "value": 1,
+        "title": "Oxidative DNA Damage as a Potential Early Biomarker of Helicobacter pylori Associated Carcinogenesis",
+        "year": "2014",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Pathology",
+          "Intestinal metaplasia",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2169703539/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "141141141",
+        "value": 1,
+        "title": "Oxidative DNA Damage as a Potential Early Biomarker of Helicobacter pylori Associated Carcinogenesis",
+        "year": "2014",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Pathology",
+          "Intestinal metaplasia",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2169703539/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "142142142",
+        "value": 1,
+        "title": "Oxidative DNA Damage as a Potential Early Biomarker of Helicobacter pylori Associated Carcinogenesis",
+        "year": "2014",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Pathology",
+          "Intestinal metaplasia",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2169703539/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "143143143",
+        "value": 1,
+        "title": "Oxidative DNA Damage as a Potential Early Biomarker of Helicobacter pylori Associated Carcinogenesis",
+        "year": "2014",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Pathology",
+          "Intestinal metaplasia",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2169703539/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "144144144",
+        "value": 1,
+        "title": "Oxidative DNA Damage as a Potential Early Biomarker of Helicobacter pylori Associated Carcinogenesis",
+        "year": "2014",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Pathology",
+          "Intestinal metaplasia",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2169703539/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "145145145",
+        "value": 1,
+        "title": "Oxidative DNA Damage as a Potential Early Biomarker of Helicobacter pylori Associated Carcinogenesis",
+        "year": "2014",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Pathology",
+          "Intestinal metaplasia",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2169703539/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "333",
+        "value": 1,
+        "title": "Molecular identification of agents causing respiratory infections in chickens from southern region of Pakistan from October 2007 to February 2008.",
+        "year": "2009",
+        "overview": "International Journal of Agriculture and Biology",
+        "catogories": [
+          "Virology",
+          "Serotype",
+          "Respiratory system"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/69814470/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "147147147",
+        "value": 1,
+        "title": "Molecular identification of agents causing respiratory infections in chickens from southern region of Pakistan from October 2007 to February 2008.",
+        "year": "2009",
+        "overview": "International Journal of Agriculture and Biology",
+        "catogories": [
+          "Virology",
+          "Serotype",
+          "Respiratory system"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/69814470/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "148148148",
+        "value": 1,
+        "title": "Molecular identification of agents causing respiratory infections in chickens from southern region of Pakistan from October 2007 to February 2008.",
+        "year": "2009",
+        "overview": "International Journal of Agriculture and Biology",
+        "catogories": [
+          "Virology",
+          "Serotype",
+          "Respiratory system"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/69814470/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "149149149",
+        "value": 1,
+        "title": "Molecular identification of agents causing respiratory infections in chickens from southern region of Pakistan from October 2007 to February 2008.",
+        "year": "2009",
+        "overview": "International Journal of Agriculture and Biology",
+        "catogories": [
+          "Virology",
+          "Serotype",
+          "Respiratory system"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/69814470/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "150150150",
+        "value": 1,
+        "title": "Molecular identification of agents causing respiratory infections in chickens from southern region of Pakistan from October 2007 to February 2008.",
+        "year": "2009",
+        "overview": "International Journal of Agriculture and Biology",
+        "catogories": [
+          "Virology",
+          "Serotype",
+          "Respiratory system"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/69814470/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "151151151",
+        "value": 1,
+        "title": "Molecular identification of agents causing respiratory infections in chickens from southern region of Pakistan from October 2007 to February 2008.",
+        "year": "2009",
+        "overview": "International Journal of Agriculture and Biology",
+        "catogories": [
+          "Virology",
+          "Serotype",
+          "Respiratory system"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/69814470/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "145145145",
+        "value": 1,
+        "title": "Molecular identification of agents causing respiratory infections in chickens from southern region of Pakistan from October 2007 to February 2008.",
+        "year": "2009",
+        "overview": "International Journal of Agriculture and Biology",
+        "catogories": [
+          "Virology",
+          "Serotype",
+          "Respiratory system"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/69814470/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "137137137",
+        "value": 1,
+        "title": "Prevalence, diversity and disease association of Helicobacter pylori in dyspeptic patients from Pakistan",
+        "year": "2013",
+        "overview": "Journal of Infection in Developing Countries",
+        "catogories": [
+          "Population",
+          "Medicine",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1985735322/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "138138138",
+        "value": 1,
+        "title": "Prevalence, diversity and disease association of Helicobacter pylori in dyspeptic patients from Pakistan",
+        "year": "2013",
+        "overview": "Journal of Infection in Developing Countries",
+        "catogories": [
+          "Population",
+          "Medicine",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1985735322/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "155155155",
+        "value": 1,
+        "title": "Prevalence, diversity and disease association of Helicobacter pylori in dyspeptic patients from Pakistan",
+        "year": "2013",
+        "overview": "Journal of Infection in Developing Countries",
+        "catogories": [
+          "Population",
+          "Medicine",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1985735322/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "156156156",
+        "value": 1,
+        "title": "Prevalence, diversity and disease association of Helicobacter pylori in dyspeptic patients from Pakistan",
+        "year": "2013",
+        "overview": "Journal of Infection in Developing Countries",
+        "catogories": [
+          "Population",
+          "Medicine",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1985735322/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "141141141",
+        "value": 1,
+        "title": "Prevalence, diversity and disease association of Helicobacter pylori in dyspeptic patients from Pakistan",
+        "year": "2013",
+        "overview": "Journal of Infection in Developing Countries",
+        "catogories": [
+          "Population",
+          "Medicine",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1985735322/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "158158158",
+        "value": 1,
+        "title": "Prevalence, diversity and disease association of Helicobacter pylori in dyspeptic patients from Pakistan",
+        "year": "2013",
+        "overview": "Journal of Infection in Developing Countries",
+        "catogories": [
+          "Population",
+          "Medicine",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1985735322/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "159159159",
+        "value": 1,
+        "title": "Prevalence, diversity and disease association of Helicobacter pylori in dyspeptic patients from Pakistan",
+        "year": "2013",
+        "overview": "Journal of Infection in Developing Countries",
+        "catogories": [
+          "Population",
+          "Medicine",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1985735322/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "145145145",
+        "value": 1,
+        "title": "Prevalence, diversity and disease association of Helicobacter pylori in dyspeptic patients from Pakistan",
+        "year": "2013",
+        "overview": "Journal of Infection in Developing Countries",
+        "catogories": [
+          "Population",
+          "Medicine",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1985735322/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "161161161",
+        "value": 1,
+        "title": "Prevalence, diversity and disease association of Helicobacter pylori in dyspeptic patients from Pakistan",
+        "year": "2013",
+        "overview": "Journal of Infection in Developing Countries",
+        "catogories": [
+          "Population",
+          "Medicine",
+          "Internal medicine"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/1985735322/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "137137137",
+        "value": 1,
+        "title": "Combination of Interleukin 1 Polymorphism and Helicobacter pylori Infection: an Increased Risk of Gastric Cancer in Pakistani Population.",
+        "year": "2017",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Variable number tandem repeat",
+          "Population",
+          "Polymorphism (computer science)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2577763528/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "163163163",
+        "value": 1,
+        "title": "Combination of Interleukin 1 Polymorphism and Helicobacter pylori Infection: an Increased Risk of Gastric Cancer in Pakistani Population.",
+        "year": "2017",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Variable number tandem repeat",
+          "Population",
+          "Polymorphism (computer science)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2577763528/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "142142142",
+        "value": 1,
+        "title": "Combination of Interleukin 1 Polymorphism and Helicobacter pylori Infection: an Increased Risk of Gastric Cancer in Pakistani Population.",
+        "year": "2017",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Variable number tandem repeat",
+          "Population",
+          "Polymorphism (computer science)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2577763528/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "165165165",
+        "value": 1,
+        "title": "Combination of Interleukin 1 Polymorphism and Helicobacter pylori Infection: an Increased Risk of Gastric Cancer in Pakistani Population.",
+        "year": "2017",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Variable number tandem repeat",
+          "Population",
+          "Polymorphism (computer science)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2577763528/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "139139139",
+        "value": 1,
+        "title": "Combination of Interleukin 1 Polymorphism and Helicobacter pylori Infection: an Increased Risk of Gastric Cancer in Pakistani Population.",
+        "year": "2017",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Variable number tandem repeat",
+          "Population",
+          "Polymorphism (computer science)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2577763528/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "333",
+        "value": 1,
+        "title": "Combination of Interleukin 1 Polymorphism and Helicobacter pylori Infection: an Increased Risk of Gastric Cancer in Pakistani Population.",
+        "year": "2017",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Variable number tandem repeat",
+          "Population",
+          "Polymorphism (computer science)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2577763528/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "145145145",
+        "value": 1,
+        "title": "Combination of Interleukin 1 Polymorphism and Helicobacter pylori Infection: an Increased Risk of Gastric Cancer in Pakistani Population.",
+        "year": "2017",
+        "overview": "Pathology & Oncology Research",
+        "catogories": [
+          "Variable number tandem repeat",
+          "Population",
+          "Polymorphism (computer science)"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2577763528/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "169169169",
+        "value": 1,
+        "title": "Correlation of ABH blood group antigens secretion with Helicobacter pylori infection in Pakistani patients",
+        "year": "2015",
+        "overview": "Tropical Medicine & International Health",
+        "catogories": [
+          "Virology",
+          "Surgery",
+          "Reflux"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2030584591/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "137137137",
+        "value": 1,
+        "title": "Correlation of ABH blood group antigens secretion with Helicobacter pylori infection in Pakistani patients",
+        "year": "2015",
+        "overview": "Tropical Medicine & International Health",
+        "catogories": [
+          "Virology",
+          "Surgery",
+          "Reflux"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2030584591/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "147147147",
+        "value": 1,
+        "title": "Correlation of ABH blood group antigens secretion with Helicobacter pylori infection in Pakistani patients",
+        "year": "2015",
+        "overview": "Tropical Medicine & International Health",
+        "catogories": [
+          "Virology",
+          "Surgery",
+          "Reflux"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2030584591/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "172172172",
+        "value": 1,
+        "title": "Correlation of ABH blood group antigens secretion with Helicobacter pylori infection in Pakistani patients",
+        "year": "2015",
+        "overview": "Tropical Medicine & International Health",
+        "catogories": [
+          "Virology",
+          "Surgery",
+          "Reflux"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2030584591/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "141141141",
+        "value": 1,
+        "title": "Correlation of ABH blood group antigens secretion with Helicobacter pylori infection in Pakistani patients",
+        "year": "2015",
+        "overview": "Tropical Medicine & International Health",
+        "catogories": [
+          "Virology",
+          "Surgery",
+          "Reflux"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2030584591/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "145145145",
+        "value": 1,
+        "title": "Correlation of ABH blood group antigens secretion with Helicobacter pylori infection in Pakistani patients",
+        "year": "2015",
+        "overview": "Tropical Medicine & International Health",
+        "catogories": [
+          "Virology",
+          "Surgery",
+          "Reflux"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2030584591/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "000",
+        "value": 1,
+        "title": "Rifampicin conjugated silver nanoparticles: a new arena for development of antibiofilm potential against methicillin resistant Staphylococcus aureus and Klebsiella pneumoniae",
+        "year": "2019",
+        "overview": "International Journal of Nanomedicine",
+        "catogories": [
+          "Silver nanoparticle",
+          "Rifampicin",
+          "Molecular biology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2946944915/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "176176176",
+        "value": 1,
+        "title": "Rifampicin conjugated silver nanoparticles: a new arena for development of antibiofilm potential against methicillin resistant Staphylococcus aureus and Klebsiella pneumoniae",
+        "year": "2019",
+        "overview": "International Journal of Nanomedicine",
+        "catogories": [
+          "Silver nanoparticle",
+          "Rifampicin",
+          "Molecular biology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2946944915/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "141414",
+        "value": 1,
+        "title": "Rifampicin conjugated silver nanoparticles: a new arena for development of antibiofilm potential against methicillin resistant Staphylococcus aureus and Klebsiella pneumoniae",
+        "year": "2019",
+        "overview": "International Journal of Nanomedicine",
+        "catogories": [
+          "Silver nanoparticle",
+          "Rifampicin",
+          "Molecular biology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2946944915/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "121212",
+        "value": 1,
+        "title": "Rifampicin conjugated silver nanoparticles: a new arena for development of antibiofilm potential against methicillin resistant Staphylococcus aureus and Klebsiella pneumoniae",
+        "year": "2019",
+        "overview": "International Journal of Nanomedicine",
+        "catogories": [
+          "Silver nanoparticle",
+          "Rifampicin",
+          "Molecular biology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2946944915/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "179179179",
+        "value": 1,
+        "title": "Rifampicin conjugated silver nanoparticles: a new arena for development of antibiofilm potential against methicillin resistant Staphylococcus aureus and Klebsiella pneumoniae",
+        "year": "2019",
+        "overview": "International Journal of Nanomedicine",
+        "catogories": [
+          "Silver nanoparticle",
+          "Rifampicin",
+          "Molecular biology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2946944915/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "333",
+        "value": 1,
+        "title": "Rifampicin conjugated silver nanoparticles: a new arena for development of antibiofilm potential against methicillin resistant Staphylococcus aureus and Klebsiella pneumoniae",
+        "year": "2019",
+        "overview": "International Journal of Nanomedicine",
+        "catogories": [
+          "Silver nanoparticle",
+          "Rifampicin",
+          "Molecular biology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2946944915/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "181181181",
+        "value": 1,
+        "title": "Rifampicin conjugated silver nanoparticles: a new arena for development of antibiofilm potential against methicillin resistant Staphylococcus aureus and Klebsiella pneumoniae",
+        "year": "2019",
+        "overview": "International Journal of Nanomedicine",
+        "catogories": [
+          "Silver nanoparticle",
+          "Rifampicin",
+          "Molecular biology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2946944915/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "182182182",
+        "value": 1,
+        "title": "Rifampicin conjugated silver nanoparticles: a new arena for development of antibiofilm potential against methicillin resistant Staphylococcus aureus and Klebsiella pneumoniae",
+        "year": "2019",
+        "overview": "International Journal of Nanomedicine",
+        "catogories": [
+          "Silver nanoparticle",
+          "Rifampicin",
+          "Molecular biology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2946944915/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "282828",
+        "value": 1,
+        "title": "Rifampicin conjugated silver nanoparticles: a new arena for development of antibiofilm potential against methicillin resistant Staphylococcus aureus and Klebsiella pneumoniae",
+        "year": "2019",
+        "overview": "International Journal of Nanomedicine",
+        "catogories": [
+          "Silver nanoparticle",
+          "Rifampicin",
+          "Molecular biology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2946944915/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "184184184",
+        "value": 1,
+        "title": "DNA electromagnetic properties and interactions -An investigation on intrinsic bioelectromagnetism within DNA",
+        "year": "2018",
+        "overview": "Electromagnetic Biology and Medicine",
+        "catogories": [
+          "Nuclear magnetic resonance",
+          "In vitro",
+          "Eukaryotic DNA replication"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2883391792/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "185185185",
+        "value": 1,
+        "title": "DNA electromagnetic properties and interactions -An investigation on intrinsic bioelectromagnetism within DNA",
+        "year": "2018",
+        "overview": "Electromagnetic Biology and Medicine",
+        "catogories": [
+          "Nuclear magnetic resonance",
+          "In vitro",
+          "Eukaryotic DNA replication"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2883391792/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "186186186",
+        "value": 1,
+        "title": "DNA electromagnetic properties and interactions -An investigation on intrinsic bioelectromagnetism within DNA",
+        "year": "2018",
+        "overview": "Electromagnetic Biology and Medicine",
+        "catogories": [
+          "Nuclear magnetic resonance",
+          "In vitro",
+          "Eukaryotic DNA replication"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2883391792/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "187187187",
+        "value": 1,
+        "title": "DNA electromagnetic properties and interactions -An investigation on intrinsic bioelectromagnetism within DNA",
+        "year": "2018",
+        "overview": "Electromagnetic Biology and Medicine",
+        "catogories": [
+          "Nuclear magnetic resonance",
+          "In vitro",
+          "Eukaryotic DNA replication"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2883391792/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "188188188",
+        "value": 1,
+        "title": "DNA electromagnetic properties and interactions -An investigation on intrinsic bioelectromagnetism within DNA",
+        "year": "2018",
+        "overview": "Electromagnetic Biology and Medicine",
+        "catogories": [
+          "Nuclear magnetic resonance",
+          "In vitro",
+          "Eukaryotic DNA replication"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2883391792/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "189189189",
+        "value": 1,
+        "title": "DNA electromagnetic properties and interactions -An investigation on intrinsic bioelectromagnetism within DNA",
+        "year": "2018",
+        "overview": "Electromagnetic Biology and Medicine",
+        "catogories": [
+          "Nuclear magnetic resonance",
+          "In vitro",
+          "Eukaryotic DNA replication"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2883391792/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "190190190",
+        "value": 1,
+        "title": "DNA electromagnetic properties and interactions -An investigation on intrinsic bioelectromagnetism within DNA",
+        "year": "2018",
+        "overview": "Electromagnetic Biology and Medicine",
+        "catogories": [
+          "Nuclear magnetic resonance",
+          "In vitro",
+          "Eukaryotic DNA replication"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2883391792/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "184184184",
+        "value": 1,
+        "title": "DNA Electromagnetic Properties and Interactions",
+        "year": "2017",
+        "overview": "arXiv: Biological Physics",
+        "catogories": [
+          "Physics",
+          "Nuclear magnetic resonance",
+          "Microwave"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2609794061/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "5d7f31abc63a8961b77cf43f",
+        "value": 1,
+        "title": "DNA Electromagnetic Properties and Interactions",
+        "year": "2017",
+        "overview": "arXiv: Biological Physics",
+        "catogories": [
+          "Physics",
+          "Nuclear magnetic resonance",
+          "Microwave"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2609794061/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "193193193",
+        "value": 1,
+        "title": "DNA Electromagnetic Properties and Interactions",
+        "year": "2017",
+        "overview": "arXiv: Biological Physics",
+        "catogories": [
+          "Physics",
+          "Nuclear magnetic resonance",
+          "Microwave"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2609794061/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "189189189",
+        "value": 1,
+        "title": "DNA Electromagnetic Properties and Interactions",
+        "year": "2017",
+        "overview": "arXiv: Biological Physics",
+        "catogories": [
+          "Physics",
+          "Nuclear magnetic resonance",
+          "Microwave"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2609794061/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "195195195",
+        "value": 1,
+        "title": "DNA Electromagnetic Properties and Interactions",
+        "year": "2017",
+        "overview": "arXiv: Biological Physics",
+        "catogories": [
+          "Physics",
+          "Nuclear magnetic resonance",
+          "Microwave"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2609794061/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "196196196",
+        "value": 1,
+        "title": "DNA Electromagnetic Properties and Interactions",
+        "year": "2017",
+        "overview": "arXiv: Biological Physics",
+        "catogories": [
+          "Physics",
+          "Nuclear magnetic resonance",
+          "Microwave"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2609794061/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "197197197",
+        "value": 1,
+        "title": "DNA Electromagnetic Properties and Interactions",
+        "year": "2017",
+        "overview": "arXiv: Biological Physics",
+        "catogories": [
+          "Physics",
+          "Nuclear magnetic resonance",
+          "Microwave"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2609794061/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "187187187",
+        "value": 1,
+        "title": "DNA Electromagnetic Properties and Interactions",
+        "year": "2017",
+        "overview": "arXiv: Biological Physics",
+        "catogories": [
+          "Physics",
+          "Nuclear magnetic resonance",
+          "Microwave"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2609794061/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "186186186",
+        "value": 1,
+        "title": "DNA Electromagnetic Properties and Interactions",
+        "year": "2017",
+        "overview": "arXiv: Biological Physics",
+        "catogories": [
+          "Physics",
+          "Nuclear magnetic resonance",
+          "Microwave"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2609794061/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "200200200",
+        "value": 1,
+        "title": "Study of class 1 integrons in multidrug-resistant uropathogenic Escherichia coli isolated from different hospitals in Karachi",
+        "year": "2018",
+        "overview": "Iranian Journal of Basic Medical Sciences",
+        "catogories": [
+          "Uropathogenic E. coli",
+          "Multiple drug resistance",
+          "Microbiology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2896885348/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "201201201",
+        "value": 1,
+        "title": "Study of class 1 integrons in multidrug-resistant uropathogenic Escherichia coli isolated from different hospitals in Karachi",
+        "year": "2018",
+        "overview": "Iranian Journal of Basic Medical Sciences",
+        "catogories": [
+          "Uropathogenic E. coli",
+          "Multiple drug resistance",
+          "Microbiology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2896885348/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "202202202",
+        "value": 1,
+        "title": "Study of class 1 integrons in multidrug-resistant uropathogenic Escherichia coli isolated from different hospitals in Karachi",
+        "year": "2018",
+        "overview": "Iranian Journal of Basic Medical Sciences",
+        "catogories": [
+          "Uropathogenic E. coli",
+          "Multiple drug resistance",
+          "Microbiology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2896885348/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "142142142",
+        "value": 1,
+        "title": "Study of class 1 integrons in multidrug-resistant uropathogenic Escherichia coli isolated from different hospitals in Karachi",
+        "year": "2018",
+        "overview": "Iranian Journal of Basic Medical Sciences",
+        "catogories": [
+          "Uropathogenic E. coli",
+          "Multiple drug resistance",
+          "Microbiology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2896885348/reference",
+        "color": "#83BE96"
+      },
+      {
+        "source": "5d7f31abc63a8961b77cf43f",
+        "target": "145145145",
+        "value": 1,
+        "title": "Study of class 1 integrons in multidrug-resistant uropathogenic Escherichia coli isolated from different hospitals in Karachi",
+        "year": "2018",
+        "overview": "Iranian Journal of Basic Medical Sciences",
+        "catogories": [
+          "Uropathogenic E. coli",
+          "Multiple drug resistance",
+          "Microbiology"
+        ],
+        "papaerLink": "https://academic.microsoft.com/paper/2896885348/reference",
+        "color": "#83BE96"
+      }
+    ]
+  }

@@ -1,0 +1,79 @@
+<body>
+  <div class='container-fluid lighten-3 d-block homeSearchePan pt-1 pl-1 pr-1'>
+    <div class="row top">
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-6 col-sm-12" style="padding-left: 50px">
+        <h2 class="fontStyle"><i class="fas fa-user-graduate"></i>&nbsp;{{author_result_obj.Name}}
+        </h2><br>
+        <h5 class="fontStyle">
+          AFFILIATION:-&nbsp;{{author_result_obj.affiliation}}
+        </h5>
+      </div>
+
+      <div class="col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2
+        offset-sm-0" style="padding-left: 50px">
+        <h5 class="fontStyle">Publications:&nbsp;&nbsp;{{author_result_obj.totalPaper}}</h5>
+        <h5 class="fontStyle">
+          Citation:&nbsp;&nbsp;{{author_result_obj.totalCitation}}
+        </h5>
+        <h5 class="fontStyle">
+          Coauthers:&nbsp;&nbsp;{{coauthers}}
+        </h5>
+      </div>
+    </div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item topnav">
+        <a class="nav-link active" data-toggle="tab" href="#Publications">Publications</a>
+      </li>
+      <li class="nav-item topnav">
+        <a class="nav-link" data-toggle="tab" href="#ResearchInterest">Research Interests</a>
+      </li>
+      <li class="nav-item topnav">
+        <a class="nav-link" data-toggle="tab" (click)="network()" href="#Network">Network</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="Publications" class="container tab-pane active"><br>
+        <div class="col-md-8 col-lg-8 col-sm-12">
+          <div *ngFor="let item of this.pub_result">
+          <div class="card" style="border-radius: 10px">
+            <div class="card-title bg-primary" style="border-radius: 10px">
+              <h4 style="padding: 10px" class="fontStyle">{{item.title}}</h4>
+            </div>
+            <div class="card-title bg-white">
+              <span *ngFor="let item2 of item.coAuthors">&nbsp;&nbsp;<span class="badge badge-light stylo">{{item2.name}}</span>
+              </span>
+            </div>
+            <div class="card-body stylo">
+              Overview:- {{item.overview}}
+            </div>
+            <div class="card-title stylo">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Year:- {{item.year}}
+              </div>
+            <div class="card-footer stylo">
+              Catogories:<span *ngFor="let item3 of item.catogories">&nbsp;&nbsp;<span class="badge badge-light stylo">{{item3}}</span>
+              </span>
+            </div>
+          </div><br><br></div>
+        </div>
+      </div>
+
+      <div id="ResearchInterest" class="container tab-pane"><br>
+        <li class="list-group-flush stylo" *ngFor="let item4 of this.author_result_obj.researchInterest">
+          {{item4}}
+        </li>
+      </div>
+
+      <div id="Network" class="container tab-pane prop"><br>
+        <svg style="background-color: snow" width="100%" height="100%" class="d3-miserables"></svg>
+        <div #graph id="gaph"></div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
