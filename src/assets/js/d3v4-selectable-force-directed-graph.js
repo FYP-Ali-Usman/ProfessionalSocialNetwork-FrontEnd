@@ -1,4 +1,25 @@
-function createV4SelectableForceDirectedGraph(svg, graph, url) {
+function createGraph(svg, graph, url, coAUthorUrl) {
+    var shortestPath = [];
+    var shortestPathLen = 0;
+    var coAuthorId;
+    if (coAUthorUrl != ''){
+        for (i = 0; i < graph.nodes.length; i++) {
+            if (graph.nodes[i].urlLink == coAUthorUrl)
+                coAuthorId = graph.nodes[i].id
+        }
+        for(var prop in graph.shortestPaths) {
+            if (prop == coAuthorId){
+                // shortestPath.push([])
+                for (i = 0; i < graph.shortestPaths[prop].length; i++) {
+                    shortestPath.push(graph.shortestPaths[prop][i])
+                }
+                // shortestPath = graph.shortestPaths[prop][0] // this will consider only first shortest path but there can be multiple shortes paths which it will neglect
+            }                
+        }
+        shortestPathLen = shortestPath.length;
+        console.log(shortestPathLen)
+    } 
+
     // alert('Welcome to D3 js');
     // if both d3v3 and d3v4 are loaded, we'll assume
     // that d3v4 is called d3v4, otherwise we'll assume
@@ -71,7 +92,40 @@ function createV4SelectableForceDirectedGraph(svg, graph, url) {
         .selectAll("line")
         .data(graph.links)
         .enter().append("line")
-        .attr("stroke-width", function(d) { return Math.sqrt(2); })
+        .attr("stroke-width", function(d) {
+            if (coAUthorUrl != ''){
+                var inIndex = null;
+                for (i = 0; i < shortestPathLen; i++){
+                    if (shortestPath[i].includes(d.target)){
+                        inIndex = i
+                    }
+                }
+                if (inIndex != null){
+                    return Math.sqrt(30); 
+                }
+            }
+            else{
+                return Math.sqrt(2);
+            }  
+            return Math.sqrt(2);
+        })
+        .style("opacity",(d) => {
+            if (coAUthorUrl != ''){
+                var inIndex = null;
+                for (i = 0; i < shortestPathLen; i++){
+                    if (shortestPath[i].includes(d.target)){
+                        inIndex = i
+                    }
+                }
+                if (inIndex == null){
+                    return 0.3;
+                }
+            }
+            else{
+                return 1;
+            }  
+            // return 1;
+        })
         .attr("stroke", function(d) { 
             if ('color' in d){
                 // console.log(d.color);
@@ -113,12 +167,49 @@ function createV4SelectableForceDirectedGraph(svg, graph, url) {
               return 10;
             }
           })
+        .style("opacity",(d) => {
+            if (coAUthorUrl != ''){
+                var inIndex = null;
+                for (i = 0; i < shortestPathLen; i++){
+                    if (shortestPath[i].includes(d.id)){
+                        inIndex = i
+                    }
+                }
+                if (inIndex != null){
+                    return 1;
+                }
+                else{
+                    return 0.3;
+                }
+                if (shortestPath.includes(d.id)){
+                    return 1;
+                }
+                else {
+                    return 0.3;
+                }
+            }
+            else{
+                return 1;
+            }  
+        })
         .attr("fill", function(d) { 
-            if ('color' in d)
-                return d.color;
-            else
-                // console.log(this.__data__.name);
+            // if ('color' in d)
+            //     return d.color;
+            // else
+            //     // console.log(this.__data__.name);
+            //     return color(d.group);
+            if (d.level == 0){
+                return 'Blue';
+            }
+            else if (d.level == 1){
+                return '#00ff99';
+            }
+            else if (d.level == 2){
+                return '#ffad33'
+            }
+            else{
                 return color(d.group);
+            }
         })
         .call(d3v4.drag()
         .on("start", dragstarted)
@@ -131,33 +222,41 @@ function createV4SelectableForceDirectedGraph(svg, graph, url) {
             highlightedLinks = []
             clickedNodeId = d.id;
             link.each( (dd) => {
-              if(dd.source.id == clickedNodeId){
+            if(dd.source.id == clickedNodeId){
                 oppositeNode.push(dd.target.id);
                 highlightedLinks.push(dd);
-              }
-              else if(dd.target.id == clickedNodeId){
+            }
+            else if(dd.target.id == clickedNodeId){
                 oppositeNode.push(dd.source.id);
                 highlightedLinks.push(dd);
-              }
+            }
             })
             link.attr('stroke-width',(dd) => {
-              if(highlightedLinks.includes(dd)){
+            if(highlightedLinks.includes(dd)){
                 return Math.sqrt(8); 
-              }
-              else{
+            }
+            else{
                 return Math.sqrt(1); 
-              }
+            }
+            })
+            link.style("opacity",(dd) => {
+            if(highlightedLinks.includes(dd)){
+                return 1;
+            }
+            else{
+                return 0.3;
+            }
             })
             // console.log(this.oppositeNode);
             node.style("opacity", (dd) => {
-              if(oppositeNode.includes(dd.id)){
+            if(oppositeNode.includes(dd.id)){
                 return 1;
-              }
-              else{
+            }
+            else{
                 return 0.3;
-              }
+            }
             });  
-          })
+        })
         .on("mousemove",  function moveTooltip() {
                     var [posX, posY] = [d3.event.x, d3.event.y];
                     posX += posX > width / 2 ? -100 : 50;
@@ -272,8 +371,13 @@ function createV4SelectableForceDirectedGraph(svg, graph, url) {
         }
                   
     // add titles for mouseover blurbs
+    // node.append("title")
+    //     .text("Person");
+
     node.append("title")
-        .text("Person");
+        .text(function(d) {
+                return d.id;
+    });
 
     link.append("title")
         .text("Publication");
@@ -287,7 +391,7 @@ function createV4SelectableForceDirectedGraph(svg, graph, url) {
         .force("link", d3v4.forceLink()
                 .id(function(d) { return d.id; })
                 .distance(function(d) { 
-                    return 50;
+                    return 30;
                     //var dist = 20 / d.value;
                     //console.log('dist:', dist);
 

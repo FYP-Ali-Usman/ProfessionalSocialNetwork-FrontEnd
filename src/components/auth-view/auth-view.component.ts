@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import * as d3 from 'd3';
 import { ApiService } from '../../app/api.service';
-declare const createV4SelectableForceDirectedGraph: any;
+declare const createGraph: any;
 @Component({
   selector: 'app-auth-view',
   templateUrl: './auth-view.component.html',
@@ -20,6 +20,7 @@ export class AuthViewComponent implements OnInit {
   svg;
   data;
   url;
+  coAuthorUrl: any = '';
   nodeExtensionNeed: Array<String> = []
   coauthers:any;
   affilia:any;
@@ -70,7 +71,10 @@ export class AuthViewComponent implements OnInit {
       this.url = this.data.author;
       
       this.svg = d3.select('svg');
-      createV4SelectableForceDirectedGraph(this.svg, this.data, this.url);
+      this.coAuthorUrl = 'https://academic.microsoft.com/author/2684417783/publication?paperId=2539085113'
+      // this.coAuthorUrl = 'https://academic.microsoft.com/author/2144262668/publication?paperId=2736459537'
+      // this.coAuthorUrl = 'https://academic.microsoft.com/author/2465287955/publication?paperId=2946944915'
+      createGraph(this.svg, this.data, this.url, this.coAuthorUrl);
       
       this.nodeExtensionNeed = []
       for (let i = 0; i < d['nodes'].length; i++) {
