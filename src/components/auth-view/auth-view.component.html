@@ -30,22 +30,20 @@
       <li class="nav-item topnav">
         <a class="nav-link" data-toggle="tab" href="#ResearchInterest">Research Interests</a>
       </li>
-      <li class="nav-item topnav">
-        <a class="nav-link" data-toggle="tab" (click)="network()" href="#Network">Network</a>
-      </li>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
       <div id="Publications" class="container tab-pane active"><br>
-        <div class="col-md-8 col-lg-8 col-sm-12">
+        <div class="row">
+        <div class="col-md-6 col-lg-6 col-sm-12">
           <div *ngFor="let item of this.pub_result">
           <div class="card" style="border-radius: 10px">
             <div class="card-title bg-primary" style="border-radius: 10px">
               <h4 style="padding: 10px" class="fontStyle">{{item.title}}</h4>
             </div>
             <div class="card-title bg-white">
-              <span *ngFor="let item2 of item.coAuthors">&nbsp;&nbsp;<span class="badge badge-light stylo">{{item2.name}}</span>
+              <span *ngFor="let item2 of item.coAuthors">&nbsp;&nbsp; <a (click)="setCoauther(item2.linkUrl)"> <span class="badge badge-light stylo">{{item2.name}}</span></a>
               </span>
             </div>
             <div class="card-body stylo">
@@ -60,17 +58,19 @@
             </div>
           </div><br><br></div>
         </div>
+        <div class="col-md-6 col-lg-6 col-sm-12">
+          <button class="btn btn-primary btn-sm" (click)="reset()">RESTET NETWORK VIEW</button>
+          <button class="btn btn-primary btn-sm">VIEW SELECTED COAUTHER PROFILE</button>
+          <svg style="background-color: snow" width="100%" height="70%" class="d3-miserables"></svg>
+          <div class="prop"></div>
+        </div>
+      </div>
       </div>
 
       <div id="ResearchInterest" class="container tab-pane"><br>
         <li class="list-group-flush stylo" *ngFor="let item4 of this.author_result_obj.researchInterest">
           {{item4}}
         </li>
-      </div>
-
-      <div id="Network" class="container tab-pane prop"><br>
-        <svg style="background-color: snow" width="100%" height="100%" class="d3-miserables"></svg>
-        <div #graph id="gaph"></div>
       </div>
 
     </div>

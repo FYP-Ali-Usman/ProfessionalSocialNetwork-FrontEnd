@@ -17,6 +17,7 @@ function createGraph(svg, graph, url, coAUthorUrl) {
             }                
         }
         shortestPathLen = shortestPath.length;
+        console.log(shortestPath)
         console.log(shortestPathLen)
     } 
 
@@ -34,7 +35,7 @@ function createGraph(svg, graph, url, coAUthorUrl) {
     // console.log(d3v4.select('svg').node());
     // let parentHeight = d3v4.select('svg').node().parentNode.clientHeight;
     // let parentWidth = screen.width;
-    let parentWidth = window.innerWidth;
+    let parentWidth = window.innerWidth/2.7;
     let parentHeight = window.innerHeight/1.8;
 
     var svg = d3v4.select('svg')
@@ -93,13 +94,17 @@ function createGraph(svg, graph, url, coAUthorUrl) {
         .data(graph.links)
         .enter().append("line")
         .attr("stroke-width", function(d) {
+            // console.log(d.target.id)
+            // console.log(shortestPath)
             if (coAUthorUrl != ''){
                 var inIndex = null;
                 for (i = 0; i < shortestPathLen; i++){
-                    if (shortestPath[i].includes(d.target)){
+                    if (shortestPath[i].includes(d.target.id)){
+                    // if (true){
                         inIndex = i
                     }
                 }
+                console.log(inIndex)
                 if (inIndex != null){
                     return Math.sqrt(30); 
                 }
@@ -109,11 +114,11 @@ function createGraph(svg, graph, url, coAUthorUrl) {
             }  
             return Math.sqrt(2);
         })
-        .style("opacity",(d) => {
+        .style("opacity",(d) => { 
             if (coAUthorUrl != ''){
                 var inIndex = null;
                 for (i = 0; i < shortestPathLen; i++){
-                    if (shortestPath[i].includes(d.target)){
+                    if (shortestPath[i].includes(d.target.id)){
                         inIndex = i
                     }
                 }
@@ -216,46 +221,69 @@ function createGraph(svg, graph, url, coAUthorUrl) {
         .on("drag", dragged)
         .on("end", dragended))
         .on("click", function(d) {
-            console.log("Level of the node is: "+d.level);
+            // console.log("Level of the node is: "+d.level);
             oppositeNode = []
             oppositeNode.push(d.id);
             highlightedLinks = []
             clickedNodeId = d.id;
+            var shortestPath = []
+            for(var prop in graph.shortestPaths) {
+                if (prop == d.id){
+                    for (i = 0; i < graph.shortestPaths[prop].length; i++) {
+                        shortestPath.push(graph.shortestPaths[prop][i])
+                    }
+                }                
+            }
+            // console.log(shortestPath);
+            link.attr('stroke-width',(dd) => {
+                for(var j in shortestPath){
+                    if(shortestPath[j].includes(dd.target.id) && shortestPath[j].includes(dd.source.id)){
+                        highlightedLinks.push(dd);
+                    }
+                }
+            })
+            node.style("opacity", (dd) => {
+                for(var j in shortestPath){
+                    if(shortestPath[j].includes(dd.id) && shortestPath[j].includes(dd.id)){
+                        oppositeNode.push(dd.id);
+                    }
+                }
+            });  
             link.each( (dd) => {
-            if(dd.source.id == clickedNodeId){
-                oppositeNode.push(dd.target.id);
-                highlightedLinks.push(dd);
-            }
-            else if(dd.target.id == clickedNodeId){
-                oppositeNode.push(dd.source.id);
-                highlightedLinks.push(dd);
-            }
+                if(dd.source.id == clickedNodeId){
+                    oppositeNode.push(dd.target.id);
+                    highlightedLinks.push(dd);
+                }
+                else if(dd.target.id == clickedNodeId){
+                    oppositeNode.push(dd.source.id);
+                    highlightedLinks.push(dd);
+                }
             })
             link.attr('stroke-width',(dd) => {
-            if(highlightedLinks.includes(dd)){
-                return Math.sqrt(8); 
-            }
-            else{
-                return Math.sqrt(1); 
-            }
+                if(highlightedLinks.includes(dd)){
+                    return Math.sqrt(8); 
+                }
+                else{
+                    return Math.sqrt(1); 
+                }
             })
             link.style("opacity",(dd) => {
-            if(highlightedLinks.includes(dd)){
-                return 1;
-            }
-            else{
-                return 0.3;
-            }
+                if(highlightedLinks.includes(dd)){
+                    return 1;
+                }
+                else{
+                    return 0.3;
+                }
             })
             // console.log(this.oppositeNode);
             node.style("opacity", (dd) => {
-            if(oppositeNode.includes(dd.id)){
-                return 1;
-            }
-            else{
-                return 0.3;
-            }
-            });  
+                if(oppositeNode.includes(dd.id)){
+                    return 1;
+                }
+                else{
+                    return 0.3;
+                }
+            });      
         })
         .on("mousemove",  function moveTooltip() {
                     var [posX, posY] = [d3.event.x, d3.event.y];
@@ -326,6 +354,7 @@ function createGraph(svg, graph, url, coAUthorUrl) {
         .on("mouseout", hideTooltip);
 
     //https://blockbuilder.org/alexmacy/e81c67c1f0db4c4806ffdc4160c6e7d9
+
     var tooltip = d3.select(".prop").append("div")
         .attr("id", "tooltip")
         .html("")
@@ -336,7 +365,7 @@ function createGraph(svg, graph, url, coAUthorUrl) {
             
             tooltip.interrupt()
                 .style("opacity", 1)
-                .html("Pointer x-axis: " + d3.event.x + "<br>Pointer y-axis: " + d3.event.y)
+                // .html("Pointer x-axis: " + d3.event.x + "<br>Pointer y-axis: " + d3.event.y)
                 .transition().duration(20000).ease(d3.easeLinear)
                 .style("left", posX + "px")
                 .style("top", posY + "px");
@@ -566,17 +595,17 @@ function createGraph(svg, graph, url, coAUthorUrl) {
         })
     }
 
-    var texts = ['=> Use the scroll wheel to zoom', '=> Hold and move nodes'
-    , '=> Click on nodes to highlight', '=> Hover over the node to view properties']
+    // var texts = ['=> Use the scroll wheel to zoom', '=> Hold and move nodes'
+    // , '=> Click on nodes to highlight', '=> Hover over the node to view properties']
 
-    svg.selectAll('text')
-        .data(texts)
-        .enter()
-        .append('text')
-        .attr('x', 50)
-        .attr('y', function(d,i) { return parentHeight - (i+1) * 20;})
-        // .attr('y', function(d,i) { return 470 + i * 18; })
-        .text(function(d) { return d; });
+    // svg.selectAll('text')
+    //     .data(texts)
+    //     .enter()
+    //     .append('text')
+    //     .attr('x', 50)
+    //     .attr('y', function(d,i) { return parentHeight - (i+1) * 20;})
+    //     // .attr('y', function(d,i) { return 470 + i * 18; })
+    //     .text(function(d) { return d; });
 
     return graph;
 };

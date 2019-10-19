@@ -20,11 +20,12 @@ export class AuthViewComponent implements OnInit {
   svg;
   data;
   url;
-  coAuthorUrl: any = '';
   nodeExtensionNeed: Array<String> = []
   coauthers:any;
   affilia:any;
   timeLeft: number = 10;
+  coAuthorUrl:any='';
+  displayHidden:any=''
   @Input()
 
   margin = {top: 20, right: 20, bottom: 30, left: 40};
@@ -59,7 +60,17 @@ export class AuthViewComponent implements OnInit {
       }
       this.coauthers=this.network_authers.length;
       // console.log(this.coauthers);
+      this.network();
     });
+  }
+  setCoauther(value){
+    this.coAuthorUrl=value;
+    console.log(this.coAuthorUrl);
+    createGraph(this.svg, this.data, this.url,this.coAuthorUrl);
+  }
+  reset(){
+    this.coAuthorUrl='';
+    createGraph(this.svg, this.data, this.url,this.coAuthorUrl);
   }
   network(){
     // console.log(this.main_auther);
@@ -71,9 +82,6 @@ export class AuthViewComponent implements OnInit {
       this.url = this.data.author;
       
       this.svg = d3.select('svg');
-      this.coAuthorUrl = 'https://academic.microsoft.com/author/2684417783/publication?paperId=2539085113'
-      // this.coAuthorUrl = 'https://academic.microsoft.com/author/2144262668/publication?paperId=2736459537'
-      // this.coAuthorUrl = 'https://academic.microsoft.com/author/2465287955/publication?paperId=2946944915'
       createGraph(this.svg, this.data, this.url, this.coAuthorUrl);
       
       this.nodeExtensionNeed = []
