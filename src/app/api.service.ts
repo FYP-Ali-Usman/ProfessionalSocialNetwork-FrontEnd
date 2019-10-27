@@ -224,6 +224,9 @@ searchAuther2(id3):Observable<any[]>{
 searchPub(id3):Observable<any[]>{
   return this.http.get<any[]>("http://127.0.0.1:8000/search/apubSearch",{params:{id:id3}});
 }
+coautherSerach(urll):Observable<any[]>{
+  return this.http.get<any[]>("http://127.0.0.1:8000/search/coauth",{params:{url:urll}});
+}
 // =========================================================================
 
 // =========================================
@@ -231,7 +234,17 @@ getNewtork(a,b){
   return this.http.get('http://127.0.0.1:8000/graph/entity', {
     params: {
       nodeId: a,
-      affiliation: b
+      affiliation: b,
+      expand: false
+    }
+  });
+}
+expandNetwork(authorURL, organization):Observable<any[]>{
+  return this.http.get<any[]>("http://127.0.0.1:8000/graph/entity",{
+    params:{
+      nodeId: authorURL,
+      affiliation: organization,
+      expand: true
     }
   });
 }

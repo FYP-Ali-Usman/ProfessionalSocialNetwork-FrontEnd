@@ -1,10 +1,13 @@
-function createGraph(svg, graph, url, coAUthorUrl) {
+function createGraph(svg, graph, url, coAUthorUrl, publicatonUrl) {
     var shortestPath = [];
     var shortestPathLen = 0;
+    var highlightedPublicationNodes = [];
     var coAuthorId;
+    let parentWidthDivider = 2.7;
+    let parentHeightDivider = 1.8;
     if (coAUthorUrl != ''){
         for (i = 0; i < graph.nodes.length; i++) {
-            if (graph.nodes[i].urlLink == coAUthorUrl)
+            if (graph.nodes[i].urlLink.substring(0,graph.nodes[i].urlLink.indexOf("publication")+11) == coAUthorUrl.substring(0,coAUthorUrl.indexOf("publication")+11))
                 coAuthorId = graph.nodes[i].id
         }
         for(var prop in graph.shortestPaths) {
@@ -17,8 +20,24 @@ function createGraph(svg, graph, url, coAUthorUrl) {
             }                
         }
         shortestPathLen = shortestPath.length;
-        console.log(shortestPath)
-        console.log(shortestPathLen)
+        // console.log(shortestPath)
+        // console.log(shortestPathLen)
+
+        // in below for loop i wanted to show that part of graph where the coauhor is shown once user clicks on coauthor
+        // but it is behaving awkward
+        
+        // for(var prop in graph.nodes) {
+        //     if (graph.nodes[prop].id == coAuthorId){
+        //         console.log(graph.nodes[prop])
+        //         var n = graph.nodes[prop].x.toString();
+        //         console.log(n);
+        //         n = n[0]
+        //         parentWidthDivider = n*1.5;
+        //         // if(graph.nodes[prop].x > 0){
+        //         //     parentWidthDivider = n*1.5;
+        //         // }
+        //     }                
+        // }
     } 
 
     // alert('Welcome to D3 js');
@@ -35,12 +54,13 @@ function createGraph(svg, graph, url, coAUthorUrl) {
     // console.log(d3v4.select('svg').node());
     // let parentHeight = d3v4.select('svg').node().parentNode.clientHeight;
     // let parentWidth = screen.width;
-    let parentWidth = window.innerWidth/2.7;
-    let parentHeight = window.innerHeight/1.8;
+    let parentWidth = window.innerWidth/parentWidthDivider;
+    // let parentWidth = window.innerWidth/9;
+    let parentHeight = window.innerHeight/parentHeightDivider;
 
     var svg = d3v4.select('svg')
-    .attr('width', parentWidth)
-    .attr('height', parentHeight)
+    .attr('width', width)
+    .attr('height', height)
 
     var margin = {top: 20, right: 20, bottom: 20, left: 20},
         padding = {top: 60, right: 60, bottom: 60, left: 60}
@@ -95,7 +115,22 @@ function createGraph(svg, graph, url, coAUthorUrl) {
         .enter().append("line")
         .attr("stroke-width", function(d) {
             // console.log(d.target.id)
+            // console.log(d)
             // console.log(shortestPath)
+            if (publicatonUrl != ''){
+                if(d.papaerLink == publicatonUrl){
+                    if(!highlightedPublicationNodes.includes(d.source)){
+                        highlightedPublicationNodes.push(d.source);
+                    }
+                    if(!highlightedPublicationNodes.includes(d.target)){
+                        highlightedPublicationNodes.push(d.target);
+                    }
+                    return Math.sqrt(30); 
+                }
+                else{
+                    return Math.sqrt(2); 
+                }
+            }
             if (coAUthorUrl != ''){
                 var inIndex = null;
                 for (i = 0; i < shortestPathLen; i++){
@@ -104,7 +139,7 @@ function createGraph(svg, graph, url, coAUthorUrl) {
                         inIndex = i
                     }
                 }
-                console.log(inIndex)
+                // console.log(inIndex)
                 if (inIndex != null){
                     return Math.sqrt(30); 
                 }
@@ -115,6 +150,14 @@ function createGraph(svg, graph, url, coAUthorUrl) {
             return Math.sqrt(2);
         })
         .style("opacity",(d) => { 
+            if (publicatonUrl != ''){
+                if(d.papaerLink == publicatonUrl){
+                    return 1; 
+                }
+                else{
+                    return 0.3; 
+                }
+            }
             if (coAUthorUrl != ''){
                 var inIndex = null;
                 for (i = 0; i < shortestPathLen; i++){
@@ -168,12 +211,30 @@ function createGraph(svg, graph, url, coAUthorUrl) {
               // d.group = 3;
               return 20;
             }
+            if (coAUthorUrl != ''){
+                if(d.id == coAuthorId){
+                    return 20;
+                }
+                else{
+                  return 10;
+                }
+            }
             else{
               return 10;
             }
           })
         .style("opacity",(d) => {
+            if (publicatonUrl != ''){
+                if(highlightedPublicationNodes.includes(d.id)){
+                    return 1;
+                }
+                else{
+                    return 0.3;
+                }
+            }
             if (coAUthorUrl != ''){
+                // if(coAuthorId == d.id)
+                //     console.log(d);
                 var inIndex = null;
                 for (i = 0; i < shortestPathLen; i++){
                     if (shortestPath[i].includes(d.id)){
@@ -235,6 +296,15 @@ function createGraph(svg, graph, url, coAUthorUrl) {
                 }                
             }
             // console.log(shortestPath);
+
+            // node.attr("r", (dd)=>{
+            //     if (clickedNodeId == dd.id){
+            //       return 20;
+            //     }
+            //     else{
+            //       return 10;
+            //     }
+            // })
             link.attr('stroke-width',(dd) => {
                 for(var j in shortestPath){
                     if(shortestPath[j].includes(dd.target.id) && shortestPath[j].includes(dd.source.id)){
@@ -355,8 +425,7 @@ function createGraph(svg, graph, url, coAUthorUrl) {
 
     //https://blockbuilder.org/alexmacy/e81c67c1f0db4c4806ffdc4160c6e7d9
 
-    var tooltip = d3.select(".prop").append("div")
-        .attr("id", "tooltip")
+    var tooltip = d3.select(".prop")
         .html("")
         .on("mouseover",     function moveTooltip() {
             var [posX, posY] = [d3.event.x, d3.event.y];

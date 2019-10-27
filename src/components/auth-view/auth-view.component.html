@@ -1,79 +1,131 @@
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
 <body>
   <div class='container-fluid lighten-3 d-block homeSearchePan pt-1 pl-1 pr-1'>
     <div class="row top">
       <!-- Grid column -->
-      <div class="col-md-6 col-lg-6 col-sm-12" style="padding-left: 50px">
+      <div class="col-md-5 col-lg-5 col-sm-12" style="padding-left: 50px">
         <h2 class="fontStyle"><i class="fas fa-user-graduate"></i>&nbsp;{{author_result_obj.Name}}
-        </h2><br>
-        <h5 class="fontStyle">
+        </h2>
+        <p class="fontStyle">
           AFFILIATION:-&nbsp;{{author_result_obj.affiliation}}
-        </h5>
       </div>
-
-      <div class="col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2
+      
+      <div class="col-md-6 col-lg-6 col-sm-12 offset-md-1 offset-lg-1
         offset-sm-0" style="padding-left: 50px">
-        <h5 class="fontStyle">Publications:&nbsp;&nbsp;{{author_result_obj.totalPaper}}</h5>
-        <h5 class="fontStyle">
-          Citation:&nbsp;&nbsp;{{author_result_obj.totalCitation}}
-        </h5>
-        <h5 class="fontStyle">
-          Coauthers:&nbsp;&nbsp;{{coauthers}}
-        </h5>
+        <div>
+        <p class="fontStyle" style="display: inline;">Publications:&nbsp;&nbsp;{{author_result_obj.totalPaper}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="fontStyle" style="display: inline;">
+          Citation:&nbsp;&nbsp;{{author_result_obj.totalCitation}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+        <p class="fontStyle" style="display: inline;">
+          Coauthers:&nbsp;&nbsp;{{coauthers}}&nbsp;&nbsp;
+        </p></div>
+        
+        <button class="btn btn-primary btn-sm" (click)="reset()" >RESTET NETWORK VIEW</button>
+        <button class="btn btn-primary btn-sm" [ngStyle]="{display: coauthbutton}" (click)="viewCoauther()">VIEW SELECTED COAUTHER PROFILE</button>
+        <button class="btn btn-primary btn-sm" [ngStyle]="{display: pubbutton}" (click)="viePub()">VIEW SELECTED PUBLICATION</button>
+        <button class="btn btn-primary btn-sm" (click)="expand()" >EXPAND NETWORK</button>
+        
       </div>
-    </div>
+    </div></div>
 
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-      <li class="nav-item topnav">
-        <a class="nav-link active" data-toggle="tab" href="#Publications">Publications</a>
-      </li>
-      <li class="nav-item topnav">
-        <a class="nav-link" data-toggle="tab" href="#ResearchInterest">Research Interests</a>
-      </li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div id="Publications" class="container tab-pane active"><br>
-        <div class="row">
-        <div class="col-md-6 col-lg-6 col-sm-12">
-          <div *ngFor="let item of this.pub_result">
-          <div class="card" style="border-radius: 10px">
-            <div class="card-title bg-primary" style="border-radius: 10px">
-              <h4 style="padding: 10px" class="fontStyle">{{item.title}}</h4>
-            </div>
-            <div class="card-title bg-white">
-              <span *ngFor="let item2 of item.coAuthors">&nbsp;&nbsp; <a (click)="setCoauther(item2.linkUrl)"> <span class="badge badge-light stylo">{{item2.name}}</span></a>
-              </span>
-            </div>
-            <div class="card-body stylo">
-              Overview:- {{item.overview}}
-            </div>
-            <div class="card-title stylo">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Year:- {{item.year}}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7 col-lg-7 col-sm-12">
+          <div>
+            <div class="row">
+              <div class="col">
+                  <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item topnav">
+                        <a class="nav-link active" data-toggle="tab" href="#Publications">Publications</a>
+                      </li>
+                      <li class="nav-item topnav">
+                        <a class="nav-link" data-toggle="tab" href="#ResearchInterest">Research Interests</a>
+                      </li>
+                      <li class="nav-item topnav">
+                      <a class="nav-link" data-toggle="tab" href="#guid">Tutorial Guide
+                      </a>
+                  </li>
+                  </ul>
+                
+                    <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div id="Publications" class="tab-pane active"><br>
+                      <div  class="scrool">
+                      <div *ngFor="let item of this.pub_result">
+                        <div class="card" style="border-radius: 10px">
+                          <div class="card-title bg-primary" style="border-radius: 10px">
+                              <a (click)="setPublication(item.papaerLink)"><h4 style="padding: 10px" class="fontStyle">{{item.title}}</h4></a>
+                          </div>
+                          <div class="card-title bg-white" style="padding-left: 5%;padding-right: 5%;">
+                              <span *ngFor="let item2 of item.coAuthors"><a (click)="setCoauther(item2.linkUrl)"> <span class="badge badge-pill badge-success stylo" style="font-size: 14px;">{{item2.name}}</span>&nbsp;&nbsp;</a>
+                              </span>
+                          </div>
+                          <div class="card-body stylo" style="color: black;padding-left: 5%;padding-right: 5%;">
+                              Overview:- {{item.overview}}
+                          </div>
+                          <div class="card-title stylo" style="color: black;padding-left: 5%;padding-right: 5%;">
+                          Year:- {{item.year}}
+                          </div>
+                          <div class="card-footer stylo" style="color: black;padding-left: 5%;padding-right: 5%;">
+                              Catogories:<span *ngFor="let item3 of item.catogories">&nbsp;&nbsp;<span class="badge badge-pill badge-dark stylo">{{item3}}</span>
+                              </span>
+                          </div>
+                        </div><br><br>
+                      </div></div>
+                      
+                    </div>
+                    <div id="ResearchInterest" class="tab-pane" style="color: black;"><br>
+                      <li class="list-group-flush stylo" *ngFor="let item4 of this.author_result_obj.researchInterest">
+                        {{item4}}
+                      </li>
+                  </div>
+                  <div id="guid" class="tab-pane stylo" style="color: black; padding-left: 10%;"><br>
+                  <li class="ww">The <i class="fas fa-circle" style="color:blue"></i> node represents {{author_result_obj.Name}} at level 0.</li>
+                  <li class=" ww">The <i class="fas fa-circle" style="color:#00ff99"></i> nodes represents coauthers of {{author_result_obj.Name}} at level 1.</li>
+                  <li class=" ww">The <i class="fas fa-circle" style="color:#ffad33"></i> nodes are extension of the coauthors making it to level 2.</li>
+                  <li class=" ww">By default, the network is at level 1.</li>
+                  <li class=" ww">Hoverover the nodes or the links to view detils.</li>
+                  <li class=" ww">Clicking on the node to highlights them.</li>
+                  <li class=" ww">Drag them to move graph position.</li>
+                  <li class=" ww">Scroll mouse wheel to zoom in or out</li>
+                  <li class=" ww">Click on the publications and coauthor's names(in the "Publications" tab) for details.</li>
+                  <li class=" ww">"Reset network view" button: View default network.</li>
+                  <li class=" ww">"View selected coauthor profile" button: Move to that coauthor page.</li>
+                  <li class=" ww">"View selected publication" button: Move to that publication page.</li>
+                  <li class=" ww">"Expand Network" button: Network can be extended to level 2.</li>
+                  <li class=" ww">Expanding the graph to level 2 takes time in computation.</li>
+                  <li class=" ww">Get more recommendations by signing in.</li>
+                  </div>
+                  </div>
               </div>
-            <div class="card-footer stylo">
-              Catogories:<span *ngFor="let item3 of item.catogories">&nbsp;&nbsp;<span class="badge badge-light stylo">{{item3}}</span>
-              </span>
             </div>
-          </div><br><br></div>
+          </div>
+          
         </div>
-        <div class="col-md-6 col-lg-6 col-sm-12">
-          <button class="btn btn-primary btn-sm" (click)="reset()">RESTET NETWORK VIEW</button>
-          <button class="btn btn-primary btn-sm">VIEW SELECTED COAUTHER PROFILE</button>
-          <svg style="background-color: snow" width="100%" height="70%" class="d3-miserables"></svg>
-          <div class="prop"></div>
+
+        <div class="col-md-5 col-lg-5 col-sm-12">
+          <div>
+            <div class="row">
+              <div class="col" style="height: 400px;">
+                <div ng-app="" ng-init="mySwitch=false">
+                  </div>
+                  <br />
+                  <br />
+                  <br />
+                  <svg style="background-color: snow" width="100%" height="100%" class="d3-miserables"></svg>
+                  <br />
+                  <p class="prop stylo" #removeable></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-
-      <div id="ResearchInterest" class="container tab-pane"><br>
-        <li class="list-group-flush stylo" *ngFor="let item4 of this.author_result_obj.researchInterest">
-          {{item4}}
-        </li>
-      </div>
-
+      </div>    
     </div>
-
-  </div>
 </body>
