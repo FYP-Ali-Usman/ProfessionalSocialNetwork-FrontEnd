@@ -181,6 +181,10 @@ getArticles(){
   const headers3 = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8');
   return this.http.get<Article[]>("http://127.0.0.1:8000/forum/article/",{headers: headers3});
 }
+getPubArticles(id3){
+  const headers5 = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8');
+  return this.http.get<Article[]>("http://127.0.0.1:8000/forum/article/pi", {params:{id:id3}});
+}
 getArticle(id3){
   const headers3 = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8');
   return this.http.get<Article[]>("http://127.0.0.1:8000/forum/article/",{params:{id:id3}});
@@ -227,6 +231,12 @@ searchPub(id3):Observable<any[]>{
 coautherSerach(urll):Observable<any[]>{
   return this.http.get<any[]>("http://127.0.0.1:8000/search/coauth",{params:{url:urll}});
 }
+onePubSerach(id3):Observable<any[]>{
+  return this.http.get<any[]>("http://127.0.0.1:8000/search/onePub",{params:{id:id3}});
+}
+recommend(id3):Observable<any[]>{
+  return this.http.get<any[]>("http://127.0.0.1:8000/recommend",{params:{id:id3}});
+}
 // =========================================================================
 
 // =========================================
@@ -247,6 +257,11 @@ expandNetwork(authorURL, organization):Observable<any[]>{
       expand: true
     }
   });
+}
+// ===============================================================
+
+getRecommends(id3):Observable<any[]>{
+  return this.http.get<any[]>("http://127.0.0.1:8000/recommend/advance",{params:{id:id3}});
 }
 // ====================================================
 }

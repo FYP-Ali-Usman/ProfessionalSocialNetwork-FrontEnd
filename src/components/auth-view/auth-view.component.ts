@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import * as d3 from 'd3';
 import * as $ from 'jquery';
 import { ApiService } from '../../app/api.service';
+import { json } from 'd3';
 declare const createGraph: any;
 @Component({
   selector: 'app-auth-view',
@@ -32,6 +33,15 @@ export class AuthViewComponent implements OnInit {
   coauthbutton:string='';
   pubbutton:string='';
   coauthSearchData:any;
+  pubId:any;
+  user_id;
+  dprofile={};
+  allowAdd:boolean=true;
+  authRecomend=[]
+  authRecomendObj={}
+  profile;
+  response_user;
+  error_msg;
   @Input()
 
   margin = {top: 20, right: 20, bottom: 30, left: 40};
@@ -56,7 +66,50 @@ export class AuthViewComponent implements OnInit {
           this.affilia=this.author_result_obj['affiliation'];
           // console.log(this.author_result_obj);
         }
+  // ==============================================================
+      if(this.apiservice.loggedIn() == true){
+        // ===
+        this.user_id=this.apiservice.getUserId();
+        this.apiservice.getProfile(this.user_id).subscribe(datadd => {
+          console.log('profile retrieved');
+          const kkk = datadd;
+          this.dprofile=kkk;
+          console.log(this.dprofile);
+          this.authRecomend=JSON.parse(this.dprofile['authInterest']);
+          if(this.authRecomend!=null && this.authRecomend!=undefined){
+            for (let index = 0; index < this.authRecomend.length; index++) {
+              if(this.authRecomend[index]['id']==this.author_result_obj['_id']['$oid']){
+                this.authRecomend[index]['respect']=this.authRecomend[index]['respect']+1;
+                this.allowAdd=false;
+                break;
+              }
+            }
+            if(this.allowAdd==true){
+              this.authRecomendObj={id:this.author_result_obj['_id']['$oid'],respect:1}
+              this.authRecomend.push(this.authRecomendObj);
+            }
+          }
+          else{
+            this.authRecomend=[];
+            this.authRecomendObj={id:this.author_result_obj['_id']['$oid'],respect:1}
+            this.authRecomend.push(this.authRecomendObj);
+          }
+          console.log(JSON.stringify(this.authRecomend));
+          this.onRecomend(this.authRecomend,this.dprofile);
+          
+        },error=>{
+          console.log(error);
+        }
+        );
+        // ===
+  
+      }
+      this.authRecomend=[]
+      this.authRecomendObj={}
+      // =======================================================
+
       });
+
       this.apiservice.searchPub(this.query).subscribe(data=>{
         this.pub_result=[];
         this.network_authers=[];
@@ -74,7 +127,11 @@ export class AuthViewComponent implements OnInit {
         // console.log(this.pub_result);
         this.network();
       });
+
     });
+
+    // =======================================================
+    
   }
 
   
@@ -94,8 +151,9 @@ export class AuthViewComponent implements OnInit {
       this.router.navigate(['/auther',this.coauthSearchData['_id']['$oid']]);
     });
   }
-  setPublication(value){
+  setPublication(value,id){
     this.publicatonUrl=value;
+    this.pubId=id['$oid'];
     this.coAuthorUrl='';
     this.coauthbutton='none';
     this.pubbutton='inline';
@@ -105,7 +163,7 @@ export class AuthViewComponent implements OnInit {
     console.log('clicked');
   }
   viePub(){
-    this.router.navigate(['/publication',this.publicatonUrl]);
+    this.router.navigate(['/publication',this.pubId]);
   }
   reset(){
     this.coAuthorUrl='';
@@ -161,4 +219,33 @@ export class AuthViewComponent implements OnInit {
       }
     });
   }
+
+
+  onRecomend(recommend,profile){
+    const formData = new FormData();
+    this.profile = {id:profile['id'],typeOf:profile['typeOf'],organization:profile['organization'],about:profile['about'],authInterest:JSON.stringify(recommend)}
+    console.log(this.profile);
+    
+    formData.append('id', this.profile['id']);
+    formData.append('authInterest', this.profile['authInterest']);
+    formData.append('typeOf', this.profile['typeOf']);
+    formData.append('organization', this.profile['organization']);
+    formData.append('about', this.profile['about']);
+    console.log(formData);
+    this.apiservice.updateProfile(formData).subscribe(data => {
+      $('.msg2').css('visibility', 'visible');
+      console.log('profile updated');
+      console.log(data);
+      this.response_user = data;
+      $('.msg1').css('visibility', 'hidden');
+    },error=>{
+      console.log(error);
+      $('.msg1').css('visibility', 'visible');
+      this.error_msg = error.error;
+    }
+    );
+
+    this.authRecomend = [];
+  }
+
 }

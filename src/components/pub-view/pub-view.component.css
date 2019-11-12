@@ -1,0 +1,34 @@
+.pt-1 {
+    margin-top: 55px;
+  }
+.fontStyle {
+    color: snow;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: slategray 3px 0 15px;
+  }
+.top{
+    background: linear-gradient(to bottom, #776be2 0%, #00ccff 100%);
+    padding-bottom: 2px;
+    padding-top: 30px;
+}
+
+.stylo{
+  font-family: "Times New Roman", Times, serif;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2 );
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.scrool{
+  overflow: auto;
+}
+
+.table-success{
+  background-color:  rgb(211, 211, 211);
+} 

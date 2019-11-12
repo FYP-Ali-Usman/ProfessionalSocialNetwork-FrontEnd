@@ -16,12 +16,21 @@ export class HomeComponent implements OnInit {
   author:any='';
   sss1:string='none';
   sss2:string='block';
+  query;
 
   movies = [{title: 'titanic'}, {title: 'avatar'}];
   constructor(private api: ApiService, private comp: HeaderComponent,private router: Router) {
   }
   ngOnInit() {
     this.comp.ngOnInit();
+    this.query=localStorage.getItem('user_id');
+    this.api.getRecommends(this.query).subscribe(datadd => {
+      console.log(datadd);
+    },error=>{
+      console.log(error);
+    }
+    );
+
   }
   ss1(){
     this.sss1='block';

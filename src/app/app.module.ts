@@ -14,9 +14,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
 import { ProfileComponent } from '../components/profile/profile.component';
-import {AfterSearchComponent} from '../components/after-search/after-search.component'
-import {OtherSearchComponent} from '../components/other-search/other-search.component'
-import {AuthViewComponent} from '../components/auth-view/auth-view.component'
+import {AfterSearchComponent} from '../components/after-search/after-search.component';
+import {OtherSearchComponent} from '../components/other-search/other-search.component';
+import {AuthViewComponent} from '../components/auth-view/auth-view.component';
+import {PubViewComponent} from '../components/pub-view/pub-view.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FileUploadModule} from 'ng2-file-upload';
 // import { NgbCarousel} from '@ng-bootstrap/ng-bootstrap';
@@ -37,6 +38,8 @@ const appRoutes: Routes = [
   {path: 'search', component:AfterSearchComponent},
   {path: 'searchfor/:author', component:OtherSearchComponent},
   {path: 'auther/:id', component:AuthViewComponent},
+  {path: 'publication/:id', component:PubViewComponent},
+
 ];
 
 @NgModule({
@@ -52,12 +55,13 @@ const appRoutes: Routes = [
     PostviewComponent,
     AfterSearchComponent,
     OtherSearchComponent,
-    AuthViewComponent
+    AuthViewComponent,
+    PubViewComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule, 
+    HttpClientModule,
     NgbModule,
     FormsModule,
     FileUploadModule,

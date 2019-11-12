@@ -61,7 +61,7 @@
                       <div *ngFor="let item of this.pub_result">
                         <div class="card" style="border-radius: 10px">
                           <div class="card-title bg-primary" style="border-radius: 10px">
-                              <a (click)="setPublication(item.papaerLink)"><h4 style="padding: 10px" class="fontStyle">{{item.title}}</h4></a>
+                              <a (click)="setPublication(item.papaerLink,item._id)"><h4 style="padding: 10px" class="fontStyle">{{item.title}}</h4></a>
                           </div>
                           <div class="card-title bg-white" style="padding-left: 5%;padding-right: 5%;">
                               <span *ngFor="let item2 of item.coAuthors"><a (click)="setCoauther(item2.linkUrl)"> <span class="badge badge-pill badge-success stylo" style="font-size: 14px;">{{item2.name}}</span>&nbsp;&nbsp;</a>
