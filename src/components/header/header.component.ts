@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild, OnInit  } from '@angular/core';
 import { ApiService } from '../../app/api.service';
 import * as $ from 'jquery';
 import { Router } from '@angular/router';
@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  
   constructor(private apiservice: ApiService , private router: Router) { }
 
   ngOnInit() {
@@ -30,4 +31,6 @@ export class HeaderComponent {
     this.router.navigate['/Home'];
     console.log('lllllll');
   }
+
+  
 }

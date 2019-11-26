@@ -1,0 +1,78 @@
+<body>
+    <div class='container-fluid lighten-3 d-block homeSearchePan pt-1 pl-1 pr-1'>
+      <div class="row banner">
+        <h1 align="center" class="fontStyle col-md-4 col-lg-4 col-sm-12
+          offset-md-4 offset-lg-4 ">Favourited Authors</h1>
+      </div>
+    </div><br>
+
+    
+    <div class='container-fluid'>
+    <div class="row">
+    <!-- ====== -->
+    <div class="col-md-5 col-lg-5 col-sm-12 offset-md-1 offset-lg-1 offset-sm-0" style="padding: 50px">
+    <div [ngStyle]="{display: seco}" *ngFor="let item of this.author_result2">
+        <div class="card">
+
+          <div class="card-header bg-primary">
+            <h5 class="fontStyle" style="float: left"><a (click)="viewAuthor(item._id)"><i
+                  class="fas fa-user-graduate"></i>&nbsp;{{item.Name}}</a>
+            </h5>
+            <h6 class="fontStyle" style="float: right">Papers:{{item.totalPaper}}&nbsp;&nbsp;</h6>
+            <h6 class="fontStyle" style="float: right">Citations:{{item.totalCitation}}&nbsp;&nbsp;</h6>
+          </div>
+
+          <div class="card-body">
+            <h6 style="float: left"><i class="fas fa-institution"></i>
+              Affiliation:&nbsp;{{item.affiliation}}
+            </h6><br>
+            <hr>
+            <h6><i class="fas fa-sun"></i>
+              Research Interests:
+            </h6><br>
+            <span *ngFor="let itemq of item.researchInterest">&nbsp;&nbsp;<a (click)="searchCat(itemq)"><span
+                class="badge badge-light">{{itemq}}</span></a>
+            </span>
+            <button style="float: right;" type="button" (click)="deletefav(item._id)" class="btn btn-sm btn-danger"><i class="fas fa-remove"></i>Remove</button>
+          </div>
+        </div><br><br>
+    </div>
+    </div>
+    <!-- ========== -->
+
+    <!-- ====== -->
+    <div class="col-md-5 col-lg-5 col-sm-12" style="padding: 50px">
+    <div [ngStyle]="{display: seco}" *ngFor="let itemm of this.author_result2y">
+        <div class="card">
+
+            <div class="card-header bg-primary">
+            <h5 class="fontStyle" style="float: left"><a (click)="viewAuthor(itemm._id)"><i
+                    class="fas fa-user-graduate"></i>&nbsp;{{itemm.Name}}</a>
+            </h5>
+            <h6 class="fontStyle" style="float: right">Papers:{{itemm.totalPaper}}&nbsp;&nbsp;</h6>
+            <h6 class="fontStyle" style="float: right">Citations:{{itemm.totalCitation}}&nbsp;&nbsp;</h6>
+            </div>
+
+            <div class="card-body">
+            <h6 style="float: left"><i class="fas fa-institution"></i>
+                Affiliation:&nbsp;{{itemm.affiliation}}
+            </h6><br>
+            <hr>
+            <h6><i class="fas fa-sun"></i>
+                Research Interests:
+            </h6><br>
+            <span *ngFor="let itemq of itemm.researchInterest">&nbsp;&nbsp;<a (click)="searchCat(itemq)"><span
+                class="badge badge-light">{{itemq}}</span></a>
+            </span>
+            <button style="float: right;" type="button" (click)="deletefav(itemm._id)" class="btn btn-sm btn-danger"><i class="fas fa-remove"></i>Remove</button>
+            </div>
+        </div><br><br>
+    </div>
+    </div>
+    <!-- ========== -->
+    </div></div>
+
+
+
+</body>
+

@@ -1,0 +1,113 @@
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <div class='container-fluid pro ddd1 pt-1 pl-1 pr-1 stylo'>
+      <!-- <h3 class='alert-danger msg1'>{{this.error_msg.username}}</h3>
+      <h3 class='alert-danger msg1'>{{this.error_msg.email}}</h3>
+      <h3 class='alert-danger msg1'>{{this.error_msg.password}}</h3>
+      <h3 class='alert-danger msg1'>{{this.error_msg.detail}}</h3>
+      <h3 class='alert-success msg1'>{{this.error_msg.message}}</h3>
+      <h3 class='alert-success msg2'>{{this.response_user.detail}}</h3>
+      <h3 class='alert-success msg2'>{{this.response_user.message}}</h3> -->
+      <div class='row profile_img'>
+        <div class='col'>
+          <a target="_blank" href="">
+            <img src="{{dprofile.image}}" alt="Forest">
+          </a>
+          <h3 class='fontStyle' style='margin-top: 10pt;'>{{duser.username}}</h3>
+        </div>
+      </div>
+
+      <div class='row' style='margin-top: 50pt;'>
+        <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>First Name:</h6>
+              <p>{{duser.first_name}}</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 col-lg-4 col-sm-12'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Last Name:</h6>
+              <p>{{duser.last_name}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='row' style='margin-top: 50pt;'>
+        <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Email:</h6>
+              <p>{{duser.email}}</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 col-lg-4 col-sm-12'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Phone:</h6>
+              <p>{{dprofile.phone}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class='row' style='margin-top: 50pt;'>
+        <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Organization:</h6>
+              <p>{{dprofile.organization}}</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 col-lg-4 col-sm-12'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>About:</h6>
+              <p>{{dprofile.about}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='row' style='margin-top: 50pt;'>
+
+        <div class='col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Type:</h6>
+              <p>{{dprofile.typeOf}}</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 col-lg-4 col-sm-12'>
+          <div class="card">
+            <div class="container-fluid containerCard">
+              <h6>Ratings:</h6>
+              <p>555555</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- =============================================== -->
+  </body>
+
+</html>

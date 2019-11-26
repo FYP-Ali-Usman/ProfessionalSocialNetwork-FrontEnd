@@ -189,10 +189,12 @@ function createGraph(svg, graph, url, coAUthorUrl, publicatonUrl) {
                 posY += posY > height / 2 ? -100 : 50;
                 tooltip.interrupt()
                     .style("opacity", 1)
-                    .html("Title: " + this.__data__.title + 
-                    // "<br>URL: " + this.__data__.urlLink + 
-                    "<br>Year: " + this.__data__.year + 
-                    "<br>Overview: " + this.__data__.overview  )
+                    .html(
+                    '<ul class="list-group">'+
+                        '<li class="list-group-item list-group-item-danger">Title: '+ this.__data__.title +
+                        '</li><li class="list-group-item list-group-item-success">Year: ' + this.__data__.year + 
+                        '</li><li class="list-group-item list-group-item-success">About: ' + this.__data__.overview + 
+                    '</li></ul>')
                     .transition().duration(20000).ease(d3.easeLinear)
                     .style("left", posX + "px")
                     .style("top", posY + "px");
@@ -367,25 +369,26 @@ function createGraph(svg, graph, url, coAUthorUrl, publicatonUrl) {
                             this.__data__.eigenvectorCentrality == 0)
                             tooltip.interrupt()
                                 .style("opacity", 1)
-                                .html("Name: " + this.__data__.name + 
-                                // "<br>URL: " + this.__data__.urlLink + 
-                                "<br>Total Papers: " + this.__data__.totalPaper + 
-                                "<br>Total Coauthors: " + this.__data__.totalCoAuthor + 
-                                "<br>Total Citations: " + this.__data__.totalCitation )
+                                .html(
+                                    '<ul class="list-group">'+
+                                '<li class="list-group-item list-group-item-danger">Name: '+ this.__data__.name +
+                                '</li><li class="list-group-item list-group-item-success">Total Papers: ' + this.__data__.totalPaper + 
+                                '</li><li class="list-group-item list-group-item-success">Total Coauthors: ' + this.__data__.totalCoAuthor + 
+                                '</li><li class="list-group-item list-group-item-success">Total Citations: ' + this.__data__.totalCitation+
+                                '</li></ul>')
                                 .transition().duration(20000).ease(d3.easeLinear)
                                 .style("left", posX + "px")
                                 .style("top", posY + "px");
                         else{
                             tooltip.interrupt()
                                 .style("opacity", 1)
-                                .html("Name: " + this.__data__.name + 
-                                // "<br>URL: " + this.__data__.urlLink + 
-                                // "<br>Total Papers: " + this.__data__.totalPaper + 
-                                // "<br>Total Coauthors: " + this.__data__.totalCoAuthor + 
-                                // "<br>Total Citations: " + this.__data__.totalCitation + 
-                                "<br>Degree Centrality: " + this.__data__.degreeCentrality + 
-                                "<br>Closeness Centrality: " + this.__data__.closenessCentrality + 
-                                "<br>Betweenness Centrality: " + this.__data__.betweennessCentrality
+                                .html(
+                                '<ul class="list-group">'+
+                                '<li class="list-group-item list-group-item-danger">Name: '+ this.__data__.name +
+                                '</li><li class="list-group-item list-group-item-success">Degree Centrality: ' + this.__data__.degreeCentrality + 
+                                '</li><li class="list-group-item list-group-item-success">Closeness Centrality: ' + this.__data__.closenessCentrality + 
+                                '</li><li class="list-group-item list-group-item-success">Betweenness Centrality: ' + this.__data__.betweennessCentrality+
+                                '</li></ul>'
                                 // "<br>Eigen Vector Centrality: " + this.__data__.eigenvectorCentrality 
                                 )
                                 .transition().duration(20000).ease(d3.easeLinear)
@@ -408,10 +411,13 @@ function createGraph(svg, graph, url, coAUthorUrl, publicatonUrl) {
                         else{
                             tooltip.interrupt()
                                 .style("opacity", 1)
-                                .html("Name: " + this.__data__.name + 
-                                "<br>Degree Centrality: " + this.__data__.degreeCentrality + 
-                                "<br>Closeness Centrality: " + this.__data__.closenessCentrality + 
-                                "<br>Betweenness Centrality: " + this.__data__.betweennessCentrality
+                                .html(
+                                    '<ul class="list-group">'+
+                                    '<li class="list-group-item list-group-item-danger">Name: '+ this.__data__.name +
+                                    '</li><li class="list-group-item list-group-item-success">Degree Centrality: ' + this.__data__.degreeCentrality + 
+                                    '</li><li class="list-group-item list-group-item-success">Closeness Centrality: ' + this.__data__.closenessCentrality + 
+                                    '</li><li class="list-group-item list-group-item-success">Betweenness Centrality: ' + this.__data__.betweennessCentrality+
+                                    '</li></ul>'
                                 // "<br>Eigen Vector Centrality: " + this.__data__.eigenvectorCentrality  
                                 )
                                 .transition().duration(5000).ease(d3.easeLinear)

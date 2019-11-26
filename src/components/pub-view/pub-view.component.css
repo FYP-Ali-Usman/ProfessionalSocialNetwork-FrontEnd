@@ -28,7 +28,10 @@
 .scrool{
   overflow: auto;
 }
-
+.hovr:hover{
+  color: royalblue;
+  font-weight: bold
+}
 .table-success{
   background-color:  rgb(211, 211, 211);
 } 

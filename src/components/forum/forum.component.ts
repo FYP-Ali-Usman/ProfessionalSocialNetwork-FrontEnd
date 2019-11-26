@@ -53,7 +53,7 @@ export class ForumComponent implements OnInit {
     this.apiservice.getArticles().subscribe(data=>{
       this.article_response=data;
       for (let i = 0; i < this.article_response.length; i++) {
-        this.article_response_obj={id:this.article_response[i].id,title:this.article_response[i].title,discription:this.article_response[i].discription,username:this.article_response[i].user.username,image:this.article_response[i].image,Updated_at:this.article_response[i].Updated_at,tags:JSON.parse(this.article_response[i].tags)};
+        this.article_response_obj={id:this.article_response[i].id,title:this.article_response[i].title,discription:this.article_response[i].discription,username:this.article_response[i].user.username,image:this.article_response[i].image,Updated_at:this.article_response[i].Updated_at,tags:JSON.parse(this.article_response[i].tags),userId:this.article_response[i].user.id};
 
         this.article_response2.push(this.article_response_obj);    
       }
@@ -99,6 +99,9 @@ export class ForumComponent implements OnInit {
     console.log('ddd'+id)
     this.router.navigate(['/postview',id])
   }
+  openProfile(id3){
+    this.router.navigate(['/profile',id3])
+  }
   goLog()
   {
     this.router.navigate(['/Login'])
@@ -126,7 +129,6 @@ export class ForumComponent implements OnInit {
       this.article_response=data;
       // console.log(this.article_response);
       $('.msg1').css('display', 'block');
-      this.ngOnInit();
     },
     error=>{
         this.artErrorMsg=error.error;
@@ -138,7 +140,7 @@ export class ForumComponent implements OnInit {
     this.discription='';
     this.tagsJson='';
     this.tagText='';
-    
+    this.ngOnInit();
     window.scroll(0,0);
   }
   updateArticle(){
@@ -176,7 +178,6 @@ export class ForumComponent implements OnInit {
       console.log(this.article_response);
       $('.msg1').css('display', 'block');
       this.get_user_article();
-  
     },
     error=>{
         this.artErrorMsg=error.error;

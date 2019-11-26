@@ -222,6 +222,12 @@ createCom(com):Observable<Comment[]>{
 searchAuther(id3):Observable<any[]>{
   return this.http.get<any[]>("http://127.0.0.1:8000/search/authSearch",{params:{name:id3}});
 }
+searchAutherFav(id3):Observable<any[]>{
+  return this.http.get<any[]>("http://127.0.0.1:8000/search/fav",{params:{id:id3}});
+}
+searchAutherYeild(id3):Observable<any[]>{
+  return this.http.get<any[]>("http://127.0.0.1:8000/search/authSearchYeild",{params:{name:id3}});
+}
 searchAuther2(id3):Observable<any[]>{
   return this.http.get<any[]>("http://127.0.0.1:8000/search/oneSearch",{params:{id:id3}});
 }

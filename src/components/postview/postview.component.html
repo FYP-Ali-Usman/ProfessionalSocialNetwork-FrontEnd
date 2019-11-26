@@ -22,7 +22,7 @@
           <!-- Author -->
           <p class="lead" style="font-weight: bolder">
             BY:
-            <a href="#">{{this.article_response3.username}}</a>
+            <a (click)="openProfile(this.article_response3.userId)" style="color:blueviolet;">{{this.article_response3.username}}</a>
           </p>
 
           <hr>
@@ -71,11 +71,11 @@
           <div class="media mb-4" *ngFor="let item of this.comment_response">
             <i class="fas fa-user-circle"></i>
             <div class="media-body">
-              <h6 class="mt-0" style="font-weight: bolder"><a class="namec">{{item.user.username}}</a><span style="float: right;"
+              <h6 class="mt-0" style="font-weight: bolder"><a class="namec" (click)="openProfile(item.user.id)" style="color:blueviolet;">{{item.user.username}}</a><span style="float: right;"
                 >POSTED AT&nbsp;&nbsp;-:{{item.Updated_at.substr(0,10)}}</span>&nbsp;</h6><hr>
               {{item.body}}
               <br>
-              <img width="170px" height="150px" class="img-fluid rounded" src="{{item.image}}">
+              <img width="170px" height="150px" class="img-fluid rounded" src="{{item.image}}" alt="11">
             </div>
 
           </div>

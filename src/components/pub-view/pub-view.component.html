@@ -19,14 +19,14 @@
         <!-- ==================================================== -->
         <div class="row container-fluid" style="padding-top: 5px;">
             <div class="col-md-7 col-lg-7 col-sm-12 " style="padding-left: 50px; background-color: rgb(255, 255, 255);">
-                <br><span *ngFor="let item of this.pub_result_obj.coAuthors"><span class="badge badge-pill badge-success stylo">{{item.name}}</span>
+                <br><span *ngFor="let item of this.pub_result_obj.coAuthors"><span class="badge badge-pill badge-success stylo" (click)="viewCoauther(item.linkUrl)">{{item.name}}</span>
                 &nbsp;&nbsp;
                 </span><br><br>
                 <p class="stylo">{{this.pub_result_obj.abstract}}</p><br><br>
-                <h5 style="display: inline;">Catogories: </h5>
-                <span *ngFor="let item1 of this.pub_result_obj.catogories"><button class="btn btn-outline-dark btn-sm">{{item1}}</button>
+                <h5 style="display: inline;">Catogories</h5>
+                <span *ngFor="let item1 of this.pub_result_obj.catogories"><button class="btn btn-outline-dark btn-sm" (click)="searchCatt(item1)">{{item1}}</button>
                 </span><br><br>
-                <h5 style="display: inline;">External Link: </h5>
+                <h5 style="display: inline;">External Link</h5>
                 <button class="btn btn-outline-warning btn-sm">PDF link</button><br>
 <!-- =============================================== -->
                 <div class="container-fluid">
@@ -115,7 +115,7 @@
                 </div>
 <!-- ==================================================end======================== -->
             <!-- Blog Post -->
-            <div class="container-fluid" id="postss" style="background-color: snow;">
+            <div class="container-fluid" style="background-color: snow;">
             <br>
             <p class='allo'><button type="button" (click)="openModel()" class="btn btn-primary"><i
             class="fa fa-plus" aria-hidden="true"></i>
@@ -124,19 +124,17 @@
             <button id='loggg' type="button" (click)="goLog()" class="btn
                     btn-success stylo">Login To Post Comment</button>
             <hr><br>
-            <div class="card mb-4" *ngFor="let item of
+            <div class="card mb-4"  id="postss" *ngFor="let item of
             this.article_response3">
             <div class="card-body">
-              <h2 class="card-title stylo" (click)="viewComment(item.id)"><a>{{item.title}}</a><button style="float:
-                  right;" type="button" class="btn btn-sm btn-outline-warning"><i class="fas fa-heart"></i>Add
-                  to favovourite</button></h2>
+              <h2 class="card-title stylo" (click)="viewComment(item.id)"><a>{{item.title}}</a></h2>
               <p class="card-text stylo">{{item.discription}}</p>
               <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
             </div>
             <div class="card-footer text-muted">
               <div class="row">
                 <div class="col-md-12 post-header-line stylo">
-                  <i class="fas fa-user"></i>By <a href="#">{{item.username}}</a>
+                  <i class="fas fa-user"></i>By <a (click)="openProfile(item.userId)" style="color:blueviolet;">{{item.username}}</a>
                   &nbsp;|&nbsp; <i class="fas fa-calendar"></i>{{item.Updated_at.substr(0,10)}}&nbsp;|&nbsp;
                   <i class="fas fa-comment"></i><a style="color: rgb(67, 95,
                     221)" (click)="viewComment(item.id)">
@@ -148,18 +146,19 @@
             </div>
           </div>
         </div>
+
             </div>
             <div class="col-md-5 col-lg-5 col-sm-12" style="padding-left: 50px; background-color: snow">
                 <div class="card">
                     <div class="card-header bg-info">Similar publications from same author:</div><br>
                     <div class="card-body scrool" [ngStyle]="{'height': hhh}">
-                        <table class="table table-success table-striped rounded-left" style="border: 1px solid black; background-color: rgb(211, 211, 211);"  *ngFor="let item of this.recommendPub.sameAuthor">
+                        <table class="table table-light table-striped rounded-left" style="border: 1px solid black; background-color: rgb(211, 211, 211);"  *ngFor="let item of this.recommendPub.sameAuthor">
                         <tbody>
                             <tr>
-                            <td style="font-weight: bolder;">{{item.title}}&nbsp;|&nbsp;<p style="font-size: 10px;">{{item.year}}</p></td>
+                            <td style="font-weight: bolder;"  class="hovr"><a (click)="openPub(item.id)">{{item.title}}</a>&nbsp;|&nbsp;<p style="font-size: 10px;">{{item.year}}</p></td>
                             </tr>
                             <tr>
-                            <td><span *ngFor="let item1 of item.category"><button class="btn btn-outline-dark btn-sm">{{item1}}</button>
+                            <td><span *ngFor="let item1 of item.category"><button class="btn btn-outline-dark btn-sm" (click)="searchCatt(item1)">{{item1}}</button>
                                 </span></td>
                             </tr>
                         </tbody>
@@ -171,13 +170,13 @@
                 <div class="card">
                     <div class="card-header bg-info">Similar publications from different authors:</div><br>
                     <div class="card-body scrool" [ngStyle]="{'height': hhh2}">
-                        <table class="table table-success table-striped rounded-left" style="border: 1px solid black; background-color: rgb(211, 211, 211);"  *ngFor="let item of this.recommendPub.notSameAuthor">
+                        <table class="table table-light table-striped rounded-left" style="border: 1px solid black; background-color: rgb(211, 211, 211);"  *ngFor="let item of this.recommendPub.notSameAuthor">
                         <tbody>
                             <tr>
-                            <td style="font-weight: bolder;">{{item.title}}&nbsp;|&nbsp;<p style="font-size: 10px;">{{item.year}}</p></td>
+                            <td style="font-weight: bolder;" class="hovr"><a (click)="openPub(item.id)">{{item.title}}</a>&nbsp;|&nbsp;<p style="font-size: 10px;">{{item.year}}</p></td>
                             </tr>
                             <tr>
-                            <td><span *ngFor="let item1 of item.category"><button class="btn btn-outline-dark btn-sm">{{item1}}</button>
+                            <td><span *ngFor="let item1 of item.category"><button class="btn btn-outline-dark btn-sm" (click)="searchCatt(item1)">{{item1}}</button>
                                 </span></td>
                             </tr>
                         </tbody>

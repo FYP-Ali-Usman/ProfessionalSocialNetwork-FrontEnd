@@ -6,6 +6,22 @@
     font-family: "Times New Roman", Times, serif;
     text-shadow: slategray 1px 0 10px;
   }
+.hovr{
+  color: royalblue;
+}
+.scrool{
+  overflow: auto;
+}
+#firstehh{
+  height: 1100px;
+}
+#firste{
+  height: 1100px;
+}
+.hovr:hover{
+    color: rgb(184, 51, 182);
+    font-weight: bold;
+  }
 .top{
     background: linear-gradient(to bottom, #776be2 0%, #00ccff 100%);
     padding-bottom: 20px;
@@ -14,13 +30,13 @@
 .stylo{
   font-family: "Times New Roman", Times, serif;
 }
-.card {
+.card1 {
   /* Add shadows to create the "card" effect */
   box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2 );
   transition: 0.3s;
 }
 
 /* On mouse-over, add a deeper shadow */
-.card:hover {
+.card1:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }

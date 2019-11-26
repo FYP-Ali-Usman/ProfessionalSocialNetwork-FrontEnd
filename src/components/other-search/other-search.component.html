@@ -6,7 +6,7 @@
       <div class="col-md-3 col-lg-3 col-sm-12 offset-md-4 offset-lg-4
         offset-sm-0">
         <!-- Default input -->
-        <input type="text" name='Author' class="form-control" [(ngModel)]="author" placeholder="Author Name">
+        <input type="text" name='Author' class="form-control" [(ngModel)]="author" placeholder="Search again">
       </div>
       <!-- Grid column -->
       <div class='col-md-1 col-lg-1 col-sm-12'>
@@ -32,9 +32,44 @@
         <div class="spinner-grow text-success"></div>
       </div>
     </div>
-    <div class="row" style="padding-left: 100px; padding-top: 30px">
-      <div class="col-md-6 col-lg-6 col-sm-12">
-        <div *ngFor="let item of this.author_result2">
+    <div class="row" style="padding-left: 20px; padding-right: 20px; padding-top: 30px">
+<!-- start publication -->
+      <div class="col-md-7 col-lg-7 col-sm-12">
+        <h5 align="center" style="padding-top: 10px; font-weight: bolder; font-size: 30px; display: inline;"><b>Publications</b></h5>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="padding-left: 20%; font-size: 70%;">{{this.pubLength}} records</span><hr>
+        <div class="scrool" id="firstehh">
+          <div *ngFor="let item of this.pub_result2">
+          <div>
+            <div>
+              <p style="font-weight: bolder;" class="hovr">
+              <a (click)="openPub(item._id)">
+                <h5 class="hovr"><b>{{item.title}}</b></h5>
+                
+              </a>&nbsp;|&nbsp;
+              <span style="font-size: 10px;">{{item.year}}</span>
+              </p>
+            </div>
+
+            <div>
+              <span *ngFor="let item1 of item.catogories">
+                <button class="btn btn-outline-dark btn-sm" (click)="searchCat(item1)">{{item1}}</button>
+              </span>    
+                <br>
+            </div>
+        </div><br><hr>
+      </div>
+        <!--  -->
+        
+          <!--  -->
+
+      </div>
+    </div>
+<!-- ==== start auther -->
+      <div class="col-md-5 col-lg-5 col-sm-12">
+      <h5 align="center" style="padding-top: 10px; font-weight: bolder; font-size: 25px; display: inline;"><b>Authors</b></h5>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span style="padding-left: 15%; font-size: 70%;">{{this.authLength}} records</span><hr>
+      <div class="scrool" id="firste">
+        <div [ngStyle]="{display: fir}" *ngFor="let item of this.author_result2">
         <div class="card">
 
           <div class="card-header bg-primary">
@@ -53,26 +88,48 @@
             <h6><i class="fas fa-sun"></i>
               Research Interests:
             </h6><br>
-            <span *ngFor="let itemq of item.researchInterest">&nbsp;&nbsp;<span
-                class="badge badge-light">{{itemq}}</span>
+            <span *ngFor="let itemq of item.researchInterest">&nbsp;&nbsp;<a (click)="searchCat(itemq)"><span
+                class="badge badge-light">{{itemq}}</span></a>
             </span>
           </div>
         </div><br><br>
       </div>
-      </div>
-      <div class="col-md-4 col-lg-4 col-sm-12 offset-md-2 offset-lg-2
-        offset-sm-0">
-        <div class="card">
-          <div class="card-header bg-light">Recomendations:</div>
-          <div class="card-body">Content</div>
-        </div>
-        <div class="card">
-          <div class="card-header bg-light">Recomendations:</div>
-          <div class="card-body">Content</div>
-        </div>
 
+      <p class="fontStyle" style="color: blue; display: inline;" [ngStyle]="{display: llod}">Seraching for more authors</p><div style="display: inline;" class="spinner-border text-primary" [ngStyle]="{display: llod}"></div>
+      
+      <div [ngStyle]="{display: seco}" *ngFor="let item of this.author_result2y">
+        <div class="card">
+
+          <div class="card-header bg-primary">
+            <h5 class="fontStyle" style="float: left"><a (click)="viewAuthor(item._id)"><i
+                  class="fas fa-user-graduate"></i>&nbsp;{{item.Name}}</a>
+            </h5>
+            <h6 class="fontStyle" style="float: right">Papers:{{item.totalPaper}}&nbsp;&nbsp;</h6>
+            <h6 class="fontStyle" style="float: right">Citations:{{item.totalCitation}}&nbsp;&nbsp;</h6>
+          </div>
+
+          <div class="card-body">
+            <h6 style="float: left"><i class="fas fa-institution"></i>
+              Affiliation:&nbsp;{{item.affiliation}}
+            </h6><br>
+            <hr>
+            <h6><i class="fas fa-sun"></i>
+              Research Interests:
+            </h6><br>
+            <span *ngFor="let itemq of item.researchInterest">&nbsp;&nbsp;<a (click)="searchCat(itemq)"><span
+                class="badge badge-light">{{itemq}}</span></a>
+            </span>
+          </div>
+        </div><br><br>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+
+
+
+
+    </div>
+
+    <br><br><br>
   </div>
 </body>

@@ -18,6 +18,8 @@ import {AfterSearchComponent} from '../components/after-search/after-search.comp
 import {OtherSearchComponent} from '../components/other-search/other-search.component';
 import {AuthViewComponent} from '../components/auth-view/auth-view.component';
 import {PubViewComponent} from '../components/pub-view/pub-view.component';
+import {ProfileViewComponent} from '../components/profile-view/profile-view.component';
+import {FavouritesComponent} from '../components/favourites/favourites.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FileUploadModule} from 'ng2-file-upload';
 // import { NgbCarousel} from '@ng-bootstrap/ng-bootstrap';
@@ -39,6 +41,8 @@ const appRoutes: Routes = [
   {path: 'searchfor/:author', component:OtherSearchComponent},
   {path: 'auther/:id', component:AuthViewComponent},
   {path: 'publication/:id', component:PubViewComponent},
+  {path: 'profile/:id', component:ProfileViewComponent},
+  {path: 'favourites', component:FavouritesComponent},
 
 ];
 
@@ -47,6 +51,7 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     HeaderComponent,
+    FavouritesComponent,
     SingupComponent,
     LoginComponent,
     FooterComponent,
@@ -56,7 +61,8 @@ const appRoutes: Routes = [
     AfterSearchComponent,
     OtherSearchComponent,
     AuthViewComponent,
-    PubViewComponent
+    PubViewComponent,
+    ProfileViewComponent
   ],
   imports: [
     BrowserModule,

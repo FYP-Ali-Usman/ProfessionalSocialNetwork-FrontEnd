@@ -1,8 +1,33 @@
 <body>
   <div class='container-fluid lighten-3 d-block homeSearchePan pt-1 pl-1 pr-1'>
     
-    <div class="row">
-      <div class="col-md-4 col-lg-4 col-sm-12 offset-md-4 offset-lg-4 offset-sm-0">
+    <!-- Grd row -->
+    <div class="row top">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-sm-12 offset-md-3 offset-lg-3 offset-sm-0">
+        <!-- Default input -->
+        <input #url type="text" name='url' class="form-control" placeholder="Url">
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-sm-12">
+        <!-- Default input -->
+        <input #name type="text" name='organization' class="form-control" placeholder="Organization name">
+      </div>
+      <!-- Grid column -->
+      <div class='col-md-1 col-lg-1 col-sm-12'>
+        <button type='submit' mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light"
+          mdbWavesEffect type="submit" (click)="onPress(url.value, name.value)"><i class="fa fa-search fa-2x"
+            aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Grd row -->
+
+    <div class="row " [ngStyle]="{'display': loading}">
+      <div class="col-md-4 col-lg-4 col-sm-12 offset-md-4 offset-lg-4
+        offset-sm-0">
         <div class="spinner-grow text-muted"></div>
         <div class="spinner-grow text-primary"></div>
         <div class="spinner-grow text-success"></div>
@@ -15,5 +40,6 @@
         <div class="spinner-grow text-success"></div>
       </div>
     </div>
+    
   </div>
 </body>

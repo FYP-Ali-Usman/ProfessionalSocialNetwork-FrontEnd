@@ -23,24 +23,16 @@
 
       <div class='container-fluid text-center fdg'>
         <!-- Grd row -->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-4 col-sm-12 offset-md-4 offset-lg-4 offset-sm-0">
-            <span class="btn btn-dark btn-sm"
-              (click)="ss2()">By
-              Author
-              Name</span><span class="btn btn-dark btn-sm" (click)="ss1()">BY Faculty Url</span>
-          </div>
-        </div>
+        <!--  -->
         
         <!-- Grd row -->
         <div [ngStyle]="{display: sss2}">
           <div class="row">
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-sm-12 offset-md-4 offset-lg-4 offset-sm-0">
+            <div class="col-md-6 col-lg-6 col-sm-12 offset-md-3 offset-lg-3 offset-sm-0">
               <!-- Default input -->
               <input type="text" name='Author' id='authorId' class="form-control" [(ngModel)]="author"
-                placeholder="Author Name">
+                placeholder="Search for an author, article, publication, institute or any of your interest.">
             </div>
             <!-- Grid column -->
             <div class='col-md-1 col-lg-1 col-sm-12'>
@@ -51,36 +43,63 @@
           </div><br><br><br><br>
         </div>
         <!-- Grd row -->
-        <!-- Grd row -->
-        <div [ngStyle]="{display: sss1}">
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-sm-12 offset-md-3 offset-lg-3 offset-sm-0">
-              <!-- Default input -->
-              <input #url type="text" name='url' class="form-control" placeholder="Url">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-sm-12">
-              <!-- Default input -->
-              <input #name type="text" name='organization' class="form-control" placeholder="Organization name">
-            </div>
-            <!-- Grid column -->
-            <div class='col-md-1 col-lg-1 col-sm-12'>
-              <button type='submit' mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light"
-                mdbWavesEffect type="submit" (click)="onPress(url.value, name.value)"><i class="fa fa-search fa-2x"
-                  aria-hidden="true"></i>
-              </button>
-            </div>
-          </div><br><br><br><br><br><br>
-        </div>
-        <!-- Grd row -->
 
 
       </div>
     </div>
   </div>
+<h5 class="fontStyle" align="center" style="padding-top: 15px; font-weight: bolder; font-size: 30px;"><b>We recommend you !</b></h5>
+  <div class='cardHolder fontStyle'>
+      <div class='container-fluid'>
+  
+        <div class='row' style="padding-left: 20px; padding-right: 20px;">
+  
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div *ngFor="let item of this.recommendations">
+            <div class="card">
+              <div class="card-header bg-info">
+                <p style="font-weight: bolder;" class="hovr">
+                  <a (click)="openPub(item.id)">
+                    <h5 class="hovr" style="color: snow;"><b>{{item.title}}</b></h5>
+                    
+                  </a>&nbsp;|&nbsp;
+                  <span style="font-size: 10px;">{{item.year}}</span>
+                </p>
+              </div><br>
+              <div class="card-body" > 
+                <span *ngFor="let item1 of item.category">
+                  <button class="btn btn-outline-dark btn-sm" (click)="searchCatttt(item1)">{{item1}}</button>
+                </span>    
+                <br>
+              </div>
+            </div><br></div>
+          </div>
+  
+          <div class="col-md-6 col-lg-6 col-sm-12">
+              <div *ngFor="let item of this.recommendations2">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <p style="font-weight: bolder;" class="hovr">
+                    <a (click)="openPub(item.id)">
+                      <h5 class="hovr" style="color: snow;"><b>{{item.title}}</b></h5>
+                      
+                    </a>&nbsp;|&nbsp;
+                    <span style="font-size: 10px;">{{item.year}}</span>
+                  </p>
+                </div><br>
+                <div class="card-body" > 
+                  <span *ngFor="let item1 of item.category">
+                    <button class="btn btn-outline-dark btn-sm" (click)="searchCatttt(item1)">{{item1}}</button>
+                  </span>    
+                  <br>
+                </div>
+              </div><br></div>
+            </div>
+  
+        </div>
+      </div>
+    </div>
+  
 
   <div class='cardHolder'>
     <div class='container-fluid'>
@@ -91,7 +110,7 @@
           <div class="card">
             <div class="container-fluid containerCard">
               <h4 class="hovr" (click)="openForum()"><a><b>JOIN OUR COMMUNITY</b></a></h4>
-              <p>Join our communiyt to help get helped. Post your queris and find response from a large community.</p>
+              <p>Join our communiyt to help get helped. Post your queris and find response from a large community. Queries about publications and help other and get helped</p>
             </div>
           </div>
         </div>
@@ -100,11 +119,11 @@
           <div class="card">
             <div class="container-fluid containerCard">
               <h4><b>CONTACT US</b></h4>
-              <table class="table table-hover table-bordered">
+              <table class="table table-hover table-bordered table-responsive">
                 <tbody>
                   <tr>
-                    <td>  <i class="fas fa-facebook-square"></i> facebook.com/usman</td>
-                    <td> <i class="fas fa-mail-reply"></i> usman30.1996@hotmail.com</td>
+                    <td>  <i class="fab fa-facebook-f"></i> facebook.com/usman</td>
+                    <td> <i class="fas fa-envelope"></i> usman30.1996@hotmail.com</td>
                     <td> <i class="fas fa-phone"></i>0302-5081347</td>
 
                   </tr>
@@ -115,72 +134,12 @@
         </div>
 
       </div>
+      <!-- ================= -->
 
-
-    </div>
-  </div>
-
-  <div class='cardHolder'>
-    <div class='container-fluid'>
-
-      <div class='row'>
-
-        <div class="col-md-6 col-lg-6 col-sm-12">
-          <div class="card">
-            <div class="container-fluid containerCard">
-              <h4><b>John Doe</b></h4>
-              <p>Architectbajdcvbiasdcv cavvcaskvckavckasbcjacvbjavcjasvcsajvcjsavcjascjvsjcvsajcasjcvjacd
-                ddvbcasksdvckavak bvckasvckavckasca aaavckasvckavca cca & Engineer</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-6 col-sm-12">
-          <div class="card">
-            <div class="container-fluid containerCard">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & bkasjd adfga fa fagfag agaigaigfacva
-                ejbsdjkbfsjdcbsjfdjfbjdfjdfgjdfbjdfbjdfbdjfdjfvbbbbbagkgcaigfkacvddgfd dggf df df df dg d fkgsd sd
-                fgfskgfksgfsf sf sdf ba a agifgakgcda Engineer</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
 
 
     </div>
   </div>
 
-  <div class='cardHolder'>
-    <div class='container-fluid'>
-
-      <div class='row'>
-
-        <div class="col-md-6 col-lg-6 col-sm-12">
-          <div class="card">
-            <div class="container-fluid containerCard">
-              <h4><b>John Doe</b></h4>
-              <p>Architectbajdcvbiasdcv cavvcaskvckavckasbcjacvbjavcjasvcsajvcjsavcjascjvsjcvsajcasjcvjacd
-                ddvbcasksdvckavak bvckasvckavckasca aaavckasvckavca cca & Engineer</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-6 col-sm-12">
-          <div class="card">
-            <div class="container-fluid containerCard">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & bkasjd adfga fa fagfag agaigaigfacva
-                ejbsdjkbfsjdcbsjfdjfbjdfjdfgjdfbjdfbjdfbdjfdjfvbbbbbagkgcaigfkacvddgfd dggf df df df dg d fkgsd sd
-                fgfskgfksgfsf sf sdf ba a agifgakgcda Engineer</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
-  </div>
+  
 </body>

@@ -105,12 +105,12 @@
       </div>
 
       <div class='row' style='margin-top: 50pt;'>
-        <div class='col-md-3 col-lg-3 col-sm-12 offset-md-2 offset-lg-2'>
+        <div class='col-md-2 col-lg-2 col-sm-12 offset-md-2 offset-lg-2'>
           <input type="button" name="Update" Value='Update Account'
             id="profileid" (click)="uploadForm()"
             class="btn btn-default btn-lg">
         </div>
-        <div class='col-md-3 col-lg-3 col-sm-12'>
+        <div class='col-md-2 col-lg-2 col-sm-12'>
           <input type="button" name="Update" Value='Update Profile'
             id="profileid" (click)="uploadForm2()"
             class="btn btn-default btn-lg">
@@ -118,6 +118,11 @@
         <div class='col-md-2 col-lg-2 col-sm-12'>
           <input type="submit" name="Delete" Value='Delete Profile'
             id="deleteid" class="btn btn-danger btn-lg">
+        </div>
+        <div class='col-md-3 col-lg-3 col-sm-12'>
+          <input type="button" name="Update" Value='Clear Search History'
+            id="profileid" (click)="clearSerch(dprofile.id)"
+            class="btn btn-default btn-lg">
         </div>
       </div>
 

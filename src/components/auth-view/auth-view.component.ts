@@ -37,11 +37,16 @@ export class AuthViewComponent implements OnInit {
   user_id;
   dprofile={};
   allowAdd:boolean=true;
+  allowAdd2:boolean=false;
   authRecomend=[]
   authRecomendObj={}
   profile;
+  profile2;
   response_user;
   error_msg;
+  favourite=[];
+  showFav:any;
+  showFav2:any;
   @Input()
 
   margin = {top: 20, right: 20, bottom: 30, left: 40};
@@ -50,6 +55,8 @@ export class AuthViewComponent implements OnInit {
   constructor(private apiservice: ApiService , private router: Router, private _Activatedroute:ActivatedRoute) { }
 
   ngOnInit() {
+    this.showFav='none';
+    this.showFav2='none';
     this.coauthbutton='none';
     this.pubbutton='none';
     this.network_authers=[]
@@ -64,10 +71,11 @@ export class AuthViewComponent implements OnInit {
           this.author_result_obj=JSON.parse(data[index]);
           this.main_auther=this.author_result_obj['urlLink'];
           this.affilia=this.author_result_obj['affiliation'];
-          // console.log(this.author_result_obj);
+          console.log(this.author_result_obj);
         }
   // ==============================================================
       if(this.apiservice.loggedIn() == true){
+        console.log('vjacvjvdsajv ');
         // ===
         this.user_id=this.apiservice.getUserId();
         this.apiservice.getProfile(this.user_id).subscribe(datadd => {
@@ -75,6 +83,27 @@ export class AuthViewComponent implements OnInit {
           const kkk = datadd;
           this.dprofile=kkk;
           console.log(this.dprofile);
+// ==============================================================
+      this.favourite=JSON.parse(this.dprofile['favouriteAuthors']);
+      console.log(this.favourite)
+      if(this.favourite!=null && this.favourite!=undefined){
+        for (let index = 0; index < this.favourite.length; index++) {
+          if(this.favourite[index]==this.query){
+            this.showFav='none';
+            this.showFav2='inline';
+            break;
+          }
+          else{
+            this.showFav='inline';
+            this.showFav2='none';
+          }
+        }
+      }else{
+        this.showFav='inline';
+        this.showFav2='none';
+      }
+// =====================================================
+
           this.authRecomend=JSON.parse(this.dprofile['authInterest']);
           if(this.authRecomend!=null && this.authRecomend!=undefined){
             for (let index = 0; index < this.authRecomend.length; index++) {
@@ -246,6 +275,55 @@ export class AuthViewComponent implements OnInit {
     );
 
     this.authRecomend = [];
+  }
+  searchCattt(cat){
+    this.router.navigate(['/searchfor',cat]);
+  }
+
+  addFavorit(aid){
+    console.log(aid['$oid']);
+    this.favourite=JSON.parse(this.dprofile['favouriteAuthors']);
+    if(this.favourite!=null && this.favourite!=undefined){
+      for (let index = 0; index < this.favourite.length; index++) {
+        if(this.favourite[index]==aid['$oid']){
+          this.allowAdd2=true;
+          break;
+        }
+      }
+      if(this.allowAdd2==false){
+        this.favourite.push(aid['$oid']);
+      }
+    }
+    else{
+      this.favourite=[];
+      this.favourite.push(aid['$oid']);
+    }
+
+    const formDataw = new FormData();
+    this.profile2 = {id:this.dprofile['id'],typeOf:this.dprofile['typeOf'],organization:this.dprofile['organization'],about:this.dprofile['about'],favouriteAuthors:JSON.stringify(this.favourite)}
+    console.log(this.profile);
+    
+    formDataw.append('id', this.profile2['id']);
+    formDataw.append('favouriteAuthors', this.profile2['favouriteAuthors']);
+    formDataw.append('typeOf', this.profile2['typeOf']);
+    formDataw.append('organization', this.profile2['organization']);
+    formDataw.append('about', this.profile2['about']);
+    console.log(formDataw);
+    this.apiservice.updateProfile(formDataw).subscribe(data => {
+      $('.msg2').css('visibility', 'visible');
+      console.log('profile updated');
+      console.log(data);
+      this.response_user = data;
+      $('.msg1').css('visibility', 'hidden');
+    },error=>{
+      console.log(error);
+      $('.msg1').css('visibility', 'visible');
+      this.error_msg = error.error;
+    }
+    );
+    this.favourite=[];
+    this.showFav='none';
+    this.showFav2='inline';
   }
 
 }

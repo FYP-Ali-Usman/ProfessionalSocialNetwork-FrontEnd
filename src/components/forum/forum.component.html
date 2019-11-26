@@ -40,7 +40,7 @@
                 <div class="card-footer text-muted">
                   <div class="row">
                     <div class="col-md-12 post-header-line stylo">
-                      <i class="fas fa-user"></i>By <a href="#">{{item.username}}</a>
+                      <i class="fas fa-user"></i>By <a (click)="openProfile(item.userId)" style="color:blueviolet;">{{item.username}}</a>
                       &nbsp;|&nbsp; <i class="fas fa-calendar"></i>{{item.Updated_at.substr(0,10)}}&nbsp;|&nbsp;
                       <i class="fas fa-comment"></i><a style="color: rgb(67, 95,
                         221)" (click)="viewComment(item.id)">

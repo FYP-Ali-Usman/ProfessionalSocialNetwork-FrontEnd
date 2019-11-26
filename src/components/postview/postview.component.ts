@@ -49,7 +49,7 @@ export class PostviewComponent implements OnInit {
       
       this.article_response.push(data);
       for (let i = 0; i < this.article_response.length; i++) {
-        this.article_response_obj={id:this.article_response[i].id,title:this.article_response[i].title,discription:this.article_response[i].discription,username:this.article_response[i].user.username,image:this.article_response[i].image,Updated_at:this.article_response[i].Updated_at,tags:JSON.parse(this.article_response[i].tags)};
+        this.article_response_obj={id:this.article_response[i].id,title:this.article_response[i].title,discription:this.article_response[i].discription,username:this.article_response[i].user.username,image:this.article_response[i].image,Updated_at:this.article_response[i].Updated_at,tags:JSON.parse(this.article_response[i].tags),userId:this.article_response[i].user.id};
 
         this.article_response2.push(this.article_response_obj);    
       }
@@ -79,6 +79,9 @@ export class PostviewComponent implements OnInit {
   }
   goLog(){
     this.router.navigate(['/Login']);
+  }
+  openProfile(id3){
+    this.router.navigate(['/profile',id3])
   }
   selected_image:File=null;
   onFileSelected(event){

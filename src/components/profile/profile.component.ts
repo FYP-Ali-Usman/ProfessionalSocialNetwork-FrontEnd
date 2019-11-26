@@ -55,8 +55,8 @@ export class ProfileComponent implements OnInit {
 
     this.apiservice.getUser(this.user_id).subscribe(datadd => {
       console.log('profile retrieved');
-      const kkk = datadd;
-      this.duser=kkk;
+      const kkkk = datadd;
+      this.duser=kkkk;
 
     },error=>{
       console.log(error);
@@ -235,7 +235,39 @@ export class ProfileComponent implements OnInit {
     $('.ddd3').css('display', 'none');
     this.ngOnInit();
   }
+  clearSerch(id3){
+    if(this.apiservice.loggedIn() == true){
+    const formData = new FormData();
+    this.profile = {id:id3,typeOf:this.dprofile['typeOf'],organization:this.dprofile['organization'],about:this.dprofile['about'],authInterest:null,pubInterest:null}
+    console.log(this.profile);
+    
+    formData.append('id', this.profile['id']);
+    formData.append('phone', this.profile['phone']);
+    formData.append('typeOf', this.profile['typeOf']);
+    formData.append('organization', this.profile['organization']);
+    formData.append('about', this.profile['about']);
+    formData.append('pubInterest', this.profile['pubInterest']);
+    formData.append('authInterest', this.profile['authInterest']);
+    
+    this.apiservice.updateProfile(formData).subscribe(data => {
+      $('.msg2').css('visibility', 'visible');
+      console.log('profile updated');
+      console.log(data);
+      this.response_user = data;
+      $('.msg1').css('visibility', 'hidden');
+      this.ngOnInit();
+    },error=>{
+      console.log(error);
+      $('.msg1').css('visibility', 'visible');
+      this.error_msg = error.error;
+    }
+    );
 
+    this.profile={};
+    window.scroll(0,0);
+ 
+    }
+  }
   onSubmit(){
     this.user_id=this.apiservice.getUserId();
     this.user = {id:this.user_id, username: this.username, first_name:this.first_name, last_name:this.last_name, email:this.email};

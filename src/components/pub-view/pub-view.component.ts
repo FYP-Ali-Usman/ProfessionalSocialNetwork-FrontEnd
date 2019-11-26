@@ -27,6 +27,9 @@ export class PubViewComponent implements OnInit {
   discription:string="";
   image:string;
   tagText:any="";
+  coAuthorUrl:any='';
+  coauthers:any;
+  coauthSearchData:any;
   tags:string[];
   tags2:string[];
   tagsJson;
@@ -70,20 +73,17 @@ export class PubViewComponent implements OnInit {
       this.yourFeed=false;}
 // ================================================articles
       this.apiservice.getPubArticles(this.query).subscribe(data=>{
-        console.log(data)
         if(data.length==0){
           $('#postss').css('display', 'none');
         }
         this.article_response=data;
         for (let i = 0; i < this.article_response.length; i++) {
-          this.article_response_obj={id:this.article_response[i].id,title:this.article_response[i].title,discription:this.article_response[i].discription,username:this.article_response[i].user.username,image:this.article_response[i].image,Updated_at:this.article_response[i].Updated_at,tags:JSON.parse(this.article_response[i].tags)};
+          this.article_response_obj={id:this.article_response[i].id,title:this.article_response[i].title,discription:this.article_response[i].discription,username:this.article_response[i].user.username,image:this.article_response[i].image,Updated_at:this.article_response[i].Updated_at,tags:JSON.parse(this.article_response[i].tags),userId:this.article_response[i].user.id};
           // this.article_response_obj=JSON.parse(this.article_response[i]);
-          console.log(this.article_response_obj)
           this.article_response2.push(this.article_response_obj);    
         }
         this.article_response3=this.article_response2;
         this.article_response2=[];
-        console.log(this.article_response3);
       },
       error=>{
           this.artErrorMsg=error.error;
@@ -98,7 +98,6 @@ export class PubViewComponent implements OnInit {
           
           this.pub_result.push(this.pub_result_obj);
           }
-          console.log(this.pub_result);
           if(this.apiservice.loggedIn() == true){
             // ===
             this.user_id=this.apiservice.getUserId();
@@ -106,7 +105,6 @@ export class PubViewComponent implements OnInit {
               console.log('profile retrieved');
               const kkk = datadd;
               this.dprofile=kkk;
-              console.log(this.dprofile);
               this.pubRecommend=JSON.parse(this.dprofile['pubInterest']);
               if(this.pubRecommend!=null && this.pubRecommend!=undefined){
                 
@@ -123,12 +121,10 @@ export class PubViewComponent implements OnInit {
                 }
               }
               else{
-                console.log(this.pub_result_obj);
                 this.pubRecommend=[];
                 this.pubRecommendObj={id:this.pub_result_obj['_id']['$oid'],respect:1}
                 this.pubRecommend.push(this.pubRecommendObj);
               }
-              console.log(JSON.stringify(this.pubRecommend));
               this.onRecomend(this.pubRecommend,this.dprofile);
               
             },error=>{
@@ -163,7 +159,6 @@ export class PubViewComponent implements OnInit {
         else{
           this.hhh='550px';
         }
-        console.log(data)
         });
       // =======================================
         // ==============================================================
@@ -179,7 +174,12 @@ export class PubViewComponent implements OnInit {
   {
     this.router.navigate(['/Login'])
   }
-
+  openProfile(id3){
+    this.router.navigate(['/profile',id3])
+  }
+  openPub(id){
+    this.router.navigate(['/publication',id]);
+  }
   closeModel(){
     $('#id01').css('display', 'none');
   }
@@ -336,5 +336,16 @@ export class PubViewComponent implements OnInit {
       );
   
       this.pubRecommend = [];
+    }
+    viewCoauther(url){
+      this.apiservice.coautherSerach(url).subscribe(data=>{
+        for (let index = 0; index < data.length; index++){
+          this.coauthSearchData=JSON.parse(data[index])}
+        console.log(this.coauthSearchData['_id']['$oid']);
+        this.router.navigate(['/auther',this.coauthSearchData['_id']['$oid']]);
+      });
+    }
+    searchCatt(cat){
+      this.router.navigate(['/searchfor',cat]);
     }
 }

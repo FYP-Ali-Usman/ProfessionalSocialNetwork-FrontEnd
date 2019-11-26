@@ -9,8 +9,10 @@
     <div class="row top">
       <!-- Grid column -->
       <div class="col-md-5 col-lg-5 col-sm-12" style="padding-left: 50px">
-        <h2 class="fontStyle"><i class="fas fa-user-graduate"></i>&nbsp;{{author_result_obj.Name}}
+        <h2 class="fontStyle" style="display: inline;"><i class="fas fa-user-graduate"></i>&nbsp;{{author_result_obj.Name}}
         </h2>
+        
+        
         <p class="fontStyle">
           AFFILIATION:-&nbsp;{{author_result_obj.affiliation}}
       </div>
@@ -25,11 +27,13 @@
         <p class="fontStyle" style="display: inline;">
           Coauthers:&nbsp;&nbsp;{{coauthers}}&nbsp;&nbsp;
         </p></div>
-        
-        <button class="btn btn-primary btn-sm" (click)="reset()" >RESTET NETWORK VIEW</button>
-        <button class="btn btn-primary btn-sm" [ngStyle]="{display: coauthbutton}" (click)="viewCoauther()">VIEW SELECTED COAUTHER PROFILE</button>
-        <button class="btn btn-primary btn-sm" [ngStyle]="{display: pubbutton}" (click)="viePub()">VIEW SELECTED PUBLICATION</button>
-        <button class="btn btn-primary btn-sm" (click)="expand()" >EXPAND NETWORK</button>
+        <button [ngStyle]="{display: this.showFav}" type="button" class="btn btn-sm btn-warning" (click)="addFavorit(author_result_obj._id)"><i class="fas fa-heart"></i>Add
+          to favovourite</button>
+        <button [ngStyle]="{display: this.showFav2}" type="button" [disabled]="true" class="btn btn-sm btn-warning"><i class="fas fa-heart"></i>Favovourited</button>
+        <button class="btn btn-success btn-sm" (click)="reset()" >RESTET NETWORK VIEW</button>
+        <button class="btn btn-success btn-sm" [ngStyle]="{display: coauthbutton}" (click)="viewCoauther()">VIEW SELECTED COAUTHER PROFILE</button>
+        <button class="btn btn-success btn-sm" [ngStyle]="{display: pubbutton}" (click)="viePub()">VIEW SELECTED PUBLICATION</button>
+        <button class="btn btn-success btn-sm" (click)="expand()" >EXPAND NETWORK</button>
         
       </div>
     </div></div>
@@ -74,7 +78,7 @@
                           Year:- {{item.year}}
                           </div>
                           <div class="card-footer stylo" style="color: black;padding-left: 5%;padding-right: 5%;">
-                              Catogories:<span *ngFor="let item3 of item.catogories">&nbsp;&nbsp;<span class="badge badge-pill badge-dark stylo">{{item3}}</span>
+                              Catogories:<span *ngFor="let item3 of item.catogories">&nbsp;&nbsp;<a (click)="searchCattt(item3)"><span class="badge badge-pill badge-dark stylo">{{item3}}</span></a>
                               </span>
                           </div>
                         </div><br><br>
@@ -83,7 +87,7 @@
                     </div>
                     <div id="ResearchInterest" class="tab-pane" style="color: black;"><br>
                       <li class="list-group-flush stylo" *ngFor="let item4 of this.author_result_obj.researchInterest">
-                        {{item4}}
+                        <a (click)="searchCattt(item4)">{{item4}}</a>
                       </li>
                   </div>
                   <div id="guid" class="tab-pane stylo" style="color: black; padding-left: 10%;"><br>
