@@ -59,8 +59,10 @@ function createGraph(svg, graph, url, coAUthorUrl, publicatonUrl) {
     let parentHeight = window.innerHeight/parentHeightDivider;
 
     var svg = d3v4.select('svg')
-    .attr('width', width)
-    .attr('height', height)
+    // .attr('width', width)
+    // .attr('height', height)
+    .attr("width", '100%')
+    .attr("height", '100%')
 
     var margin = {top: 20, right: 20, bottom: 20, left: 20},
         padding = {top: 60, right: 60, bottom: 60, left: 60}
@@ -290,13 +292,16 @@ function createGraph(svg, graph, url, coAUthorUrl, publicatonUrl) {
             highlightedLinks = []
             clickedNodeId = d.id;
             var shortestPath = []
+            // console.log(graph.shortestPaths)
             for(var prop in graph.shortestPaths) {
                 if (prop == d.id){
                     for (i = 0; i < graph.shortestPaths[prop].length; i++) {
+                        // console.log(graph.shortestPaths[prop][i])
                         shortestPath.push(graph.shortestPaths[prop][i])
                     }
                 }                
             }
+            // console.log(shortestPath)
             // console.log(shortestPath);
 
             // node.attr("r", (dd)=>{
@@ -331,8 +336,11 @@ function createGraph(svg, graph, url, coAUthorUrl, publicatonUrl) {
                     highlightedLinks.push(dd);
                 }
             })
+            console.log(highlightedLinks)
             link.attr('stroke-width',(dd) => {
                 if(highlightedLinks.includes(dd)){
+                    console.log(dd.source.id)
+                    console.log(dd.target.id)
                     return Math.sqrt(8); 
                 }
                 else{

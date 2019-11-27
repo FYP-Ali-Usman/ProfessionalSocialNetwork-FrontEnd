@@ -40,16 +40,21 @@ export class OtherSearchComponent implements OnInit {
     this.author_result_j=[];
     this.author_resulty_j=[];
     this.pub_result_j=[];
+    this.author_result2y=[];
     this.pubLength=0;
     this.authLength=0;
     this._Activatedroute.params.subscribe(queryParams => {
       console.log(queryParams);
       this.query=queryParams.author;
       console.log(this.query);
-      // ("author");
+      this.author_result_j=[];
+      this.author_resulty_j=[];
+      this.pub_result_j=[];
+      this.author_result2y=[];
+        // ("author");
     this.apiservice.searchAuther(this.query).subscribe(data=>{
       console.log(data);
-      // console.log(data['rauthor'])
+      console.log(data['rauthor'])
       this.author_result=[];
       console.log(data['rpublications'])
       this.author_result_j=data['rauthor']
@@ -79,15 +84,17 @@ export class OtherSearchComponent implements OnInit {
       this.loading='none';
       // ===============================
       this.crawAllow=data['crawl'];
-      if(this.crawAllow='crawlAgain'){
+      if(this.crawAllow=='crawlAgain'){
         this.apiservice.searchAutherYeild(this.query).subscribe(data=>{
           // console.log(data['rauthor'])
           this.author_resulty=[];
           this.author_resulty_j=data['rauthor']
+          console.log(data['rauthor']);
           this.authLength+=this.author_resulty_j.length;
           for (let index = 0; index < this.author_resulty_j.length; index++) {
             this.author_result_objy=JSON.parse(this.author_resulty_j[index]);
-            this.author_resulty.push(this.author_result_objy);        
+            if(this.author_result_objy['_id']['$oid']!==this.author_result_obj['_id']['$oid']){
+            this.author_resulty.push(this.author_result_objy);}        
           }
           this.author_result2y=this.author_resulty; 
           console.log(this.author_result2y);
@@ -96,11 +103,12 @@ export class OtherSearchComponent implements OnInit {
           this.seco='block';
         });
       }
-      else if(this.crawAllow='crawlAgainNot')
+      else if(this.crawAllow=='crawlAgainNot')
       {
         this.loading='none';
         this.llod='none';
         this.seco='none';
+        this.author_result2y=[]
       }
       // =============================
     });
@@ -117,16 +125,17 @@ export class OtherSearchComponent implements OnInit {
   onPress2(){
     this.loading='block';
     this.router.navigate(['/searchfor',this.author]);
-    this.apiservice.searchAuther(this.author).subscribe(data=>{
-      this.author_result=[];
-      for (let index = 0; index < data.length; index++) {
-        this.author_result_obj=JSON.parse(data[index]);
-        this.author_result.push(this.author_result_obj);        
-      }
-      this.author_result2=this.author_result; 
-      console.log(this.author_result2);
-      this.loading='none';
-    });
+    this.loading='none';
+    // this.apiservice.searchAuther(this.author).subscribe(data=>{
+    //   this.author_result=[];
+    //   for (let index = 0; index < data.length; index++) {
+    //     this.author_result_obj=JSON.parse(data[index]);
+    //     this.author_result.push(this.author_result_obj);        
+    //   }
+    //   this.author_result2=this.author_result; 
+    //   console.log(this.author_result2);
+    //   this.loading='none';
+    // });
   }
   // done ====================
   searchCat(cat){

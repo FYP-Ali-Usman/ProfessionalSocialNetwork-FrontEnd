@@ -146,9 +146,7 @@
               <label for="discription">Discription:</label>
               <textarea rows="4" cols="50" [(ngModel)]="discription" id="discription" name="discription"
                 class="form-control" placeholder="Write discription."></textarea>
-              <small id="emailHelp" class="form-text text-muted">We'll never
-                share your email with anyone
-                else.</small><br><br>
+              <small id="emailHelp" class="form-text text-muted"></small><br><br>
             </div>
 
             <div class="custom-file form-group">
@@ -177,9 +175,7 @@
               <label for="title">Title:</label>
               <input type="text" name="title" value={{this.editFormArt.title}} [(ngModel)]="title" class="form-control"
                 id="title" placeholder="Enter title.">
-              <small id="emailHelp" class="form-text text-muted">We'll never
-                share your email with anyone
-                else.</small><br><br>
+              <small id="emailHelp" class="form-text text-muted"></small><br><br>
             </div>
 
             <div class="form-group">
@@ -225,7 +221,7 @@
                       class="fas fa-heart"></i>Edit</button>
                   <button style="float:
                       right;" type="button" (click)="delete_article(item.id)" class="btn btn-sm btn-danger"><i
-                      class="fas fa-heart"></i>Del</button>
+                      class="fas fa-trash"></i>Del</button>
                 </div>
                 <div class="card-body">
 

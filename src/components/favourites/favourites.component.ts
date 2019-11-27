@@ -144,5 +144,11 @@ export class FavouritesComponent implements OnInit {
     this.favtosub=null;
     
   }
+  viewAuthor(id){
+    this.router.navigate(['/auther',id['$oid']]);
+  }
+  searchCat(cat){
+    this.router.navigate(['/searchfor',cat]);
+  }
 
 }
