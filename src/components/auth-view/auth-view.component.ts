@@ -50,6 +50,7 @@ export class AuthViewComponent implements OnInit {
   @Input()
 
   margin = {top: 20, right: 20, bottom: 30, left: 40};
+  coautherName: never;
   // ========================================================
 
   constructor(private apiservice: ApiService , private router: Router, private _Activatedroute:ActivatedRoute) { }
@@ -166,14 +167,16 @@ export class AuthViewComponent implements OnInit {
   
   setCoauther(value){
     this.coAuthorUrl=value;
+    this.coautherName=name;
     console.log(this.coAuthorUrl);
+    console.log(this.coautherName);
     this.publicatonUrl='';
     this.coauthbutton='inline';
     this.pubbutton='none';
     createGraph(this.svg, this.data, this.url,this.coAuthorUrl, this.publicatonUrl);
   }
   viewCoauther(){
-    this.apiservice.coautherSerach(this.coAuthorUrl).subscribe(data=>{
+    this.apiservice.coautherSerach(this.coAuthorUrl,this.coautherName).subscribe(data=>{
       for (let index = 0; index < data.length; index++){
         this.coauthSearchData=JSON.parse(data[index])}
       console.log(this.coauthSearchData['_id']['$oid']);

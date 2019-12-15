@@ -234,8 +234,8 @@ searchAuther2(id3):Observable<any[]>{
 searchPub(id3):Observable<any[]>{
   return this.http.get<any[]>("http://127.0.0.1:8000/search/apubSearch",{params:{id:id3}});
 }
-coautherSerach(urll):Observable<any[]>{
-  return this.http.get<any[]>("http://127.0.0.1:8000/search/coauth",{params:{url:urll}});
+coautherSerach(urll,nam):Observable<any[]>{
+  return this.http.get<any[]>("http://127.0.0.1:8000/search/coauth",{params:{url:urll,name:nam}});
 }
 onePubSerach(id3):Observable<any[]>{
   return this.http.get<any[]>("http://127.0.0.1:8000/search/onePub",{params:{id:id3}});

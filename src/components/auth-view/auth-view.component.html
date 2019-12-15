@@ -68,7 +68,7 @@
                               <a (click)="setPublication(item.papaerLink,item._id)"><h4 style="padding: 10px" class="fontStyle">{{item.title}}</h4></a>
                           </div>
                           <div class="card-title bg-white" style="padding-left: 5%;padding-right: 5%;">
-                              <span *ngFor="let item2 of item.coAuthors"><a (click)="setCoauther(item2.linkUrl)"> <span class="badge badge-pill badge-success stylo" style="font-size: 14px;">{{item2.name}}</span>&nbsp;&nbsp;</a>
+                              <span *ngFor="let item2 of item.coAuthors"><a (click)="setCoauther(item2.linkUrl,item2.name)"> <span class="badge badge-pill badge-success stylo" style="font-size: 14px;">{{item2.name}}</span>&nbsp;&nbsp;</a>
                               </span>
                           </div>
                           <div class="card-body stylo" style="color: black;padding-left: 5%;padding-right: 5%;">
